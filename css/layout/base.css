@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Ширина основного контента для выравнивания по центру*/
 .conteiner {
   width: 940px;
-  height-min: 650px;
+  height: 650px;
   margin: 0 auto;
 }
 
