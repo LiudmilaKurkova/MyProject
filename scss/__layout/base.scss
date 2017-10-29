@@ -1,0 +1,51 @@
+*, *::before, *::after  {
+  box-sizing: border-box; /*Значения width/height задают высоту/ширину всего элемента, а не контента*/
+}
+
+body, html{
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  color: $dark;
+  -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/
+  -moz-osx-font-smoothing: grayscale;
+}
+  
+
+/*убираем стили*/
+ul {      
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {     
+  margin: 0;
+  font-weight: normal;
+}
+
+/*спрятать элемент*/
+.visuallyhidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+
+
+
+

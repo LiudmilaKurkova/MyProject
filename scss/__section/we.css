@@ -1,13 +1,13 @@
-.wrapper__we {
-  background: url(../../img/__we/bg__we.png) center center no-repeat;
-  background-position: cover;
-  position: relative; }
+.section__we {
+  background: url("../img/__we/bg__we.png") no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .wrap__we {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -24,10 +24,6 @@
   margin-bottom: 30px; }
 
 .description__we {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
