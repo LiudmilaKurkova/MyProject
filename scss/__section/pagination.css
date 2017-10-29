@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(0, 0, 0, 0.31); }
+
+.pagination {
+  list-style-type: none; }
+  .pagination .pagination__item:after {
+    content: "";
+    background-color: #fff;
+    border: 1px solid blue;
+    border-radius: 5px; }
+
+/*# sourceMappingURL=pagination.css.map */
