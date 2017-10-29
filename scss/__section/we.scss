@@ -1,4 +1,4 @@
-.section__we {
+.section-we {
 	background: url("../img/__we/bg__we.png") no-repeat; 
 	background-position: center bottom;
   background-size: cover;
@@ -8,14 +8,14 @@
 	align-items: center;
 }
 
-.wrap__we {
+.wrap-we {
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
 }
 
-.header__we {
+.header-we {
 	height: 190px;
 	font-family: "Gagalin";
 	font-weight: 500;
@@ -26,7 +26,7 @@
 	margin-bottom: 30px;
 	}
 
-	.description__we {
+	.main-we__description {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-around;
@@ -39,7 +39,7 @@
 	margin: 0 auto 30px auto;
 }
 
-.description__title {
+.main-we__item h3 {
 	font-family: "Lifehack";
 	font-weight: 500;
 	font-size: 21px;
@@ -48,7 +48,7 @@
 	margin-bottom: 30px;
 }
 
-.description__text {
+.main-we__item p {
 	font-family: "Ubuntu";
 	font-weight: 300;
 	font-size: 14px;
