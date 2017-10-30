@@ -589,7 +589,7 @@ th {
   align-items: center;
   list-style: none; }
 
-.description__img {
+.main-we__img {
   display: block;
   margin: 0 auto 30px auto; }
 
@@ -608,6 +608,9 @@ th {
   color: #2f3234;
   text-align: center; }
 
+.main-reviews {
+  height: 100%; }
+
 .main-reviews__block {
   display: flex;
   flex-direction: row;
@@ -622,14 +625,14 @@ th {
   height: 50%;
   filter: saturate(0); }
   .main-reviews__item:hover {
-    opacity: 0.6; }
+    opacity: 0.5;
+    filter: alpha(opacity=40); }
   .main-reviews__item:hover .main-reviews__drop {
     left: 0; }
 
 .main-reviews__img {
   position: relative;
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 .main-reviews__drop {
   position: absolute;
@@ -685,6 +688,10 @@ th {
     height: 5px;
     border-radius: 50%;
     background-color: #fff;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
     margin: 5px;
     position: relative; }
   .pagination__item:hover {
@@ -694,5 +701,64 @@ th {
     border-width: 1px;
     border-style: solid;
     border-color: #fff; }
+
+.section-team {
+  background: url("../img/__team/main.png") top center no-repeat;
+  background-size: cover;
+  position: relative; }
+
+.main-team {
+  padding: 5%;
+  background-color: #2f3234;
+  opacity: 0.9;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 50%; }
+
+.mail-team__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+
+.main-team__title {
+  font-family: "Gagalin";
+  font-weight: 500;
+  font-size: 72px;
+  color: #f6ac3a;
+  text-align: left;
+  line-height: 190px;
+  margin-bottom: 30px; }
+
+.main-team__accordion {
+  padding: 10%; }
+
+.main-team__item h3 {
+  font-family: "Gagalin";
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 30px; }
+
+.main-team__drop {
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: center;
+  align-items: center; }
+  .main-team__drop .main-team__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px; }
+  .main-team__drop .main-team__text {
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 14px;
+    color: #fff;
+    text-align: left;
+    padding-right: 10%; }
 
 /*# sourceMappingURL=style.css.map */
