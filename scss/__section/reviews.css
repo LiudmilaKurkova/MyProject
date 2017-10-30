@@ -9,10 +9,10 @@
   position: relative;
   list-style: none;
   width: 25%;
-  height: 50vh;
+  height: 50%;
   filter: saturate(0); }
   .main-reviews__item:hover {
-    opacity: 0.8; }
+    opacity: 0.6; }
   .main-reviews__item:hover .main-reviews__drop {
     left: 0; }
 

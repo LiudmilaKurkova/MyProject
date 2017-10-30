@@ -1,12 +1,27 @@
-body {
-  background-color: rgba(0, 0, 0, 0.31); }
-
 .pagination {
-  list-style-type: none; }
-  .pagination .pagination__item:after {
-    content: "";
+  position: absolute;
+  top: 90px;
+  left: 95%; }
+
+.pagination__item {
+  width: 20px;
+  height: 20px;
+  display: block; }
+  .pagination__item:after {
+    display: inline-block;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
     background-color: #fff;
-    border: 1px solid blue;
-    border-radius: 5px; }
+    margin: 5px;
+    position: relative; }
+  .pagination__item:hover {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff; }
 
 /*# sourceMappingURL=pagination.css.map */

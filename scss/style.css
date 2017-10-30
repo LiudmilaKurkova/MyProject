@@ -619,10 +619,10 @@ th {
   position: relative;
   list-style: none;
   width: 25%;
-  height: 50vh;
+  height: 50%;
   filter: saturate(0); }
   .main-reviews__item:hover {
-    opacity: 0.8; }
+    opacity: 0.6; }
   .main-reviews__item:hover .main-reviews__drop {
     left: 0; }
 
@@ -668,5 +668,31 @@ th {
   font-size: 13px;
   text-transform: uppercase;
   text-decoration: none; }
+
+.pagination {
+  position: absolute;
+  top: 90px;
+  left: 95%; }
+
+.pagination__item {
+  width: 20px;
+  height: 20px;
+  display: block; }
+  .pagination__item:after {
+    display: inline-block;
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 5px;
+    position: relative; }
+  .pagination__item:hover {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
