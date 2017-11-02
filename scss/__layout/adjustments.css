@@ -13,12 +13,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  position: relative; }
 
 .section {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.31);
   min-width: 940px;
-  min-height: 650px; }
+  min-height: 650px;
+  position: relative; }
 
 /*# sourceMappingURL=adjustments.css.map */

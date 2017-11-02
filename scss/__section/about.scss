@@ -78,8 +78,8 @@
   flex-wrap: nowrap;
   flex-grow: 1;
   align-items: center;
-  padding-bottom: 15%;
-}
+  margin-bottom: 80px;
+  }
 
 .main-about__picture {
 	flex-basis: 50%;	
@@ -111,14 +111,8 @@
 }
 
 .footer-about {
-	flex-direction: column;
-  justify-content: center;
+	width: 100%;
+	text-align: center;
 }
 
-.arrow-scroll {
-	display: block;
-	width: 30px;
-	height: 15px;
-	background: url(../img/__about/arrow-scroll.png) center center no-repeat;
-}
 

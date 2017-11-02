@@ -3,21 +3,18 @@
   background-size: cover;
   position: relative; }
 
-.main-team {
-  padding: 5%;
-  background-color: #2f3234;
-  opacity: 0.9;
+.container-team {
   position: absolute;
-  width: 50%;
-  height: 100%;
   top: 0;
-  left: 50%; }
-
-.mail-team__wrap {
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: rgba(47, 50, 52, 0.93);
+  padding: 0 120px 0 80px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center; }
+  padding-top: 50px;
+  align-items: flex-start; }
 
 .main-team__title {
   font-family: "Gagalin";
@@ -25,36 +22,55 @@
   font-size: 72px;
   color: #f6ac3a;
   text-align: left;
-  line-height: 190px;
-  margin-bottom: 30px; }
+  margin-bottom: 0; }
 
-.main-team__accordion {
-  padding: 10%; }
-
-.main-team__item h3 {
+.main-team__trigger {
+  text-decoration: none;
   font-family: "Gagalin";
   font-weight: 500;
   font-size: 14px;
   color: #fff;
-  text-align: left;
-  margin-bottom: 30px; }
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; }
+  .main-team__trigger:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 9px solid transparent;
+    border-top-color: #f8b43a;
+    border-bottom-width: 0px;
+    margin-right: 10px; }
 
 .main-team__drop {
-  display: flex;
-  flex-direction: row nowrap;
-  justify-content: center;
-  align-items: center; }
-  .main-team__drop .main-team__img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px; }
-  .main-team__drop .main-team__text {
-    font-family: "Ubuntu";
-    font-weight: 500;
-    font-size: 14px;
-    color: #fff;
-    text-align: left;
-    padding-right: 10%; }
+  display: none; }
+
+.main-team__avatar {
+  display: inline-block; }
+
+.main-team__img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px; }
+
+.main-team__text {
+  display: inline-block;
+  vertical-align: top;
+  width: 250px;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff; }
+  .main-team__text .main-team__name {
+    font-weight: bold;
+    margin-bottom: 15px; }
+
+.main-team__item--activ .main-team__trigger {
+  color: #f8b43a; }
+.main-team__item--activ .main-team__trigger:before {
+  transform: rotate(-180deg); }
+.main-team__item--activ .main-team__drop {
+  display: block; }
 
 /*# sourceMappingURL=team.css.map */
