@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$dark".
-        on line 15 of J:\WEB\public_html\scss\__layout\base.scss
+Error: Undefined variable: "$orange".
+        on line 61 of J:\WEB\public_html\scss\__section\contacts.scss
 
-10:   margin: 0;
-11:   padding: 0;
-12:   font-size: rem(16px);
-13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-14:   line-height: 1.42;
-15:   color: $dark;
-16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*\/
-17:   -moz-osx-font-smoothing: grayscale;
-18: }
-19:   
-20: 
+56: 	display: inline-block;	
+57: 	text-decoration: none;
+58: 	font-family: "Ubuntu";
+59: 	font-size: rem(14px);
+60: 	font-weight: bold;
+61: 	color: $orange;
+62: 
+63: 		&:before {
+64: 			content: "";
+65: 			display: inline-block;
+66: 			vertical-align: middle;
 
 Backtrace:
-J:\WEB\public_html\scss\__layout\base.scss:15
+J:\WEB\public_html\scss\__section\contacts.scss:61
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark\".\A         on line 15 of J:\WEB\public_html\scss\__layout\base.scss\A \A 10:   margin: 0;\A 11:   padding: 0;\A 12:   font-size: rem(16px);\A 13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;\A 14:   line-height: 1.42;\A 15:   color: $dark;\A 16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/\A 17:   -moz-osx-font-smoothing: grayscale;\A 18: }\A 19:   \A 20: "; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 61 of J:\WEB\public_html\scss\__section\contacts.scss\A \A 56: 	display: inline-block;	\A 57: 	text-decoration: none;\A 58: 	font-family: \"Ubuntu\";\A 59: 	font-size: rem(14px);\A 60: 	font-weight: bold;\A 61: 	color: $orange;\A 62: \A 63: 		&:before {\A 64: 			content: \"\";\A 65: 			display: inline-block;\A 66: 			vertical-align: middle;"; }

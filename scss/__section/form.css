@@ -1,24 +1,35 @@
 /*
-Error: Undefined variable: "$dark".
-        on line 15 of J:\WEB\public_html\scss\__layout\base.scss
+Error: Undefined variable: "$orange".
+        on line 102 of J:\WEB\public_html\scss\__section\form.scss
 
-10:   margin: 0;
-11:   padding: 0;
-12:   font-size: rem(16px);
-13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
-14:   line-height: 1.42;
-15:   color: $dark;
-16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*\/
-17:   -moz-osx-font-smoothing: grayscale;
-18: }
-19:   
-20: 
+97:       left: 50%;
+98:       transform: translate(-50%, -50%);
+99:       width: 0;
+100:       height: 0;
+101:       border-radius: 50%;
+102:       background: $orange;
+103:     }
+104:   }
+105: 
+106: .comments-form__controls-radio {
+107:   position: absolute;
 
 Backtrace:
-J:\WEB\public_html\scss\__layout\base.scss:15
+J:\WEB\public_html\scss\__section\form.scss:102
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +73,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark\".\A         on line 15 of J:\WEB\public_html\scss\__layout\base.scss\A \A 10:   margin: 0;\A 11:   padding: 0;\A 12:   font-size: rem(16px);\A 13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;\A 14:   line-height: 1.42;\A 15:   color: $dark;\A 16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/\A 17:   -moz-osx-font-smoothing: grayscale;\A 18: }\A 19:   \A 20: "; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 102 of J:\WEB\public_html\scss\__section\form.scss\A \A 97:       left: 50%;\A 98:       transform: translate(-50%, -50%);\A 99:       width: 0;\A 100:       height: 0;\A 101:       border-radius: 50%;\A 102:       background: $orange;\A 103:     }\A 104:   }\A 105: \A 106: .comments-form__controls-radio {\A 107:   position: absolute;"; }

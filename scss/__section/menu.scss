@@ -5,56 +5,96 @@
 
 }
 
-.container-menu {
-	position: absolute;
-	width: 100%;
-  display: flex;
-  flex-direction: column;
- }
-
-
-
 .main-menu__title {
 	position: absolute;
 	left: 10%;
 	top: 10%;
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #fff;
 }
 
-.accordion-menu {
+.acco-menu {
 	position: absolute;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  padding: 0;
-  margin: 0;
-  display: flex;
-	flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
+	right: 0;
+	top: 0;
+	bottom: 0;
+  display: flex; 
 }
 
-
-.accordion-menu__header {
-	width: 80px;
+.acco-menu__item {
 	height: 100%;
+
+		&:active {
+		.acco-menu__trigger-text {
+			color: $yellow;
+		}
+		&:hover {
+			.acco-menu__body {
+				width: rem(540px);
+			}
+		}
+	}
+}
+
+.acco-menu__trigger {
+	width: rem(80px);
+	display: block;
+	height: 100%;
+	float: left;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat; ;
+	text-decoration: none;
+  position: relative;
+}
+
+.acco-menu__trigger-text {
+	font-size: rem(40px);
+	color: #fff;
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 40px;
-	color: #fff;
-	-moz-transform: rotate(-90deg); /* Для Firefox */
-  -ms-transform: rotate(-90deg); /* Для IE */
-  -webkit-transform: rotate(-90deg); /* Для Safari, Chrome, iOS */
-  -o-transform: rotate(-90deg); /* Для Opera */
-  transform: rotate(-90deg);
+	font-size: rem(40px);
+	color: #fff;	
+	//text-align: center;
+	white-space: nowrap;
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  transform-origin: 0 0;
+  left: 50%;
+  top: 70%;
+  //margin-top: rem(-20px);
 }
 
-.accordion-menu__body {
-	display: block;
-	//height: 0;
-	//overflow: hidden;
+.acco-menu__body {
+	position: relative;
+	height: 100%;
+	float: left;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
 }
+
+.acco-menu__text {
+	position: absolute;
+	padding: 20% 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+	font-family: "Ubuntu";
+	font-size: rem(14px);
+	color: #fff; 
+	padding: rem(60px) rem(30px);
+	width: 100%;
+  line-height: 1.8;
+  display: none;
+}
+
+
+
+
+
 
