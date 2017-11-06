@@ -6,20 +6,33 @@
 }
 
 .main-form__title {
-	height: rem(190px);
+	//height: rem(190px);
 	font-family: "Gagalin";
 	font-weight: 500;
 	font-size: rem(72px);
 	color: #f9b43c;
 	text-align: center;
-	line-height: rem(190px);
-	margin-bottom: rem(30px);;
+	//line-height: rem(190px);
+	margin-bottom: rem(30px);
+
+    @include phones {
+      font-size: rem(50px);
+       }
 }
 
 .form__elem {
 	display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+    @include tablets {
+      flex-direction: column;
+      padding: rem(80px);
+    }
+
+      @include phones {
+        padding: 0;
+      }
  }
 
 .form__content {
@@ -29,6 +42,10 @@
 	   &:last-child {
         margin-right: 0;
   }
+
+     @include tablets {
+      width: 100%; 
+     }
 }
 
 .form__input {
@@ -62,17 +79,28 @@
 	font-weight: 300;
 	font-size: rem(14px);
 	color: #fff;
-  margin-right: rem(10px);
+  margin-left: rem(10px);
+  display: inline-block;
+
 }
 
 
 .form__row--margin {
   margin-bottom: rem(10px);
+  margin-left: rem(10px);
 
     &:last-child {
         margin-right: 0;
       }
-}
+
+      & .comments-form__controls-input {
+        margin-right: rem(20px);
+      }
+
+      @include phones {
+        justify-content: center;
+      }
+    }
 
 .form__textarea {
 	height: rem(110px);
@@ -91,6 +119,7 @@
   position: relative;
 
         &:after {
+      display: inline-block;
       content: "";
       position: absolute;
       top: 50%;
@@ -101,7 +130,44 @@
       border-radius: 50%;
       background: $orange;
     }
+    &.comments-form__controls-checkbox {
+      border-radius: 0;
   }
+        
+}
+
+
+.comments-form__controls-radio:checked+.comments-form__controls-checkbox:after {
+  display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../icons/checked.svg") 50% no-repeat transparent;
+      background-size: contain;
+      width: rem(11px);
+      height: rem(9px);  
+  cursor: pointer;
+}
+
+ /*.comments-form__controls-checkbox {
+      &:hover {
+        &:after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../icons/checked.svg") 50% no-repeat transparent;
+      background-size: contain;
+      width: rem(11px);
+      height: rem(9px); 
+  }
+}
+}*/
+
 
 .comments-form__controls-radio {
   position: absolute;
@@ -136,5 +202,9 @@
 	font-weight: 300;
 	font-size: rem(14px);
 	color: #fff;
+
+    &:hover {
+      background-color: transparent;
+    }
 }
 

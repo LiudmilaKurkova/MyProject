@@ -11,32 +11,57 @@
   right: 0;
   width: 50%;
   background: rgba(#2f3234, .93);
-  padding: 0 120px 0 80px;
+  padding: 0 rem(120px) 0 rem(80px);
   display: flex;
   flex-direction: column;
-  padding-top: 50px; 
+  padding-top: rem(50px); 
   align-items: flex-start;
+  	
+  	@include tablets() {
+  		width: 100%;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+				.main-team__avatar {
+					display: block;
+			}	
+  	}
 }
 
 .main-team__title {
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #f6ac3a;
 	text-align: left;
-	//line-height: 190px;
+	//line-height: rem(190px);
 	margin-bottom: 0;
+
+		@include phones {
+			font-size: rem(50px);
+		};
 }
+
+.main-team__item {
+	margin-bottom: rem(40px);
+	align-items: center;
+  
+		&:last-child {
+		margin-bottom: 0;
+	} 
+}
+
+
 
 .main-team__trigger {
 	text-decoration: none;
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #fff;
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 
 		  &:before {
 		    content: "";
@@ -45,8 +70,12 @@
 		    border: 9px solid transparent;
 		    border-top-color: #f8b43a;
 		    border-bottom-width: 0px;
-		    margin-right: 10px;
+		    margin-right: rem(10px);
   }
+  	@include tablets() {
+  		font-size: rem(25px);
+			text-align: center;
+		}
 } 
 
 .main-team__drop {
@@ -61,24 +90,24 @@
           
 }
 .main-team__img {
-	width: 100px;
-	height: 100px;
+	width: rem(100px);
+	height: rem(100px);
 	border-radius: 50%;
-	margin-right: 20px;
+	margin-right: rem(20px);
 }
 
 .main-team__text {
 	display: inline-block;
 	vertical-align: top;
-	width: 250px;
+	width: rem(250px);
 	font-family: "Ubuntu";
 	font-weight: 500;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #fff;
 		
  			.main-team__name  {
 				font-weight: bold;
-				margin-bottom:15px;
+				margin-bottom: rem(15px);
 }
 }
 

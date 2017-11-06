@@ -16,14 +16,18 @@
 }
 
 .header-we {
-	height: 190px;
+	height: rem(190px);
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #2f3234;
 	text-align: center;
-	line-height: 190px;
-	margin-bottom: 30px;
+	line-height: rem(190px);
+	margin-bottom: rem(30px);
+
+			@include phones {
+				font-size: rem(50px);
+			}
 	}
 
 	.main-we__description {
@@ -32,28 +36,56 @@
 	justify-content: space-around;
 	align-items: center;
 	list-style: none;
+
+		@include phones {
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
+}
+
+.main-we__item {
+	@include phones {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+	}
 }
 
 .main-we__img {
 	display: block;
-	margin: 0 auto 30px auto;
+	margin: 0 auto rem(30px) auto;
 }
 
+.main-we__text {
+	@include phones {
+		width: rem(336px);
+		margin-left: rem(20px);
+	}
+}
 .main-we__item h3 {
 	font-family: "Lifehack";
 	font-weight: 500;
-	font-size: 21px;
+	font-size: rem(21px);
 	color: #2f3234;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: rem(30px);
+
+		@include phones {
+			text-align: left;
+		}
 }
 
 .main-we__item p {
 	font-family: "Ubuntu";
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #2f3234;
 	text-align: center;
+
+		@include phones {
+			text-align: left;
+		}
 }
 
 

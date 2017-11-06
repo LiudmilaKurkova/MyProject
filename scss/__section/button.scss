@@ -1,0 +1,19 @@
+.toorder-about__button {
+	display: inline-block;
+	width: rem(98px);
+	height: rem(35px);
+	background: #e45028;
+	text-transform: uppercase;
+	font-family: "Ubuntu";
+	font-weight: 500;
+	font-size: rem(13px);
+	color: #fff;
+	text-align: center;
+	line-height: rem(35px);
+	border-radius: rem(5px);
+	text-decoration: none;
+	transition: .5s;
+  &:hover {
+    background-color: darken($orange, 7%);
+  }
+}
