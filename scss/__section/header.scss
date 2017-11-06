@@ -1,9 +1,11 @@
 .header-about {
 	width: 100%;
+  //height: rem(80px);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: rem(10px);
+  //margin-bottom: 15rem;
 }
 
 .nav-about {

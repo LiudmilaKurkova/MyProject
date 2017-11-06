@@ -5,6 +5,11 @@
 	position: relative;
 }
 
+.container-about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
 .main-about {
 	width: 100%;
@@ -12,7 +17,7 @@
   flex-wrap: nowrap;
   flex-grow: 1;
   align-items: center;
-  margin-bottom: rem(80px);
+  margin-bottom: rem(100px);
 
   	 @include tablets {
   	 	flex-direction: column;
@@ -61,6 +66,7 @@
 
 .footer-about {
 	width: 100%;
+	//height: rem(80px);
 	text-align: center;
 }
 

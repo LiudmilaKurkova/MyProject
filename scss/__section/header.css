@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 13 of J:\WEB\public_html\scss\__section\header.scss, in `tablets'
-        from line 13 of J:\WEB\public_html\scss\__section\header.scss
+        on line 15 of J:\WEB\public_html\scss\__section\header.scss, in `tablets'
+        from line 15 of J:\WEB\public_html\scss\__section\header.scss
 
-8: 
-9: .nav-about {
-10: 	margin-right: rem(15px);
-11: 	margin-left: auto;
-12: 
-13:     @include tablets {
-14:       display: none;
-15:       }
-16: }
-17: 
-18: .nav-about__item {
+10: 
+11: .nav-about {
+12: 	margin-right: rem(15px);
+13: 	margin-left: auto;
+14: 
+15:     @include tablets {
+16:       display: none;
+17:       }
+18: }
+19: 
+20: .nav-about__item {
 
 Backtrace:
-J:\WEB\public_html\scss\__section\header.scss:13:in `tablets'
-J:\WEB\public_html\scss\__section\header.scss:13
+J:\WEB\public_html\scss\__section\header.scss:15:in `tablets'
+J:\WEB\public_html\scss\__section\header.scss:15
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 13 of J:\WEB\public_html\scss\__section\header.scss, in `tablets'\A         from line 13 of J:\WEB\public_html\scss\__section\header.scss\A \A 8: \A 9: .nav-about {\A 10: 	margin-right: rem(15px);\A 11: 	margin-left: auto;\A 12: \A 13:     @include tablets {\A 14:       display: none;\A 15:       }\A 16: }\A 17: \A 18: .nav-about__item {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 15 of J:\WEB\public_html\scss\__section\header.scss, in `tablets'\A         from line 15 of J:\WEB\public_html\scss\__section\header.scss\A \A 10: \A 11: .nav-about {\A 12: 	margin-right: rem(15px);\A 13: 	margin-left: auto;\A 14: \A 15:     @include tablets {\A 16:       display: none;\A 17:       }\A 18: }\A 19: \A 20: .nav-about__item {"; }
