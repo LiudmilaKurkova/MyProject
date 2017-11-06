@@ -32,3 +32,34 @@
   justify-content: center; 
 }
 
+.section__title {
+  font-family: "Gagalin";
+  font-weight: normal;
+  font-style: normal;
+  font-size: rem(72px);
+  color: $yellow;
+  text-transform: uppercase;
+  margin-bottom: rem(80px);  
+
+      @include phones {
+        font-size: rem(63px);
+    }
+  }
+
+.section__title--black {
+  color: $dark;
+}
+
+.section__title--white {
+  color: #fff;
+}
+
+.section__title--left {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+}
+
+.section__title--center {
+  text-align: center;
+}

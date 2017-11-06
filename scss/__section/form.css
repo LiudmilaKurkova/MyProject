@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 18 of J:\WEB\public_html\scss\__section\form.scss, in `phones'
-        from line 18 of J:\WEB\public_html\scss\__section\form.scss
+Error: Undefined mixin 'tablets'.
+        on line 28 of J:\WEB\public_html\scss\__section\form.scss, in `tablets'
+        from line 28 of J:\WEB\public_html\scss\__section\form.scss
 
-13: 	color: #f9b43c;
-14: 	text-align: center;
-15: 	//line-height: rem(190px);
-16: 	margin-bottom: rem(30px);
-17: 
-18:     @include phones {
-19:       font-size: rem(50px);
-20:        }
-21: }
-22: 
 23: .form__elem {
+24: 	display: flex;
+25:   flex-direction: row;
+26:   justify-content: space-between;
+27: 
+28:     @include tablets {
+29:       flex-direction: column;
+30:       padding: rem(80px);
+31:     }
+32: 
+33:       @include phones {
 
 Backtrace:
-J:\WEB\public_html\scss\__section\form.scss:18:in `phones'
-J:\WEB\public_html\scss\__section\form.scss:18
+J:\WEB\public_html\scss\__section\form.scss:28:in `tablets'
+J:\WEB\public_html\scss\__section\form.scss:28
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 18 of J:\WEB\public_html\scss\__section\form.scss, in `phones'\A         from line 18 of J:\WEB\public_html\scss\__section\form.scss\A \A 13: 	color: #f9b43c;\A 14: 	text-align: center;\A 15: 	//line-height: rem(190px);\A 16: 	margin-bottom: rem(30px);\A 17: \A 18:     @include phones {\A 19:       font-size: rem(50px);\A 20:        }\A 21: }\A 22: \A 23: .form__elem {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 28 of J:\WEB\public_html\scss\__section\form.scss, in `tablets'\A         from line 28 of J:\WEB\public_html\scss\__section\form.scss\A \A 23: .form__elem {\A 24: 	display: flex;\A 25:   flex-direction: row;\A 26:   justify-content: space-between;\A 27: \A 28:     @include tablets {\A 29:       flex-direction: column;\A 30:       padding: rem(80px);\A 31:     }\A 32: \A 33:       @include phones {"; }

@@ -3,6 +3,10 @@
 	top: 4.8rem;;
 	left: 94%;
   z-index: 2;
+
+    @include tablets {
+      display: none;
+    }
 }
 
 .pagination__link {

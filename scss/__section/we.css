@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 28 of J:\WEB\public_html\scss\__section\we.scss, in `phones'
-        from line 28 of J:\WEB\public_html\scss\__section\we.scss
+        on line 40 of J:\WEB\public_html\scss\__section\we.scss, in `phones'
+        from line 40 of J:\WEB\public_html\scss\__section\we.scss
 
-23: 	color: #2f3234;
-24: 	text-align: center;
-25: 	line-height: rem(190px);
-26: 	margin-bottom: rem(30px);
-27: 
-28: 			@include phones {
-29: 				font-size: rem(50px);
-30: 			}
-31: 	}
-32: 
-33: 	.main-we__description {
+35: 	flex-flow: row nowrap;
+36: 	justify-content: space-around;
+37: 	align-items: center;
+38: 	list-style: none;
+39: 
+40: 		@include phones {
+41: 			flex-flow: column;
+42: 			justify-content: center;
+43: 			align-items: center;
+44: 		}
+45: }
 
 Backtrace:
-J:\WEB\public_html\scss\__section\we.scss:28:in `phones'
-J:\WEB\public_html\scss\__section\we.scss:28
+J:\WEB\public_html\scss\__section\we.scss:40:in `phones'
+J:\WEB\public_html\scss\__section\we.scss:40
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 28 of J:\WEB\public_html\scss\__section\we.scss, in `phones'\A         from line 28 of J:\WEB\public_html\scss\__section\we.scss\A \A 23: 	color: #2f3234;\A 24: 	text-align: center;\A 25: 	line-height: rem(190px);\A 26: 	margin-bottom: rem(30px);\A 27: \A 28: 			@include phones {\A 29: 				font-size: rem(50px);\A 30: 			}\A 31: 	}\A 32: \A 33: 	.main-we__description {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 40 of J:\WEB\public_html\scss\__section\we.scss, in `phones'\A         from line 40 of J:\WEB\public_html\scss\__section\we.scss\A \A 35: 	flex-flow: row nowrap;\A 36: 	justify-content: space-around;\A 37: 	align-items: center;\A 38: 	list-style: none;\A 39: \A 40: 		@include phones {\A 41: 			flex-flow: column;\A 42: 			justify-content: center;\A 43: 			align-items: center;\A 44: 		}\A 45: }"; }

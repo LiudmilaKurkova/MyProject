@@ -27,6 +27,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal; }
 
+img {
+  width: 100%;
+  height: auto; }
+
 /*спрятать элемент*/
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
@@ -103,6 +107,32 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+.section__title {
+  font-family: "Gagalin";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 4.5rem;
+  color: #f9b43b;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+  @media screen and (max-width: 480px) {
+    .section__title {
+      font-size: 3.9375rem; } }
+
+.section__title--black {
+  color: #2f3234; }
+
+.section__title--white {
+  color: #fff; }
+
+.section__title--left {
+  position: absolute;
+  left: 10%;
+  top: 10%; }
+
+.section__title--center {
+  text-align: center; }
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -559,11 +589,6 @@ th {
   background-size: cover;
   position: relative; }
 
-.container-about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
 .main-about {
   width: 100%;
   display: flex;
@@ -586,18 +611,19 @@ th {
   flex-direction: column;
   justify-content: center; }
 
-.description-about__tagline {
-  font-family: "Gagalin";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 4.5rem;
-  color: #f9b43b;
-  text-transform: uppercase;
-  margin: 0; }
-  @media screen and (max-width: 480px) {
-    .description-about__tagline {
-      font-size: 3.9375rem; } }
+/*.description-about__tagline {
+	font-family: "Gagalin";
+	font-weight: normal;
+	font-style: normal;
+	font-size: rem(72px);
+	color: #f9b43b;
+	text-transform: uppercase;
+	margin: 0;	
 
+			@include phones {
+				font-size: rem(63px);
+		}
+}*/
 .description-about__it {
   font-family: "Lifehack";
   font-weight: 500;
@@ -628,19 +654,20 @@ th {
   justify-content: center;
   align-items: center; }
 
-.header-we {
-  height: 11.875rem;
-  font-family: "Gagalin";
-  font-weight: 500;
-  font-size: 4.5rem;
-  color: #2f3234;
-  text-align: center;
-  line-height: 11.875rem;
-  margin-bottom: 1.875rem; }
-  @media screen and (max-width: 480px) {
-    .header-we {
-      font-size: 3.125rem; } }
+/*.header-we {
+	height: rem(190px);
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: rem(72px);
+	color: #2f3234;
+	text-align: center;
+	line-height: rem(190px);
+	margin-bottom: rem(30px);
 
+			@include phones {
+				font-size: rem(50px);
+			}
+	}*/
 .main-we__description {
   display: flex;
   flex-flow: row nowrap;
@@ -777,6 +804,9 @@ th {
   top: 4.8rem;
   left: 94%;
   z-index: 2; }
+  @media screen and (max-width: 768px) {
+    .pagination {
+      display: none; } }
 
 .pagination__link {
   position: relative;
@@ -845,17 +875,19 @@ th {
       .container-team .main-team__avatar {
         display: block; } }
 
-.main-team__title {
-  font-family: "Gagalin";
-  font-weight: 500;
-  font-size: 4.5rem;
-  color: #f6ac3a;
-  text-align: left;
-  margin-bottom: 0; }
-  @media screen and (max-width: 480px) {
-    .main-team__title {
-      font-size: 3.125rem; } }
+/*.main-team__title {
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: rem(72px);
+	color: #f6ac3a;
+	text-align: left;
+	//line-height: rem(190px);
+	margin-bottom: 0;
 
+		@include phones {
+			font-size: rem(50px);
+		};
+}*/
 .main-team__item {
   margin-bottom: 2.5rem;
   align-items: center; }
@@ -899,7 +931,7 @@ th {
 .main-team__text {
   display: inline-block;
   vertical-align: top;
-  width: 15.625rem;
+  width: 13rem;
   font-family: "Ubuntu";
   font-weight: 500;
   font-size: 0.875rem;
@@ -907,6 +939,8 @@ th {
   .main-team__text .main-team__name {
     font-weight: bold;
     margin-bottom: 0.9375rem; }
+  .main-team__text .main-team__txt {
+    font-weight: 300; }
 
 .main-team__item--activ .main-team__trigger {
   color: #f8b43a; }
@@ -920,15 +954,15 @@ th {
   background-size: cover;
   position: relative; }
 
-.main-menu__title {
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  font-family: "Gagalin";
-  font-weight: 500;
-  font-size: 4.5rem;
-  color: #fff; }
-
+/*.main-menu__title {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: rem(72px);
+	color: #fff;
+}*/
 .acco-menu {
   position: absolute;
   right: 0;
@@ -939,7 +973,7 @@ th {
 .acco-menu__item {
   height: 100%; }
   .acco-menu__item:active .acco-menu__trigger-text {
-    color: #f8b43a; }
+    color: #f9b43b; }
   .acco-menu__item:active:hover .acco-menu__body {
     width: 33.75rem; }
 
@@ -997,17 +1031,20 @@ th {
   background-size: cover;
   position: relative; }
 
-.main-form__title {
-  font-family: "Gagalin";
-  font-weight: 500;
-  font-size: 4.5rem;
-  color: #f9b43c;
-  text-align: center;
-  margin-bottom: 1.875rem; }
-  @media screen and (max-width: 480px) {
-    .main-form__title {
-      font-size: 3.125rem; } }
+/*.main-form__title {
+	//height: rem(190px);
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: rem(72px);
+	color: #f9b43c;
+	text-align: center;
+	//line-height: rem(190px);
+	margin-bottom: rem(30px);
 
+    @include phones {
+      font-size: rem(50px);
+       }
+}*/
 .form__elem {
   display: flex;
   flex-direction: row;
@@ -1155,19 +1192,39 @@ th {
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline; }
+  @media screen and (max-width: 480px) {
+    .container-contacts {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
 
 .footer__row {
   width: 50%;
   margin-bottom: 0.9375rem; }
+  @media screen and (max-width: 480px) {
+    .footer__row {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0; } }
 
 .footer__row--left {
   text-align: left; }
+  @media screen and (max-width: 480px) {
+    .footer__row--left {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0.625rem; } }
 
 .footer__row--right {
   text-align: right;
   margin-bottom: 0;
   display: flex;
   justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .footer__row--right {
+      width: 100%;
+      justify-content: center;
+      text-align: center; } }
 
 .footer__adress {
   font-family: "Ubuntu";

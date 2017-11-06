@@ -1,24 +1,28 @@
 /*
-Error: Undefined variable: "$orange".
-        on line 61 of J:\WEB\public_html\scss\__section\contacts.scss
+Error: Undefined mixin 'phones'.
+        on line 30 of J:\WEB\public_html\scss\__section\contacts.scss, in `phones'
+        from line 30 of J:\WEB\public_html\scss\__section\contacts.scss
 
-56: 	display: inline-block;	
-57: 	text-decoration: none;
-58: 	font-family: "Ubuntu";
-59: 	font-size: rem(14px);
-60: 	font-weight: bold;
-61: 	color: $orange;
-62: 
-63: 		&:before {
-64: 			content: "";
-65: 			display: inline-block;
-66: 			vertical-align: middle;
+25: .container-contacts {
+26: 	display: flex;
+27:   flex-flow: row nowrap;
+28:   align-items: baseline; 
+29: 
+30:   	@include phones {
+31:   		flex-direction: column;
+32:   		justify-content: center;
+33:   		align-items: center;
+34:   		//padding: rem(20px);
+35:   	}
 
 Backtrace:
-J:\WEB\public_html\scss\__section\contacts.scss:61
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+J:\WEB\public_html\scss\__section\contacts.scss:30:in `phones'
+J:\WEB\public_html\scss\__section\contacts.scss:30
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -62,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 61 of J:\WEB\public_html\scss\__section\contacts.scss\A \A 56: 	display: inline-block;	\A 57: 	text-decoration: none;\A 58: 	font-family: \"Ubuntu\";\A 59: 	font-size: rem(14px);\A 60: 	font-weight: bold;\A 61: 	color: $orange;\A 62: \A 63: 		&:before {\A 64: 			content: \"\";\A 65: 			display: inline-block;\A 66: 			vertical-align: middle;"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 30 of J:\WEB\public_html\scss\__section\contacts.scss, in `phones'\A         from line 30 of J:\WEB\public_html\scss\__section\contacts.scss\A \A 25: .container-contacts {\A 26: 	display: flex;\A 27:   flex-flow: row nowrap;\A 28:   align-items: baseline; \A 29: \A 30:   	@include phones {\A 31:   		flex-direction: column;\A 32:   		justify-content: center;\A 33:   		align-items: center;\A 34:   		//padding: rem(20px);\A 35:   	}"; }

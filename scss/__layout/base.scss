@@ -30,6 +30,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 /*спрятать элемент*/
 .visuallyhidden:not(:focus):not(:active) {
   position: absolute;
