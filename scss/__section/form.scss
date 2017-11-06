@@ -49,7 +49,7 @@
 }
 
 .form__input {
-  border: none;
+  border: 1px solid transparent;
   border-radius: rem(5px);
   padding: rem(5px);
   width: 100%;
@@ -151,24 +151,7 @@
   cursor: pointer;
 }
 
- /*.comments-form__controls-checkbox {
-      &:hover {
-        &:after {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: url("../icons/checked.svg") 50% no-repeat transparent;
-      background-size: contain;
-      width: rem(11px);
-      height: rem(9px); 
-  }
-}
-}*/
-
-
+ 
 .comments-form__controls-radio {
   position: absolute;
   top: 0;

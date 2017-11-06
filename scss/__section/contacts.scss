@@ -23,9 +23,9 @@
 } 
 
 .container-contacts {
-	display: inline-flex;
+	display: flex;
   flex-flow: row nowrap;
-  align-items: center; 
+  align-items: baseline; 
 }
 
 .footer__row {

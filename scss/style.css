@@ -1023,7 +1023,7 @@ th {
       width: 100%; } }
 
 .form__input {
-  border: none;
+  border: 1px solid transparent;
   border-radius: 0.3125rem;
   padding: 0.3125rem;
   width: 100%; }
@@ -1101,22 +1101,6 @@ th {
   height: 0.5625rem;
   cursor: pointer; }
 
- /*.comments-form__controls-checkbox {
-      &:hover {
-        &:after {
-      display: inline-block;
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background: url("../icons/checked.svg") 50% no-repeat transparent;
-      background-size: contain;
-      width: rem(11px);
-      height: rem(9px); 
-  }
-}
-}*/
 .comments-form__controls-radio {
   position: absolute;
   top: 0;
@@ -1161,9 +1145,9 @@ th {
   padding: 0.625rem 1.25rem; }
 
 .container-contacts {
-  display: inline-flex;
+  display: flex;
   flex-flow: row nowrap;
-  align-items: center; }
+  align-items: baseline; }
 
 .footer__row {
   width: 50%;
