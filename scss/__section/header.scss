@@ -4,8 +4,12 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: rem(10px);
-  //margin-bottom: 15rem;
+	padding-top: rem(20px);
+  margin-bottom: rem(120px);
+    
+    @include tablets {
+      margin-bottom: 4rem;
+    }
 }
 
 .nav-about {

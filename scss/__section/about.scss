@@ -23,13 +23,20 @@
 
 .main-about__picture {
 	flex-basis: 50%;	
+	padding-bottom: 80px;
+
+		@include tablets {
+      margin-bottom: 0;
+    }
 }
 
 .description-about {
 	flex-basis: 50%;
 	flex-direction: column;
   justify-content: center;
+  padding-bottom: rem(55px);
 }
+
 
 /*.description-about__tagline {
 	font-family: "Gagalin";

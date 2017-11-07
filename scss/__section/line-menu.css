@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 30 of E:\WEB\public_html\scss\__section\contacts.scss, in `phones'
-        from line 30 of E:\WEB\public_html\scss\__section\contacts.scss
+Error: Undefined mixin 'tablets'.
+        on line 7 of E:\WEB\public_html\scss\__section\line-menu.scss, in `tablets'
+        from line 7 of E:\WEB\public_html\scss\__section\line-menu.scss
 
-25: .container-contacts {
-26: 	display: flex;
-27:   flex-flow: row nowrap;
-28:   align-items: baseline; 
-29: 
-30:   	@include phones {
-31:   		flex-direction: column;
-32:   		justify-content: center;
-33:   		align-items: center;
-34:   		//padding: rem(20px);
-35:   	}
+2: 	width: rem(25px);
+3: 	height: rem(25px);
+4: 	transition: all 600ms ease-in-out;
+5: 	display: none;
+6: 
+7: 		@include tablets {
+8: 			display: inline-block;
+9: 			vertical-align: middle;
+10: 			margin-left: rem(25px);
+11: 		}
+12: 
 
 Backtrace:
-E:\WEB\public_html\scss\__section\contacts.scss:30:in `phones'
-E:\WEB\public_html\scss\__section\contacts.scss:30
+E:\WEB\public_html\scss\__section\line-menu.scss:7:in `tablets'
+E:\WEB\public_html\scss\__section\line-menu.scss:7
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 30 of E:\WEB\public_html\scss\__section\contacts.scss, in `phones'\A         from line 30 of E:\WEB\public_html\scss\__section\contacts.scss\A \A 25: .container-contacts {\A 26: 	display: flex;\A 27:   flex-flow: row nowrap;\A 28:   align-items: baseline; \A 29: \A 30:   	@include phones {\A 31:   		flex-direction: column;\A 32:   		justify-content: center;\A 33:   		align-items: center;\A 34:   		//padding: rem(20px);\A 35:   	}"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 7 of E:\WEB\public_html\scss\__section\line-menu.scss, in `tablets'\A         from line 7 of E:\WEB\public_html\scss\__section\line-menu.scss\A \A 2: 	width: rem(25px);\A 3: 	height: rem(25px);\A 4: 	transition: all 600ms ease-in-out;\A 5: 	display: none;\A 6: \A 7: 		@include tablets {\A 8: 			display: inline-block;\A 9: 			vertical-align: middle;\A 10: 			margin-left: rem(25px);\A 11: 		}\A 12: "; }

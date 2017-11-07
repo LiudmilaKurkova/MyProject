@@ -1,28 +1,40 @@
 /*
-Error: Undefined mixin 'phones'.
-        on line 30 of E:\WEB\public_html\scss\__section\contacts.scss, in `phones'
-        from line 30 of E:\WEB\public_html\scss\__section\contacts.scss
+Error: Undefined variable: "$orange".
+        on line 17 of E:\WEB\public_html\scss\__section\button.scss
 
-25: .container-contacts {
-26: 	display: flex;
-27:   flex-flow: row nowrap;
-28:   align-items: baseline; 
-29: 
-30:   	@include phones {
-31:   		flex-direction: column;
-32:   		justify-content: center;
-33:   		align-items: center;
-34:   		//padding: rem(20px);
-35:   	}
+12: 	line-height: rem(35px);
+13: 	border-radius: rem(5px);
+14: 	text-decoration: none;
+15: 	transition: .5s;
+16:   &:hover {
+17:     background-color: darken($orange, 7%);
+18:   }
+19: }
 
 Backtrace:
-E:\WEB\public_html\scss\__section\contacts.scss:30:in `phones'
-E:\WEB\public_html\scss\__section\contacts.scss:30
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+E:\WEB\public_html\scss\__section\button.scss:17
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `each'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:124:in `_perform'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -66,4 +78,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 30 of E:\WEB\public_html\scss\__section\contacts.scss, in `phones'\A         from line 30 of E:\WEB\public_html\scss\__section\contacts.scss\A \A 25: .container-contacts {\A 26: 	display: flex;\A 27:   flex-flow: row nowrap;\A 28:   align-items: baseline; \A 29: \A 30:   	@include phones {\A 31:   		flex-direction: column;\A 32:   		justify-content: center;\A 33:   		align-items: center;\A 34:   		//padding: rem(20px);\A 35:   	}"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 17 of E:\WEB\public_html\scss\__section\button.scss\A \A 12: 	line-height: rem(35px);\A 13: 	border-radius: rem(5px);\A 14: 	text-decoration: none;\A 15: 	transition: .5s;\A 16:   &:hover {\A 17:     background-color: darken($orange, 7%);\A 18:   }\A 19: }"; }

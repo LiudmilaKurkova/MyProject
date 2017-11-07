@@ -3,6 +3,16 @@
 	background-position: center center;
   background-size: cover;
   position: relative;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.form__title {
+  margin-bottom: rem(70px);
+
+    @include tablets {
+      margin-top: rem(20px);
+    }
 }
 
 /*.main-form__title {
@@ -27,7 +37,7 @@
 
     @include tablets {
       flex-direction: column;
-      padding: rem(80px);
+      padding: rem(30px) rem(130px);
     }
 
       @include phones {
@@ -62,7 +72,7 @@
 
 .form__row {
   display: flex;
-  margin-bottom: rem(40px);
+  margin-bottom: rem(20px);
 }
 
 .form__block {
