@@ -113,7 +113,7 @@ img {
   font-weight: normal;
   font-style: normal;
   font-size: 4.5rem;
-  color: #f9b43b;
+  color: #f8b43a;
   text-transform: uppercase;
   margin-bottom: 5rem; }
   @media screen and (max-width: 480px) {
@@ -639,6 +639,12 @@ th {
   width: 100%;
   text-align: center; }
 
+.arrow-scroll__icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: .3s;
+  fill: #fff; }
+
 .section-we {
   background: url("../img/__we/bg__we.png") no-repeat;
   background-position: center bottom;
@@ -687,8 +693,10 @@ th {
     align-items: center; } }
 
 .main-we__img {
-  display: block;
-  margin: 0 auto 1.875rem auto; }
+  width: 90%;
+  height: 6.25rem; }
+  .main-we__img svg {
+    max-width: 95%; }
 
 @media screen and (max-width: 480px) {
   .main-we__text {
@@ -914,7 +922,8 @@ th {
   @media screen and (max-width: 768px) {
     .main-team__trigger {
       font-size: 1.5625rem;
-      text-align: center; } }
+      text-align: center;
+      justify-content: center; } }
 
 .main-team__drop {
   display: none; }
@@ -973,7 +982,7 @@ th {
 .acco-menu__item {
   height: 100%; }
   .acco-menu__item:active .acco-menu__trigger-text {
-    color: #f9b43b; }
+    color: #f8b43a; }
   .acco-menu__item:active:hover .acco-menu__body {
     width: 33.75rem; }
 

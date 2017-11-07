@@ -60,7 +60,7 @@
 	font-size: rem(14px);
 	color: #fff;
   display: flex;
-  align-items: center;
+   align-items: center;
   margin-bottom: rem(15px);
 
 		  &:before {
@@ -75,6 +75,7 @@
   	@include tablets() {
   		font-size: rem(25px);
 			text-align: center;
+			justify-content: center;
 		}
 } 
 
