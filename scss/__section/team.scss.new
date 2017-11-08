@@ -1,0 +1,115 @@
+.section-team {
+	background: url("../img/__team/main.png") top center no-repeat; 
+	background-size: cover;
+	position: relative;
+}
+
+.container-team {
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px; 
+}
+
+.main-team__wrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.main-team__title {
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: 72px;
+	color: #f6ac3a;
+	text-align: left;
+	line-height: 190px;
+	margin-bottom: 30px;
+}
+
+
+
+.main-team__accordion {
+	padding: 10%;
+}
+
+ .main-team__item h3 {
+	position: relative;
+	display: inline-block;
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+	margin-bottom: 30px;	
+	cursor: pointer;
+}
+
+.main-team__item h3:before {
+		content: "";
+    left: -18px;
+    top: 42%;
+    position: absolute;
+    border-top: 7px solid #f9b43b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-bottom: 0px solid transparent;
+    transition: .3s;
+}
+
+.main-team__item h3:active:before {
+			content: "";
+    left: -18px;
+    top: 42%;
+    position: absolute;
+    border-bottom: 7px solid #f9b43b;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 0px solid transparent;
+    transition: .3s;
+}
+
+.main-team__item h3:active {
+	color: #f6ac3a;
+}
+
+
+
+
+.main-team__drop {
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	display: none;	
+
+		.main-team__img {
+			width:100px;
+			height: 100px;
+			border-radius: 50%;
+			margin-right: 20px;
+	}
+		.main-team__text {
+			font-family: "Ubuntu";
+			font-weight: 500;
+			font-size: 14px;
+			color: #fff;
+			text-align: left;
+			padding-right: 5%;
+	}
+}
+.main-team__drop--activ {
+	display: block;
+}
+
+
+
+

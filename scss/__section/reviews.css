@@ -1,65 +1,69 @@
-.main-reviews {
-  height: 100%; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 21 of E:\WEB\public_html\scss\__section\reviews.scss, in `tablets'
+        from line 21 of E:\WEB\public_html\scss\__section\reviews.scss
 
-.main-reviews__block {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%; }
+16:   background-position: center center;
+17:   background-repeat: no-repeat;
+18:   filter: grayscale(100%);  
+19:   position: relative;
+20: 
+21:   	 @include tablets {
+22: 	    width: 50%;
+23: 	    height: 25%;
+24:   } 
+25: 
+26: 		  &:hover {
 
-.main-reviews__item {
-  position: relative;
-  list-style: none;
-  width: 25%;
-  height: 50%;
-  filter: saturate(0); }
-  .main-reviews__item:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=40); }
-  .main-reviews__item:hover .main-reviews__drop {
-    left: 0; }
-
-.main-reviews__img {
-  position: relative;
-  width: 100%; }
-
-.main-reviews__drop {
-  position: absolute;
-  text-align: left;
-  margin: 20% 10%;
-  top: 0;
-  z-index: 10;
-  left: -9999px; }
-
-.main-reviews__item h3 {
-  padding-top: 50px;
-  font-family: "Gagalin";
-  font-weight: 500;
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 30px; }
-
-.main-reviews__item p {
-  font-family: "Ubuntu";
-  font-weight: 300;
-  font-size: 14px;
-  color: #fff;
-  margin-bottom: 20px; }
-
-.main-reviews__link {
-  display: block;
-  border-radius: 5px;
-  line-height: 35px;
-  text-align: center;
-  height: 35px;
-  width: 110px;
-  background: #2f3234;
-  color: #fff;
-  font-family: "Ubuntu";
-  font-weight: 500;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-decoration: none; }
-
-/*# sourceMappingURL=reviews.css.map */
+Backtrace:
+E:\WEB\public_html\scss\__section\reviews.scss:21:in `tablets'
+E:\WEB\public_html\scss\__section\reviews.scss:21
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:18:in `load'
+C:/Program Files/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 21 of E:\WEB\public_html\scss\__section\reviews.scss, in `tablets'\A         from line 21 of E:\WEB\public_html\scss\__section\reviews.scss\A \A 16:   background-position: center center;\A 17:   background-repeat: no-repeat;\A 18:   filter: grayscale(100%);  \A 19:   position: relative;\A 20: \A 21:   	 @include tablets {\A 22: 	    width: 50%;\A 23: 	    height: 25%;\A 24:   } \A 25: \A 26: 		  &:hover {"; }

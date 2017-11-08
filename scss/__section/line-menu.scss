@@ -1,0 +1,39 @@
+.hamburger-menu-link__bars {
+	width: rem(25px);
+	height: rem(25px);
+	transition: all 600ms ease-in-out;
+	display: none;
+
+		@include tablets {
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: rem(25px);
+		}
+
+	}
+
+.active.line-wrapp{
+	transform: rotate(180deg);
+}
+
+.line{
+	width: rem(25px);
+	height: rem(3px);
+	background-color: #fff;
+	border-radius: rem(1px);
+	transition: all 600ms ease-in-out;
+}
+
+.line.center{
+	margin: rem(5px) 0;
+}
+
+.active .line.top{
+	width: rem(25px);
+	transform: translateX(8px) translateY(1px) rotate(45deg);
+}
+
+.active .line.bottom{
+	width: rem(25px);
+	transform: translateX(8px) translateY(-1px) rotate(-45deg);
+}

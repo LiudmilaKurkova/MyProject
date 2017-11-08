@@ -1,0 +1,55 @@
+.header-about {
+	width: 100%;
+  //height: rem(80px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: rem(20px);
+  margin-bottom: rem(120px);
+    
+    @include tablets {
+      margin-bottom: 4rem;
+    }
+}
+
+.nav-about {
+	margin-right: rem(15px);
+	margin-left: auto;
+
+    @include tablets {
+      display: none;
+      }
+}
+
+.nav-about__item {
+	display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: ' ';
+    @include circle(rem(5px), #fff);
+    margin: 0 rem(12px);
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.nav-about__link {
+	text-transform: uppercase;
+	font-family: "Ubuntu";
+	font-weight: 500;
+	font-size: rem(13px);
+	color: #fff;
+	text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+

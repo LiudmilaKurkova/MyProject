@@ -1,0 +1,203 @@
+.section-form {
+	background: url("../img/__form/bg-form.png") no-repeat; 
+	background-position: center center;
+  background-size: cover;
+  position: relative;
+  justify-content: space-between;
+  padding-top: 4rem;
+}
+
+.form__title {
+  margin-bottom: rem(70px);
+
+    @include tablets {
+      margin-top: rem(20px);
+    }
+}
+
+/*.main-form__title {
+	//height: rem(190px);
+	font-family: "Gagalin";
+	font-weight: 500;
+	font-size: rem(72px);
+	color: #f9b43c;
+	text-align: center;
+	//line-height: rem(190px);
+	margin-bottom: rem(30px);
+
+    @include phones {
+      font-size: rem(50px);
+       }
+}*/
+
+.form__elem {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+    @include tablets {
+      flex-direction: column;
+      padding: rem(30px) rem(130px);
+    }
+
+      @include phones {
+        padding: 0;
+      }
+ }
+
+.form__content {
+	width: 50%;	
+	margin-right: rem(20px);
+
+	   &:last-child {
+        margin-right: 0;
+  }
+
+     @include tablets {
+      width: 100%; 
+     }
+}
+
+.form__input {
+  border: 1px solid transparent;
+  border-radius: rem(5px);
+  padding: rem(5px);
+  width: 100%;
+
+    &:focus {
+  outline: none;
+  border: 1px solid #3c21b1;
+  }
+}
+
+.form__row {
+  display: flex;
+  margin-bottom: rem(20px);
+}
+
+.form__block {
+  flex: 1;
+  margin-right: rem(20px);
+  
+      &:last-child {
+        margin-right: 0;
+      }
+} 
+
+.form__block-title {
+	font-family: "Ubuntu";
+	font-weight: 300;
+	font-size: rem(14px);
+	color: #fff;
+  margin-left: rem(10px);
+  display: inline-block;
+
+}
+
+
+.form__row--margin {
+  margin-bottom: rem(10px);
+  margin-left: rem(10px);
+
+    &:last-child {
+        margin-right: 0;
+      }
+
+      & .comments-form__controls-input {
+        margin-right: rem(20px);
+      }
+
+      @include phones {
+        justify-content: center;
+      }
+    }
+
+.form__textarea {
+	height: rem(110px);
+  resize: none;
+}
+
+.comments-form__controls-fake {
+  width: rem(20px);
+  height: rem(20px);
+  border-radius: 50%;
+  border: 1px solid #cbcbcb;
+  background: linear-gradient(to bottom, #fdfdfd 0%, #ececec 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+
+        &:after {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: $orange;
+    }
+    &.comments-form__controls-checkbox {
+      border-radius: 0;
+  }
+        
+}
+
+
+.comments-form__controls-radio:checked+.comments-form__controls-checkbox:after {
+  display: inline-block;
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../icons/checked.svg") 50% no-repeat transparent;
+      background-size: contain;
+      width: rem(11px);
+      height: rem(9px);  
+  cursor: pointer;
+}
+
+ 
+.comments-form__controls-radio {
+  position: absolute;
+  top: 0;
+  left: rem(-9999px);
+}
+
+.comments-form__controls-radio:checked+.comments-form__controls-fake {
+  border-color: $orange;
+  cursor: pointer;
+
+}
+
+.comments-form__controls-radio:checked+.comments-form__controls-fake:after {
+  width: rem(8px);
+  height: rem(8px);
+  cursor: pointer;
+}
+
+ 
+.toorder-about__button--border {
+	border: rem(1px) solid $orange;
+	border-radius: rem(5px);
+}
+
+.form__input-reset {
+	width: rem(98px);
+	height: rem(35px);
+	border: none;
+	background-color: transparent;
+	font-family: "Ubuntu";
+	font-weight: 300;
+	font-size: rem(14px);
+	color: #fff;
+
+    &:hover {
+      background-color: transparent;
+    }
+}
+

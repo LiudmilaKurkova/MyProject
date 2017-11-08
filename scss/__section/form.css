@@ -1,0 +1,69 @@
+/*
+Error: Undefined mixin 'tablets'.
+        on line 13 of E:\WEB\public_html\scss\__section\form.scss, in `tablets'
+        from line 13 of E:\WEB\public_html\scss\__section\form.scss
+
+8: }
+9: 
+10: .form__title {
+11:   margin-bottom: rem(70px);
+12: 
+13:     @include tablets {
+14:       margin-top: rem(20px);
+15:     }
+16: }
+17: 
+18: /*.main-form__title {
+
+Backtrace:
+E:\WEB\public_html\scss\__section\form.scss:13:in `tablets'
+E:\WEB\public_html\scss\__section\form.scss:13
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.4.23/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:18:in `load'
+C:/Program Files/Koala/bin/sass:18:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 13 of E:\WEB\public_html\scss\__section\form.scss, in `tablets'\A         from line 13 of E:\WEB\public_html\scss\__section\form.scss\A \A 8: }\A 9: \A 10: .form__title {\A 11:   margin-bottom: rem(70px);\A 12: \A 13:     @include tablets {\A 14:       margin-top: rem(20px);\A 15:     }\A 16: }\A 17: \A 18: /*.main-form__title {"; }

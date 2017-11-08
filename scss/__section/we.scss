@@ -1,11 +1,17 @@
 .section-we {
 	background: url("../img/__we/bg__we.png") no-repeat; 
-	background-position: center bottom;
+	background-position: center center;
   background-size: cover;
   position: relative;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+		
+		@include tablets {
+		background: url("../img/__we/bg_we_768.png") no-repeat; 
+		background-position: center center;
+  	background-size: cover;
+		}
 }
 
 .wrap-we {
@@ -15,16 +21,35 @@
 	align-items: center;
 }
 
-.header-we {
-	height: 190px;
+.we__title {
+	padding-top: rem(40px);
+	margin-bottom: rem(80px);
+
+		@include tablets {
+      padding-top: 6rem;
+      margin-bottom: 11rem;
+    }
+
+    		@include phones {
+    			padding-top: 0;
+     			 margin-bottom: rem(80px);
+    		}
+}
+
+/*.header-we {
+	height: rem(190px);
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #2f3234;
 	text-align: center;
-	line-height: 190px;
-	margin-bottom: 30px;
-	}
+	line-height: rem(190px);
+	margin-bottom: rem(30px);
+
+			@include phones {
+				font-size: rem(50px);
+			}
+	}*/
 
 	.main-we__description {
 	display: flex;
@@ -32,28 +57,83 @@
 	justify-content: space-around;
 	align-items: center;
 	list-style: none;
+
+		@include phones {
+			flex-flow: column;
+			justify-content: center;
+			align-items: center;
+		}
 }
+
+.main-we__item {
+	width: rem(300px);
+
+	@include tablets {
+		width: rem(224px);
+	}
+
+	@include phones {
+		display: flex;
+		flex-flow: row;
+		align-items: center;
+		width: rem(460px);
+	}
+}
+
+.main-we__picture {
+	margin-bottom: rem(10px);
+		
+		@include phones {
+			width: rem(130px);
+		}
+		
+}
+
+
+
 
 .main-we__img {
-	display: block;
-	margin: 0 auto 30px auto;
-}
+	width: 90%;
+  height: 5.25rem;
+  svg {
+    max-width: 95%;
+  } 
+ }
 
+	//display: block;
+	//width: 100px
+	//margin: 0 auto rem(30px) auto;
+//}
+
+.main-we__text {
+	@include phones {
+		width: rem(330px);
+		margin-left: rem(20px);
+	}
+}
 .main-we__item h3 {
 	font-family: "Lifehack";
 	font-weight: 500;
-	font-size: 21px;
+	font-size: rem(24px);
 	color: #2f3234;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: rem(30px);
+
+		@include phones {
+			text-align: left;
+		}
 }
 
 .main-we__item p {
 	font-family: "Ubuntu";
 	font-weight: 300;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #2f3234;
 	text-align: center;
+
+		@include phones {
+			text-align: left;
+		}
 }
 
 

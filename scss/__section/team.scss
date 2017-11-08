@@ -4,69 +4,147 @@
 	position: relative;
 }
 
-.main-team {
-	padding:5%;
-	background-color: #2f3234;
-	opacity: (.9);
+.container-team {
 	position: absolute;
-	width: 50%;
-	height: 100%;
-	top: 0;
-	left: 50%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: rgba(#2f3234, .93);
+  padding: 4rem rem(120px) 0 rem(80px);
+  display: flex;
+  flex-direction: column;
+  //padding-top: rem(50px); 
+  align-items: flex-start;
+  justify-content: space-between;
+  	
+  	@include tablets {
+  		width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+				.main-team__avatar {
+					display: block;
+			}	
+  	}
 }
 
-.mail-team__wrap {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+.team__title {
+	//padding-top: rem(85px);
+	margin-bottom: rem(60px);
+
+		@include tablets {
+	margin-top: rem(25px);
+	margin-bottom: 6.5rem;
+}
 }
 
-.main-team__title {
+/*.main-team__title {
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #f6ac3a;
 	text-align: left;
-	line-height: 190px;
-	margin-bottom: 30px;
+	//line-height: rem(190px);
+	margin-bottom: 0;
+
+		@include phones {
+			font-size: rem(50px);
+		};
+}*/
+
+.main-team__item {
+	margin-bottom: rem(35px);
+	align-items: center;
+  
+		&:last-child {
+		margin-bottom: 0;
+	} 
 }
 
-.main-team__accordion {
-	padding: 10%;
-}
 
-.main-team__item h3 {
+
+.main-team__trigger {
+	text-decoration: none;
 	font-family: "Gagalin";
 	font-weight: 500;
-	font-size: 14px;
+	font-size: rem(14px);
 	color: #fff;
-	text-align: left;
-	margin-bottom: 30px;
-}
+  display: flex;
+   align-items: center;
+  margin-bottom: rem(15px);
+
+		  &:before {
+		    content: "";
+		    height: 0;
+		    width: 0;
+		    border: 9px solid transparent;
+		    border-top-color: #f8b43a;
+		    border-bottom-width: 0px;
+		    margin-right: rem(10px);
+  }
+  	@include tablets {
+  		font-size: rem(25px);
+			text-align: center;
+			justify-content: center;
+		}
+} 
 
 .main-team__drop {
-	display: flex;
-	flex-direction: row nowrap;
-	justify-content: center;
-	align-items: center;
-
-	.main-team__img {
-		width:100px;
-		height: 100px;
-		border-radius: 50%;
-		margin-right: 20px;
-	}
-	.main-team__text {
-	font-family: "Ubuntu";
-	font-weight: 500;
-	font-size: 14px;
-	color: #fff;
-	text-align: left;
-	padding-right: 10%;
-	}
+	display: none;
+		//align-items: center;
+	//height: 0;
+	//overflow: hidden;
 }
 
+.main-team__avatar {
+	display: inline-block;
+          
+}
+.main-team__img {
+	width: rem(100px);
+	height: rem(100px);
+	border-radius: 50%;
+	margin-right: rem(20px);
+}
+
+.main-team__text {
+	display: inline-block;
+	vertical-align: top;
+	width: 13rem;
+	font-family: "Ubuntu";
+	font-weight: 500;
+	font-size: rem(14px);
+	color: #fff;
+		
+ 			.main-team__name  {
+				font-weight: bold;
+				margin-bottom: rem(15px);
+}
+		  .main-team__txt {
+		  	font-weight: 300;
+		  }
+
+		  @include tablets {
+		  	width: 25rem;
+		  }
+}
+
+.main-team__item--activ {
+
+		.main-team__trigger {
+			color: #f8b43a;
+		}
+
+		.main-team__trigger:before {
+     			transform: rotate(-180deg);
+    }
+  
+			.main-team__drop {
+   			display: block;
+  }
+				
+	}
 
 
 

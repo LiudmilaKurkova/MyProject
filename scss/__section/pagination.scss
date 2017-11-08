@@ -1,36 +1,59 @@
 .pagination {
-	position: absolute;
-	top: 90px;
-	left: 95%;
+	position: fixed;
+	top: 4.8rem;;
+	left: 94%;
+  z-index: 2;
+
+    @include tablets {
+      display: none;
+    }
 }
 
-.pagination__item {
-		width: 20px;
-		height: 20px;
+.pagination__link {
+    position: relative;
+		width: rem(20px);
+		height: rem(20px);
 		display: block;
-  	 &:after {
-    display: inline-block;
-    content: ' ';
-    width: 5px;
-  	height: 5px;
-  	border-radius: 50%;
-  	background-color: #fff;
-    border-radius: 50%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
-    margin: 5px;
-    position: relative; 
-    }
-  &:hover {
-    display: inline-block;
     text-align: center;
-		border-radius: 50%;
-		border-width: 1px;
-	  border-style: solid;
-	  border-color: #fff;
+    margin-bottom: rem(5px);
+     	 &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    width: rem(5px);
+  	height: rem(5px);
+  	background-color: #fff;
+  }
+      &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+   width: 0;
+    height: 0;
+    border-radius: 50%;
+    border: rem(1px) solid #fff;
+    opacity: 0;
+    -webkit-transition: .3s;
+    transition: .3s;
+     }
    }
- }
+
+
+.pagination__link:hover:before {
+    width: rem(15px);
+    height: rem(15px);
+    opacity: 1;
+}
 
 	
 	

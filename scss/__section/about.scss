@@ -5,120 +5,77 @@
 	position: relative;
 }
 
-.header-about {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding-top: 10px;
-}
-
-.nav-about {
-	margin-right: rem(15px);
-	margin-left: auto;
-}
-
-.nav-about__item {
-	display: inline-block;
-  vertical-align: middle;
-  white-space: nowrap;
-  &:after {
-    display: inline-block;
-    vertical-align: middle;
-    content: ' ';
-    @include circle(5px, #fff);
-    margin: 0 12px;
-  }
-  &:last-child:after {
-    display: none;
-  }
-}
-
-
-
-.nav-about__link {
-	text-transform: uppercase;
-	font-family: "Ubuntu";
-	font-weight: 500;
-	font-size: 13px;
-	color: #fff;
-	text-decoration: none;
-  text-transform: uppercase;
-  display: inline-block;
-  vertical-align: middle;
-  transition: .5s;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.toorder-about__button {
-	display: block;
-	width: 98px;
-	height: 35px;
-	background: #e45028;
-	text-transform: uppercase;
-	font-family: "Ubuntu";
-	font-weight: 500;
-	font-size: 13px;
-	color: #fff;
-	text-align: center;
-	line-height: 35px;
-	border-radius: 5px;
-	text-decoration: none;
-	transition: .5s;
-  &:hover {
-    background-color: darken($orange, 7%);
-  }
-}
-
 .main-about {
 	width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-grow: 1;
   align-items: center;
-  padding-bottom: 15%;
-}
+  margin-bottom: rem(100px);
+
+  	 @include tablets {
+  	 	flex-direction: column;
+	    align-items: center;
+	    text-align: center;
+	    padding: 0 20%; 
+  	 }
+  }
 
 .main-about__picture {
 	flex-basis: 50%;	
+	padding-bottom: 80px;
+
+		@include tablets {
+      margin-bottom: 0;
+    }
 }
 
 .description-about {
 	flex-basis: 50%;
 	flex-direction: column;
   justify-content: center;
+  padding-bottom: rem(55px);
 }
 
-.description-about__tagline {
+
+/*.description-about__tagline {
 	font-family: "Gagalin";
 	font-weight: normal;
 	font-style: normal;
-	font-size: 72px;
+	font-size: rem(72px);
 	color: #f9b43b;
 	text-transform: uppercase;
-	margin: 0;
-}
+	margin: 0;	
+
+			@include phones {
+				font-size: rem(63px);
+		}
+}*/
+
 
 .description-about__it {
 	font-family: "Lifehack";
 	font-weight: 500;
-	font-size: 65px;
+	font-size: rem(65px);
 	color: #fff;
 	margin: 0;
 	line-height: 1;
+
+			@include phones {
+				font-size: rem(54px);
+			}
 }
 
 .footer-about {
-	flex-direction: column;
-  justify-content: center;
+	width: 100%;
+	//height: rem(80px);
+	text-align: center;
 }
 
-.arrow-scroll {
-	display: block;
-	width: 30px;
-	height: 15px;
-	background: url(../img/__about/arrow-scroll.png) center center no-repeat;
+.arrow-scroll__icon {
+	width: rem(40px);
+  height: rem(40px);
+  transition: .3s;
+  fill: #fff; 
 }
 
