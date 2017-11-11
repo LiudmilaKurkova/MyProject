@@ -20,13 +20,46 @@
     <div class="wrapper">
       <div class="maincontent">
 
-        <section class="section section-about">
+        <section class="section dropsection-about" id="dropsection-about">
           <div class="container container-about">
+            <header class="header-about">
+              <div class="header-about__logo">
+                <img class="header-about__img" src="../icons/logo.svg" alt="logo">
+              </div>
+              <img src="../img/__about/close.png" alt="" class="img-close" id="img-close">
+            </header>
+            <nav class="nav-about nav-about__drop">
+              <ul class="nav-about__list">
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">О нас</a>
+                </li>
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">бургеры</a>
+                </li>
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">команда</a>
+                </li>
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">меню</a>
+                </li>
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">отзывы</a>
+                </li>
+                <li class="nav-about__item">
+                  <a class="nav-about__link" href="#">контакты</a>
+                </li>           
+              </ul>
+            </nav>
+          </div>          
+        </section>
+
+        <section class="section section-about" id="section-about">
+           <div class="container container-about">
   			  	<header class="header-about">
   			  		<div class="header-about__logo">
   			  			<img class="header-about__img" src="../icons/logo.svg" alt="logo">
   			  		</div>
-  			  		<nav class="nav-about">
+              <nav class="nav-about">
                 <ul class="nav-about__list">
   			  				<li class="nav-about__item">
   			  					<a class="nav-about__link" href="#">О нас</a>
@@ -50,13 +83,13 @@
     			  	</nav>
               <div class="toorder-about">
                 <a class="toorder-about__button" href="#">заказать</a>
-                <a class="hamburger-menu-link" href="#">
+                <div class="hamburger-menu-link" id="hamburger-menu-link">
                   <div class="hamburger-menu-link__bars">
                     <div class="line top"></div>
                     <div class="line center"></div>
                     <div class="line bottom"></div>
                   </div>
-                </a>
+                </div>
               </div>
   			  	</header>
   			  	<main class="main-about">
@@ -421,10 +454,6 @@
         </section>
 
 
-    
-
-
-
         <ul class="pagination">
           <li class="pagination__item">
             <a class="pagination__link" href="#"></a>
@@ -447,6 +476,8 @@
           <li class="pagination__item">
             <a class="pagination__link" href="#"></a>
           </li>
-        </ul>        
+        </ul> 
+
+        <script src="../js/scrypt.js"></script>      
   </body>
 </html>

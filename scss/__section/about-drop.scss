@@ -1,0 +1,59 @@
+.dropsection-about {
+		display: none;
+		background-color: #2f3234;			
+		justify-content: flex-start;
+		transition: .5s;
+}
+
+.img-close {
+width: rem(20px);
+height: rem(20px);
+font-size: rem(20px);
+color:#fff;
+} 
+
+.nav-about__drop {
+	margin: 0;
+
+			& .nav-about__item {
+				display: block;
+				margin-bottom: rem(30px);
+				text-align: center;
+  
+  		&:after {
+		    display: block;
+		    content: ' ';
+		    margin: 0 4rem;
+		    @include circle(rem(5px), #fff);
+		      }
+				  &:last-child:after {
+				    display: none;
+				  }
+}
+
+						& .nav-about__link {
+					text-transform: uppercase;
+					font-family: "Ubuntu";
+					font-weight: 500;
+					font-size: rem(24px);
+					color: #fff;
+					text-decoration: none;
+				  text-transform: uppercase;
+				  display: inline-block;
+				  vertical-align: middle;
+				  transition: .5s;
+					margin-bottom: rem(30px);
+
+				  &:hover {
+				    text-decoration: underline;
+				  }
+				}
+			@include tablets {
+      display: block;
+      }
+}
+
+
+
+
+

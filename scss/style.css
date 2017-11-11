@@ -507,6 +507,9 @@ th {
   .toorder-about__button:hover {
     background-color: #cb411b; }
 
+.hamburger-menu-link {
+  display: inline-block; }
+
 .hamburger-menu-link__bars {
   width: 1.5625rem;
   height: 1.5625rem;
@@ -591,7 +594,8 @@ th {
   background: url("../img/__about/bg_about_.png") no-repeat;
   background-position: 50%;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  transition: .5s; }
 
 .main-about {
   width: 100%;
@@ -1334,5 +1338,51 @@ th {
 .socials__link-icon {
   width: 1.25rem;
   height: 1.25rem; }
+
+.dropsection-about {
+  display: none;
+  background-color: #2f3234;
+  justify-content: flex-start;
+  transition: .5s; }
+
+.img-close {
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.25rem;
+  color: #fff; }
+
+.nav-about__drop {
+  margin: 0; }
+  .nav-about__drop .nav-about__item {
+    display: block;
+    margin-bottom: 1.875rem;
+    text-align: center; }
+    .nav-about__drop .nav-about__item:after {
+      display: block;
+      content: ' ';
+      margin: 0 4rem;
+      width: 0.3125rem;
+      height: 0.3125rem;
+      border-radius: 0.15625rem;
+      background-color: #fff; }
+    .nav-about__drop .nav-about__item:last-child:after {
+      display: none; }
+  .nav-about__drop .nav-about__link {
+    text-transform: uppercase;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .5s;
+    margin-bottom: 1.875rem; }
+    .nav-about__drop .nav-about__link:hover {
+      text-decoration: underline; }
+  @media screen and (max-width: 768px) {
+    .nav-about__drop {
+      display: block; } }
 
 /*# sourceMappingURL=style.css.map */
