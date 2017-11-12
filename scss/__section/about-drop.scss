@@ -1,9 +1,12 @@
 .dropsection-about {
+		//@include tablets {
 		display: none;
 		background-color: #2f3234;			
 		justify-content: flex-start;
-		transition: .5s;
+		//opacity: 0;
+  	//transition: display .5s;
 }
+//}
 
 .img-close {
 width: rem(20px);
