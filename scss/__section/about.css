@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 16 of E:\WEB\public_html\scss\__section\about.scss, in `tablets'
-        from line 16 of E:\WEB\public_html\scss\__section\about.scss
+        on line 18 of E:\WEB\public_html\scss\__section\about.scss, in `tablets'
+        from line 18 of E:\WEB\public_html\scss\__section\about.scss
 
-11:   flex-wrap: nowrap;
-12:   flex-grow: 1;
-13:   align-items: center;
-14:   margin-bottom: rem(100px);
-15: 
-16:   	 @include tablets {
-17:   	 	flex-direction: column;
-18: 	    align-items: center;
-19: 	    text-align: center;
-20: 	    padding: 0 20%; 
-21:   	 }
+13:   flex-wrap: nowrap;
+14:   flex-grow: 1;
+15:   align-items: center;
+16:   margin-bottom: rem(100px);
+17: 
+18:   	 @include tablets {
+19:   	 	flex-direction: column;
+20: 	    align-items: center;
+21: 	    text-align: center;
+22: 	    padding: 0 20%; 
+23:   	 }
 
 Backtrace:
-E:\WEB\public_html\scss\__section\about.scss:16:in `tablets'
-E:\WEB\public_html\scss\__section\about.scss:16
+E:\WEB\public_html\scss\__section\about.scss:18:in `tablets'
+E:\WEB\public_html\scss\__section\about.scss:18
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 16 of E:\WEB\public_html\scss\__section\about.scss, in `tablets'\A         from line 16 of E:\WEB\public_html\scss\__section\about.scss\A \A 11:   flex-wrap: nowrap;\A 12:   flex-grow: 1;\A 13:   align-items: center;\A 14:   margin-bottom: rem(100px);\A 15: \A 16:   	 @include tablets {\A 17:   	 	flex-direction: column;\A 18: 	    align-items: center;\A 19: 	    text-align: center;\A 20: 	    padding: 0 20%; \A 21:   	 }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 18 of E:\WEB\public_html\scss\__section\about.scss, in `tablets'\A         from line 18 of E:\WEB\public_html\scss\__section\about.scss\A \A 13:   flex-wrap: nowrap;\A 14:   flex-grow: 1;\A 15:   align-items: center;\A 16:   margin-bottom: rem(100px);\A 17: \A 18:   	 @include tablets {\A 19:   	 	flex-direction: column;\A 20: 	    align-items: center;\A 21: 	    text-align: center;\A 22: 	    padding: 0 20%; \A 23:   	 }"; }

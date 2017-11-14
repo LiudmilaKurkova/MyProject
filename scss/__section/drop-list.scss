@@ -1,0 +1,35 @@
+.drop__list {
+	position: absolute;
+	left: rem(9999px);
+	z-index: 100;
+	width: rem(270px);
+	height: rem(335px);
+	border-radius: rem(5px);
+	background: rgba(255, 255, 255, 0.8);
+	padding: rem(20px) rem(15px);
+}
+
+.drop__item {
+	line-height: rem(32px);
+	margin-bottom: rem(20px);
+}
+
+
+.drop__img {
+	display: inline-block;
+	width: 15%;
+	float: left;
+	margin-right: rem(20px);
+}
+
+.drop__name {
+	display: inline-block;
+	float: left;
+	font-size: rem(14px);
+}
+
+.drop__wt {
+	display: inline-block;
+	float: right;
+	font-size: rem(14px);
+	}

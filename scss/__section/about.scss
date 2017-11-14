@@ -3,6 +3,8 @@
 	background-position: 50%;
   background-size: cover;
 	position: relative;
+	opacity: 1;
+  transition: opacity .5s;
 }
 
 .main-about {
