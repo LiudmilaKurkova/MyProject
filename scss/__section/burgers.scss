@@ -92,6 +92,15 @@
 		left: 100%;
 }
 
+.composition__img {
+	width: 50%;
+	margin-left: 22px;
+  margin-top: 13px;
+
+  	@include tablets {
+  		margin: 13px auto 0;
+  	}
+}
 
 .composition_text {
 	font-family: "Gagalin";
@@ -135,10 +144,7 @@
 }
 
 
-.composition__img {
-	width: 70%;
-	margin-left: rem(13px);
-}
+
 
 .kkal__img {
 	width: 80%;
