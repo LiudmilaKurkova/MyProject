@@ -1,50 +1,24 @@
 /*
-Error: Undefined mixin 'circle'.
-        on line 35 of E:\WEB\public_html\scss\__section\about-drop.scss, in `circle'
-        from line 35 of E:\WEB\public_html\scss\__section\about-drop.scss
+Error: Undefined mixin 'tablets'.
+        on line 2 of E:\WEB\public_html\scss\__section\about-drop.scss, in `tablets'
+        from line 2 of E:\WEB\public_html\scss\__section\about-drop.scss
 
-30:   
-31:   		&:after {
-32: 		    display: block;
-33: 		    content: ' ';
-34: 		    margin: 0 4rem;
-35: 		    @include circle(rem(5px), #fff);
-36: 		      }
-37: 				  &:last-child:after {
-38: 				    display: none;
-39: 				  }
-40: }
+1: .dropsection-about {
+2: 		@include tablets {
+3: 		width: 100%;
+4:     height: 100%;
+5:     position: absolute;
+6: 		//position: fixed;
+7: 		//overflow:  hidden;
 
 Backtrace:
-E:\WEB\public_html\scss\__section\about-drop.scss:35:in `circle'
-E:\WEB\public_html\scss\__section\about-drop.scss:35
+E:\WEB\public_html\scss\__section\about-drop.scss:2:in `tablets'
+E:\WEB\public_html\scss\__section\about-drop.scss:2
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
@@ -88,4 +62,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'circle'.\A         on line 35 of E:\WEB\public_html\scss\__section\about-drop.scss, in `circle'\A         from line 35 of E:\WEB\public_html\scss\__section\about-drop.scss\A \A 30:   \A 31:   		&:after {\A 32: 		    display: block;\A 33: 		    content: ' ';\A 34: 		    margin: 0 4rem;\A 35: 		    @include circle(rem(5px), #fff);\A 36: 		      }\A 37: 				  &:last-child:after {\A 38: 				    display: none;\A 39: 				  }\A 40: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 2 of E:\WEB\public_html\scss\__section\about-drop.scss, in `tablets'\A         from line 2 of E:\WEB\public_html\scss\__section\about-drop.scss\A \A 1: .dropsection-about {\A 2: 		@include tablets {\A 3: 		width: 100%;\A 4:     height: 100%;\A 5:     position: absolute;\A 6: 		//position: fixed;\A 7: 		//overflow:  hidden;"; }
