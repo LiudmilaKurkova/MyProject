@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 40 of E:\WEB\public_html\scss\__layout\adjustments.scss
+        on line 42 of E:\WEB\public_html\scss\__layout\adjustments.scss
 
-35: .section__title {
-36:   font-family: "Gagalin";
-37:   font-weight: normal;
-38:   font-style: normal;
-39:   font-size: rem(72px);
-40:   color: $yellow;
-41:   text-transform: uppercase;
-42:   margin-bottom: rem(35px);  
-43: 
-44:       @include phones {
-45:         font-size: rem(63px);
+37: .section__title {
+38:   font-family: "Gagalin";
+39:   font-weight: normal;
+40:   font-style: normal;
+41:   font-size: rem(72px);
+42:   color: $yellow;
+43:   text-transform: uppercase;
+44:   margin-bottom: rem(35px);  
+45: 
+46:       @include phones {
+47:         font-size: rem(63px);
 
 Backtrace:
-E:\WEB\public_html\scss\__layout\adjustments.scss:40
+E:\WEB\public_html\scss\__layout\adjustments.scss:42
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 40 of E:\WEB\public_html\scss\__layout\adjustments.scss\A \A 35: .section__title {\A 36:   font-family: \"Gagalin\";\A 37:   font-weight: normal;\A 38:   font-style: normal;\A 39:   font-size: rem(72px);\A 40:   color: $yellow;\A 41:   text-transform: uppercase;\A 42:   margin-bottom: rem(35px);  \A 43: \A 44:       @include phones {\A 45:         font-size: rem(63px);"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 42 of E:\WEB\public_html\scss\__layout\adjustments.scss\A \A 37: .section__title {\A 38:   font-family: \"Gagalin\";\A 39:   font-weight: normal;\A 40:   font-style: normal;\A 41:   font-size: rem(72px);\A 42:   color: $yellow;\A 43:   text-transform: uppercase;\A 44:   margin-bottom: rem(35px);  \A 45: \A 46:       @include phones {\A 47:         font-size: rem(63px);"; }

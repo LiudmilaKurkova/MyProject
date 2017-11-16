@@ -1,17 +1,19 @@
 .dropsection-about {
-		@include tablets {
 		width: 100%;
     height: 100%;
-    position: absolute;
-		//position: fixed;
-		//overflow:  hidden;
+    //position: absolute;
+		position: fixed;
+		overflow: hidden;
 		top: 0;
 		left: 0;
+		right: 0;
+		bottom: 0;
 		background-color: #2f3234;			
 		justify-content: flex-start;
-		opacity: 0;
+		//opacity: 0;
   	transition: opacity .5s;
-  }
+  	z-index: 2;
+  	display: none;  
 }
 
 .img-close {

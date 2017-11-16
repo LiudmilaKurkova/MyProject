@@ -2,18 +2,7 @@
 	background: url(../img/__menu/bg1.png) no-repeat;
 	background-size: cover;
 	position: relative;
-
 }
-
-/*.main-menu__title {
-	position: absolute;
-	left: 10%;
-	top: 10%;
-	font-family: "Gagalin";
-	font-weight: 500;
-	font-size: rem(72px);
-	color: #fff;
-}*/
 
 .acco-menu {
 	position: absolute;
@@ -25,8 +14,9 @@
 
 .acco-menu__item {
 	height: 100%;
+}
 
-		&:active {
+		/*&:active {
 		.acco-menu__trigger-text {
 			color: $yellow;
 		}
@@ -35,8 +25,20 @@
 				width: rem(540px);
 			}
 		}
-	}
-}
+	}*/
+
+
+.acco-menu__item--activ {
+
+		.acco-menu__trigger-text {
+			color: #f8b43a;
+		}
+
+		.acco-menu__body {
+     		max-width: rem(540px);
+    		transition: max-width 0.3s linear;
+    }
+  }
 
 .acco-menu__trigger {
 	width: rem(80px);
@@ -74,6 +76,7 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
+
 }
 
 .acco-menu__text {
@@ -83,14 +86,13 @@
   left: 0;
   right: 0;
   bottom: 0;
-
 	font-family: "Ubuntu";
 	font-size: rem(14px);
 	color: #fff; 
 	padding: rem(60px) rem(30px);
 	width: 100%;
   line-height: 1.8;
-  display: none;
+  //display: none;
 }
 
 
