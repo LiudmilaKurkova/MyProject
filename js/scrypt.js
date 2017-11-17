@@ -1,4 +1,5 @@
 //about
+
 let hamburgerMenu = document.getElementById('hamburger-menu-link');
 let block = document.getElementById('about');
 let buttonClose = document.getElementById('img-close');
@@ -22,41 +23,44 @@ let hiddenMenu = document.getElementById('drop-about');
      })
 
 //team
-/*
-$(document).ready ( () => {
+//
+$('.main-team__trigger').on('click', e => {
+   
+    const $this = $(e.currentTarget);
+    const container = $this.closest('.main-team__acco');
+    const item = $this.closest('.main-team__item');
+    const items = $('.main-team__item', container);
+    const content = $('.main-team__drop', item);
+    const otherContent = $('.main-team__drop', container);
+    const textBlock = $('.main-team__text', item);
+    const reqHeight = textBlock.outerHeight();
 
-      $('.main-team__trigger').on('click', (e) => {
+     console.log(textBlock);
+        console.log(reqHeight);
 
-  $(e.currentTarget).parent('.main-team__item').toggleClass('main-team__item--activ');
-  
-})
-})
-*/
-/*
-$(document).ready(function(){
-   //$(".main-team__acco .main-team__item:first").addClass("main-team__item--activ");
-    //$(".accordion .main-team__drop:not(:first)").hide();
+    if (!item.hasClass('main-team__item--activ')) {
+      items.removeClass('main-team__item--activ')
+      item.addClass('main-team__item--activ')
 
-    $(".main-team__trigger").click(function(){
+      otherContent.css({
+        'height': 0
+      })
 
-        $(this).next(".main-team__drop").slideToggle("slow")
-        .siblings(".main-team__drop:visible").slideUp("slow");
-        $(this).toggleClass("main-team__item--activ");
-        $(this).siblings(".main-team__item").removeClass("main-team__item--activ");
-     });
- 
- });
-*/
+      content.css({
+        'height': reqHeight
+      })
 
- $(document).ready ( () => {
+    } else {
 
-      $('.main-team__trigger').on('click', (e) => {
+      item.removeClass('main-team__item--activ');
+      content.css({
+        'height' : 0
+      })
+    }
 
-  $(e.currentTarget).parent('.main-team__item').toggleClass('main-team__item--activ');
-  $(e.currentTarget).parent('.main-team__item').siblings().removeClass('main-team__item--activ');
-  
-})
-})
+  })
+
+
 
 
 //menu
@@ -72,15 +76,4 @@ $(document).ready ( () => {
 })
 
 
-/*
-$(document).ready ( () => {
 
-      $('.acco-menu__trigger').on('click', (e) => {
-        
-
-  $(e.currentTarget).parent('.acco-menu__item').toggleClass('acco-menu__item--activ');
-  
-})
-})
-
-*/

@@ -35,10 +35,18 @@
 		}
 
 		.acco-menu__body {
-     		max-width: rem(540px);
-    		transition: max-width 0.3s linear;
-    }
+				width: rem(540px);
+    		transition: width 0.3s linear;
+
+    		@include tablets {
+    			width: rem(520px);
+    
+					@include phones {
+    			width: 15rem;
+   			 }	
+    	}
   }
+ }
 
 .acco-menu__trigger {
 	width: rem(80px);
@@ -70,7 +78,7 @@
 }
 
 .acco-menu__body {
-	position: relative;
+  position: relative;
 	height: 100%;
 	float: left;
 	background: rgba(#2f3234, .93);
@@ -88,6 +96,7 @@
   bottom: 0;
 	font-family: "Ubuntu";
 	font-size: rem(14px);
+	font-weight: 300;
 	color: #fff; 
 	padding: rem(60px) rem(30px);
 	width: 100%;

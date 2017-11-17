@@ -76,12 +76,9 @@
 } 
 
 .main-team__drop {
-	max-height: 0;
-  transition: max-height 0.1s linear;
+	height: 0;
   overflow: hidden;
-	//opacity: 0; 
-	//transition: opacity .5s; 
-	//display: none;
+  transition: .3s;
 }
 
 .main-team__avatar {
@@ -125,18 +122,14 @@
 
 		.main-team__trigger:before {
      			transform: rotate(-180deg);
-     			transition: transform .1s linear;
-    }
+     			transition: transform .3s linear;
+    }  
   
-			.main-team__drop {
-				max-height: rem(110px);
-    		transition: max-height 0.1s linear;
-				//opacity: 1; 
-				//transition: opacity .5s; 
-   			//display: block;
- 		 }
+		}
+
+ 		 
 				
-	}
+	
 
 
 

@@ -966,9 +966,9 @@ th {
       justify-content: center; } }
 
 .main-team__drop {
-  max-height: 0;
-  transition: max-height 0.1s linear;
-  overflow: hidden; }
+  height: 0;
+  overflow: hidden;
+  transition: .3s; }
 
 .main-team__avatar {
   display: inline-block; }
@@ -1000,10 +1000,7 @@ th {
   color: #f8b43a; }
 .main-team__item--activ .main-team__trigger:before {
   transform: rotate(-180deg);
-  transition: transform .1s linear; }
-.main-team__item--activ .main-team__drop {
-  max-height: 6.875rem;
-  transition: max-height 0.1s linear; }
+  transition: transform .3s linear; }
 
 .section-menu {
   background: url(../img/__menu/bg1.png) no-repeat;
@@ -1033,8 +1030,14 @@ th {
 .acco-menu__item--activ .acco-menu__trigger-text {
   color: #f8b43a; }
 .acco-menu__item--activ .acco-menu__body {
-  max-width: 33.75rem;
-  transition: max-width 0.3s linear; }
+  width: 33.75rem;
+  transition: width 0.3s linear; }
+  @media screen and (max-width: 768px) {
+    .acco-menu__item--activ .acco-menu__body {
+      width: 32.5rem; } }
+  @media screen and (max-width: 768px) and (max-width: 480px) {
+    .acco-menu__item--activ .acco-menu__body {
+      width: 15rem; } }
 
 .acco-menu__trigger {
   width: 5rem;
@@ -1078,6 +1081,7 @@ th {
   bottom: 0;
   font-family: "Ubuntu";
   font-size: 0.875rem;
+  font-weight: 300;
   color: #fff;
   padding: 3.75rem 1.875rem;
   width: 100%;
