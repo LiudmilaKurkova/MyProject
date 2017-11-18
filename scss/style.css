@@ -844,7 +844,8 @@ th {
   font-weight: 500;
   font-size: 0.8125rem;
   text-transform: uppercase;
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
   @media screen and (max-width: 768px) {
     .main-reviews__link {
       margin-left: 30%; } }
@@ -1599,5 +1600,30 @@ th {
   display: inline-block;
   float: right;
   font-size: 0.875rem; }
+
+.fansybox {
+  display: none;
+  width: 29.375rem;
+  border-radius: 0.3125rem;
+  margin: 40px 20px; }
+  .fansybox h3 {
+    padding-top: 3.125rem;
+    font-family: "Gagalin";
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #2f3234;
+    margin-bottom: 30px; }
+  .fansybox p {
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: 0.875rem;
+    color: #2f3234;
+    margin-bottom: 1.25rem; }
+
+.fancybox-close-small:after {
+  color: #ec8468;
+  font-weight: 500;
+  background-color: transparent;
+  transition: background-color none; }
 
 /*# sourceMappingURL=style.css.map */

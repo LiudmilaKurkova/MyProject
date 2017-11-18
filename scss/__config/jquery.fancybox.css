@@ -378,25 +378,18 @@ body.fancybox-iosfix {
   width: 30px;
   height: 30px;
   font: 20px/30px Arial,"Helvetica Neue",Helvetica,sans-serif;
-  color: #888;
-  font-weight: 300;
   text-align: center;
   border-radius: 50%;
   border-width: 0;
   background-color: transparent;
   transition: background-color .25s;
   box-sizing: border-box;
-  z-index: 2; }
+  z-index: 2; 
+  color: #ec8468;
+  font-weight: 500;}
 
 .fancybox-close-small:focus {
   outline: none; }
-
-.fancybox-close-small:focus:after {
-  outline: 1px dotted #888; }
-
-.fancybox-close-small:hover:after {
-  color: #555;
-  background: #eee; }
 
 .fancybox-slide--image .fancybox-close-small,
 .fancybox-slide--iframe .fancybox-close-small {

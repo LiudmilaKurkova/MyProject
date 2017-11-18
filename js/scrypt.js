@@ -75,5 +75,31 @@ $(document).ready ( () => {
 })
 })
 
+//reviews
+
+//fancybox
+$(function() {
+
+   $("[data-fancybox]").fancybox({
+    transitionEffect : "slide",
+    transitionDuration : 2000,
+    afterClose: () => {
+      console.log('РјРѕРґР°Р»РєР° Р·Р°РєСЂС‹С‚Р°');
+    }
+  });
+  
+  $('.close-fancy').on('click', e => {
+    e.preventDefault()
+    
+    $.fancybox.close();
+  })
+})
+
+
+
+
+  
+
+
 
 
