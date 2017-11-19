@@ -11,6 +11,7 @@
 .container-burgers {
 	width: 100%;
 	height: 80%;
+	overflow: hidden;
 
 	@include phones{
 		height: 100%;
@@ -47,7 +48,12 @@
 	left: 20%;
 }
 
+
+
+
+
 .main-burgers {
+	white-space: nowrap;
   position: relative;
 	width: 100%;
   display: flex;
@@ -62,6 +68,17 @@
   		align-items: center;
   		text-align: center;
   	}
+}
+
+.main-burgers__item {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	font-size: 0px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding-top: 5%;
 }
 
 .composition {
@@ -109,7 +126,7 @@
     font-size: rem(16px);
     color: #fff;
     text-align: center;
-    margin-top: 0;
+    margin-top: rem(5px);
 
 }
 
@@ -156,7 +173,9 @@
 .main-burgers__picture {
 	position: relative;
 	flex-basis: 50%;
-	margin-right: rem(20px);
+	//margin-right: rem(20px);
+	float: left;
+	width: 50%;
 	
 			@include tablets {
 				margin-bottom: rem(45px);
@@ -164,11 +183,15 @@
 }
 
 .main-burgers__img {
+	width: 95%;
 	padding-top: rem(90px);
 }
 
 .description-burgers {
 		flex-basis: 50%;
+		float: left;
+		width: 50%;
+		white-space: normal;
 		
 			@include tablets {
 				padding: 0 30px;
@@ -197,6 +220,7 @@
 	color: #fff;
 	font-weight: 300; 
 	margin-bottom: rem(40px);
+	
 
 		@include tablets {
 			padding: 0 5rem;

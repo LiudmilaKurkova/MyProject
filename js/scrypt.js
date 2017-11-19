@@ -1,16 +1,18 @@
-//about
+//about-hamburger--------------------------------------------
 
 let hamburgerMenu = document.getElementById('hamburger-menu-link');
 let block = document.getElementById('about');
 let buttonClose = document.getElementById('img-close');
 let hiddenMenu = document.getElementById('drop-about');
+let blockBody = document.getElementById('MyBody');
 
 
       hamburgerMenu.addEventListener('click', function() {
       //block.style.opacity = '0';
       hiddenMenu.style.display = 'block';
       hiddenMenu.style.opacity = '1';
-     // hiddenMenu.style.zIndex++;
+      blockBody.className = 'locked';
+      // hiddenMenu.style.zIndex++;
       //hiddenMenu.style.position = 'fixed';
      })
 
@@ -18,12 +20,13 @@ let hiddenMenu = document.getElementById('drop-about');
       //block.style.opacity = '1';
       hiddenMenu.style.display = 'none';
       hiddenMenu.style.opacity = '0';
+      blockBody.className = '';
       //hiddenMenu.style.zIndex--;
       //hiddenMenu.style.position = 'absolute';
      })
 
-//team
-//
+//team-acco---------------------------------------------
+
 $('.main-team__trigger').on('click', e => {
    
     const $this = $(e.currentTarget);
@@ -35,8 +38,8 @@ $('.main-team__trigger').on('click', e => {
     const textBlock = $('.main-team__text', item);
     const reqHeight = textBlock.outerHeight();
 
-     console.log(textBlock);
-        console.log(reqHeight);
+     //console.log(textBlock);
+        //console.log(reqHeight);
 
     if (!item.hasClass('main-team__item--activ')) {
       items.removeClass('main-team__item--activ')
@@ -63,8 +66,75 @@ $('.main-team__trigger').on('click', e => {
 
 
 
-//menu
+//menu-acco ----------------------------------------------
+$(document).ready ( () => {
 
+  const calculateWidth = () => {
+    const wWidth = $(window).width();
+    const titles = $('.acco-menu__trigger');
+    const titleWidth = titles.width();
+    const reqWidth = wWidth - (titleWidth * titles.length);
+    //console.log(titles.length);
+
+    return (reqWidth > 540) ? 540 : reqWidth
+  }
+
+  const openItem = item => {
+    const container = $('.acco-menu')
+    const items = $('.acco-menu__item', container)
+    const accoText = $('.acco-menu__text', container)
+    const activeItem = items.filter('.acco-menu__item--activ')
+    const activeContent = activeItem.find('.acco-menu__body')
+    const content = item.find('.acco-menu__body')
+    const reqWidth = calculateWidth()
+
+    items.removeClass('acco-menu__item--activ');
+    item.addClass('acco-menu__item--activ');
+
+    accoText.hide();
+    activeContent.animate({ 'width': '0px' });
+    //console.log(reqWidth);
+
+    content.animate({
+      'width': reqWidth + 'px'
+    }, () => { accoText.fadeIn() })
+  }
+
+  const closeItem = item => {
+    item.removeClass('acco-menu__item--activ');
+
+    item.closest('.acco-menu').find('.acco-menu__text')
+      .stop(true, true).fadeOut(() => {
+        item.find('.acco-menu__body').animate({ 'width': '0px' });
+      });
+  }
+
+  $('.acco-menu__trigger').on('click', (e) => {
+    //e.preventDefault();
+
+    const $this = $(e.target)
+    const item = $this.closest('.acco-menu__item')
+
+    item.hasClass('acco-menu__item--activ')
+      ? closeItem(item)
+      : openItem(item)
+
+
+  });
+
+  // клик вне аккордеона
+  $(document).on('click', (e) => {
+    const $this = $(e.target);
+
+    if (!$this.closest('.acco-menu').length) {
+      closeItem($('.acco-menu__item'))
+    }
+  });
+})
+
+
+//Это тоже работает
+/*
 $(document).ready ( () => {
 
       $('.acco-menu__trigger').on('click', (e) => {
@@ -74,10 +144,10 @@ $(document).ready ( () => {
   
 })
 })
+*/
 
-//reviews
 
-//fancybox
+//reviews-fancybox
 $(function() {
 
    $("[data-fancybox]").fancybox({

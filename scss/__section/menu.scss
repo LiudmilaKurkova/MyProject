@@ -34,18 +34,18 @@
 			color: #f8b43a;
 		}
 
-		.acco-menu__body {
-				width: rem(540px);
-    		transition: width 0.3s linear;
+		//.acco-menu__body {
+			//	width: rem(540px);
+    	//	transition: width 0.3s linear;
 
-    		@include tablets {
-    			width: rem(520px);
+    	//	@include tablets {
+    			//width: rem(520px);
     
-					@include phones {
-    			width: 15rem;
-   			 }	
-    	}
-  }
+					//@include phones {
+    		//	width: 15rem;
+   			 //}	
+    	//}
+  //}
  }
 
 .acco-menu__trigger {
@@ -84,7 +84,6 @@
 	background: rgba(#2f3234, .93);
 	width: 0;
 	overflow: hidden;
-
 }
 
 .acco-menu__text {

@@ -17,6 +17,9 @@ body {
   /*сглаживание шрифтов*/
   -moz-osx-font-smoothing: grayscale; }
 
+.locked {
+  overflow: hidden; }
+
 /*убираем стили*/
 ul {
   margin: 0;
@@ -1030,15 +1033,6 @@ th {
 }*/
 .acco-menu__item--activ .acco-menu__trigger-text {
   color: #f8b43a; }
-.acco-menu__item--activ .acco-menu__body {
-  width: 33.75rem;
-  transition: width 0.3s linear; }
-  @media screen and (max-width: 768px) {
-    .acco-menu__item--activ .acco-menu__body {
-      width: 32.5rem; } }
-  @media screen and (max-width: 768px) and (max-width: 480px) {
-    .acco-menu__item--activ .acco-menu__body {
-      width: 15rem; } }
 
 .acco-menu__trigger {
   width: 5rem;
@@ -1408,7 +1402,8 @@ th {
 
 .container-burgers {
   width: 100%;
-  height: 80%; }
+  height: 80%;
+  overflow: hidden; }
   @media screen and (max-width: 480px) {
     .container-burgers {
       height: 100%; } }
@@ -1435,6 +1430,7 @@ th {
   left: 20%; }
 
 .main-burgers {
+  white-space: nowrap;
   position: relative;
   width: 100%;
   display: flex;
@@ -1448,6 +1444,16 @@ th {
       justify-content: center;
       align-items: center;
       text-align: center; } }
+
+.main-burgers__item {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  font-size: 0px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 5%; }
 
 .composition {
   position: absolute;
@@ -1485,7 +1491,7 @@ th {
   font-size: 1rem;
   color: #fff;
   text-align: center;
-  margin-top: 0; }
+  margin-top: 0.3125rem; }
 
 .kkal {
   width: 5.3125rem;
@@ -1518,16 +1524,21 @@ th {
 .main-burgers__picture {
   position: relative;
   flex-basis: 50%;
-  margin-right: 1.25rem; }
+  float: left;
+  width: 50%; }
   @media screen and (max-width: 768px) {
     .main-burgers__picture {
       margin-bottom: 2.8125rem; } }
 
 .main-burgers__img {
+  width: 95%;
   padding-top: 5.625rem; }
 
 .description-burgers {
-  flex-basis: 50%; }
+  flex-basis: 50%;
+  float: left;
+  width: 50%;
+  white-space: normal; }
   @media screen and (max-width: 768px) {
     .description-burgers {
       padding: 0 30px; } }
@@ -1619,11 +1630,5 @@ th {
     font-size: 0.875rem;
     color: #2f3234;
     margin-bottom: 1.25rem; }
-
-.fancybox-close-small:after {
-  color: #ec8468;
-  font-weight: 500;
-  background-color: transparent;
-  transition: background-color none; }
 
 /*# sourceMappingURL=style.css.map */
