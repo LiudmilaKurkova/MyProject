@@ -14,6 +14,7 @@
     <![endif]-->
     <link rel="icon" type="image/x-icon" href="#">
     <link rel="stylesheet" type="text/css" href="../scss/__config/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="../scss/__config/jquery.bxslider.css">
     <link rel="stylesheet" type="text/css" href="../scss/style.css">
     <title>Бургерная</title>
   </head>
@@ -22,7 +23,7 @@
     <div class="wrapper">
       <div class="maincontent">             
 
-          <section class="section section-about" id="about">         
+          <section class="section section-about" id="about">  
             <div class="container container-about">
     			  	<header class="header-about">
     			  		<div class="header-about__logo">
@@ -131,144 +132,271 @@
   			    </div>  	
   		    </section>
 
+          
           <section class="section section-burgers" id="burgers">
-            <div class="burgers-scroll">
-              <img class="burgers-arrow-scroll burgers-arrow-scroll--back" src="../icons/arrow-scroll.svg" alt="Перейти назад">
+
+            <div class="slider-controls">
+              <a href="#" class="bx-prev">
+               <img class="burgers-arrow-scroll burgers-arrow-scroll--back" src="../icons/arrow-scroll.svg" alt="Перейти назад">
+              </a>
+              <a href="#" class="bx-next">
+                <img class="burgers-arrow-scroll burgers-arrow-scroll--forward" src="../icons/arrow-scroll.svg" alt="Перейти вперед">
+              </a>                       
             </div>
 
-             <div class="container container-burgers">   
+           <div class="container container-burgers">   
 
-	              <ul class="main-burgers">
+              <div class="slider">
+                 <div class="slider__item">
+                    <div class="composition">
+                      <ul class="drop__list">
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/beef.svg" alt="говядина">
+                          <div class="drop__name">Говядина</div>
+                          <div class="drop__wt">300 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/buns.svg" alt="булочки">
+                          <div class="drop__name">Булочки</div>
+                          <div class="drop__wt">100 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/salad.svg" alt="зелень">
+                          <div class="drop__name">Зелень</div>
+                          <div class="drop__wt">70 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/sauce.svg" alt="соус">
+                          <div class="drop__name">Соус</div>
+                          <div class="drop__wt">150 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
+                          <div class="drop__name">Овощи</div>
+                          <div class="drop__wt">200 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
+                          <div class="drop__name">Сыр</div>
+                          <div class="drop__wt">80 г</div>
+                        </li>                  
+                      </ul>
 
-	              	<li class="main-burgers__item clearfix">
-		                <div class="composition">
-		                  <ul class="drop__list">
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/beef.svg" alt="говядина">
-		                      <div class="drop__name">Говядина</div>
-		                      <div class="drop__wt">300 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/buns.svg" alt="булочки">
-		                      <div class="drop__name">Булочки</div>
-		                      <div class="drop__wt">100 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/salad.svg" alt="зелень">
-		                      <div class="drop__name">Зелень</div>
-		                      <div class="drop__wt">70 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/sauce.svg" alt="соус">
-		                      <div class="drop__name">Соус</div>
-		                      <div class="drop__wt">150 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
-		                      <div class="drop__name">Овощи</div>
-		                      <div class="drop__wt">200 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
-		                      <div class="drop__name">Сыр</div>
-		                      <div class="drop__wt">80 г</div>
-		                    </li>                  
-		                  </ul>
+                      <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
+                      <p class="composition_text">состав</p>
+                    </div>
+                    <div class="kkal">
+                      <!--<img class="kkal__img" src="../icons/kkal.svg" alt="icon-kkal">-->
+                      <svg class="kkal__img">
+                          <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
+                      </svg>
+                      <p class="kkal_in">1200</p>
+                      <p class="composition_text">kkal</p>
+                    </div>
 
-		                  <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
-		                  <p class="composition_text">состав</p>
-		                </div>
-		                <div class="kkal">
-		                  <!--<img class="kkal__img" src="../icons/kkal.svg" alt="icon-kkal">-->
-		                  <svg class="kkal__img">
-		                      <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
-		                  </svg>
-		                  <p class="kkal_in">1200</p>
-		                  <p class="composition_text">kkal</p>
-		                </div>
-		                <div class="main-burgers__picture">
-		                  <img src="../img/__burgers/burger_1.png" alt="Dark BEEF Burger" class="main-burgers__img"> 
-		                </div>     
-		                <div class="description-burgers">
-		                   <div class=" section__title burgers-title">Dark BEEF Burger</div>
-		                   <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
-		                   <div class="wrap-section__button">
-		                      <div class="section__title price-sum">500</div>
-		                      <div class="section__title price-val">рублей</div>
-		                      <a class="toorder-about__button" href="#form">заказать</a>
-		                   </div>
-		                </div> 
-		              </li>
+                    <div class="main-burgers__picture">
+                      <img src="../img/__burgers/burger_1.png" alt="Dark BEEF Burger" class="main-burgers__img"> 
+                    </div>     
+                    <div class="description-burgers">
+                       <div class=" section__title burgers-title">Dark BEEF Burger</div>
+                       <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                       <div class="wrap-section__button">
+                          <div class="section__title price-sum">500</div>
+                          <div class="section__title price-val">рублей</div>
+                          <a class="toorder-about__button" href="#form">заказать</a>
+                       </div>
+                    </div> 
+                  </div> 
 
-		              <li class="main-burgers__item clearfix">
-		                <div class="composition">
-		                  <ul class="drop__list">
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/beef.svg" alt="говядина">
-		                      <div class="drop__name">Говядина</div>
-		                      <div class="drop__wt">300 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/buns.svg" alt="булочки">
-		                      <div class="drop__name">Булочки</div>
-		                      <div class="drop__wt">100 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/salad.svg" alt="зелень">
-		                      <div class="drop__name">Зелень</div>
-		                      <div class="drop__wt">70 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/sauce.svg" alt="соус">
-		                      <div class="drop__name">Соус</div>
-		                      <div class="drop__wt">150 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
-		                      <div class="drop__name">Овощи</div>
-		                      <div class="drop__wt">200 г</div>
-		                    </li>
-		                    <li class="drop__item clearfix">
-		                      <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
-		                      <div class="drop__name">Сыр</div>
-		                      <div class="drop__wt">80 г</div>
-		                    </li>                  
-		                  </ul>
+                  <div class="slider__item">
+                    <div class="composition">
+                      <ul class="drop__list">
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/beef.svg" alt="говядина">
+                          <div class="drop__name">Говядина</div>
+                          <div class="drop__wt">300 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/buns.svg" alt="булочки">
+                          <div class="drop__name">Булочки</div>
+                          <div class="drop__wt">100 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/salad.svg" alt="зелень">
+                          <div class="drop__name">Зелень</div>
+                          <div class="drop__wt">70 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/sauce.svg" alt="соус">
+                          <div class="drop__name">Соус</div>
+                          <div class="drop__wt">150 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
+                          <div class="drop__name">Овощи</div>
+                          <div class="drop__wt">200 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
+                          <div class="drop__name">Сыр</div>
+                          <div class="drop__wt">80 г</div>
+                        </li>                  
+                      </ul>
 
-		                  <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
-		                  <p class="composition_text">состав</p>
-		                </div>
-		                <div class="kkal">
-		                  <!--<img class="kkal__img" src="../icons/kkal.svg" alt="icon-kkal">-->
-		                  <svg class="kkal__img">
-		                      <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
-		                  </svg>
-		                  <p class="kkal_in">1200</p>
-		                  <p class="composition_text">kkal</p>
-		                </div>
-		                <div class="main-burgers__picture">
-		                  <img src="../img/__burgers/burger_1.png" alt="Dark BEEF Burger" class="main-burgers__img"> 
-		                </div>     
-		                <div class="description-burgers">
-		                   <div class=" section__title burgers-title">Dark BEEF Burger</div>
-		                   <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
-		                   <div class="wrap-section__button">
-		                      <div class="section__title price-sum">500</div>
-		                      <div class="section__title price-val">рублей</div>
-		                      <a class="toorder-about__button" href="#form">заказать</a>
-		                   </div>
-		                </div> 
-		              </li>
-		              
-	              </ul>
+                      <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
+                      <p class="composition_text">состав</p>
+                    </div>
+                    <div class="kkal">
+                      <svg class="kkal__img">
+                          <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
+                      </svg>
+                      <p class="kkal_in">1200</p>
+                      <p class="composition_text">kkal</p>
+                    </div>
 
-             </div> 
-           
+                    <div class="main-burgers__picture">
+                      <img src="../img/__burgers/burger_sandwich_PNG4124.png" alt="burger_sandwich" class="main-burgers__img"> 
+                    </div>     
+                    <div class="description-burgers">
+                       <div class=" section__title burgers-title">Sandwich</div>
+                       <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                       <div class="wrap-section__button">
+                          <div class="section__title price-sum">500</div>
+                          <div class="section__title price-val">рублей</div>
+                          <a class="toorder-about__button" href="#form">заказать</a>
+                       </div>
+                    </div> 
+                  </div> 
 
-            <div class="burgers-scroll">
-              <img class="burgers-arrow-scroll burgers-arrow-scroll--forward" src="../icons/arrow-scroll.svg" alt="Перейти вперед">
-            </div>    
+                  <div class="slider__item">
+                    <div class="composition">
+                      <ul class="drop__list">
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/beef.svg" alt="говядина">
+                          <div class="drop__name">Говядина</div>
+                          <div class="drop__wt">300 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/buns.svg" alt="булочки">
+                          <div class="drop__name">Булочки</div>
+                          <div class="drop__wt">100 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/salad.svg" alt="зелень">
+                          <div class="drop__name">Зелень</div>
+                          <div class="drop__wt">70 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/sauce.svg" alt="соус">
+                          <div class="drop__name">Соус</div>
+                          <div class="drop__wt">150 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
+                          <div class="drop__name">Овощи</div>
+                          <div class="drop__wt">200 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
+                          <div class="drop__name">Сыр</div>
+                          <div class="drop__wt">80 г</div>
+                        </li>                  
+                      </ul>
+
+                      <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
+                      <p class="composition_text">состав</p>
+                    </div>
+                    <div class="kkal">
+                      <!--<img class="kkal__img" src="../icons/kkal.svg" alt="icon-kkal">-->
+                      <svg class="kkal__img">
+                          <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
+                      </svg>
+                      <p class="kkal_in">1200</p>
+                      <p class="composition_text">kkal</p>
+                    </div>
+
+                    <div class="main-burgers__picture">
+                      <img src="../img/__burgers/Chiken burger.png" alt="Chiken burger" class="main-burgers__img"> 
+                    </div>     
+                    <div class="description-burgers">
+                       <div class=" section__title burgers-title">Chiken Burger</div>
+                       <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                       <div class="wrap-section__button">
+                          <div class="section__title price-sum">500</div>
+                          <div class="section__title price-val">рублей</div>
+                          <a class="toorder-about__button" href="#form">заказать</a>
+                       </div>
+                    </div> 
+                  </div>   
+
+                  <div class="slider__item">
+                    <div class="composition">
+                      <ul class="drop__list">
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/beef.svg" alt="говядина">
+                          <div class="drop__name">Говядина</div>
+                          <div class="drop__wt">300 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/buns.svg" alt="булочки">
+                          <div class="drop__name">Булочки</div>
+                          <div class="drop__wt">100 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/salad.svg" alt="зелень">
+                          <div class="drop__name">Зелень</div>
+                          <div class="drop__wt">70 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/sauce.svg" alt="соус">
+                          <div class="drop__name">Соус</div>
+                          <div class="drop__wt">150 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cucumber.svg" alt="овощи">
+                          <div class="drop__name">Овощи</div>
+                          <div class="drop__wt">200 г</div>
+                        </li>
+                        <li class="drop__item clearfix">
+                          <img class="drop__img" src="../icons/cheese.svg" alt="сыр">
+                          <div class="drop__name">Сыр</div>
+                          <div class="drop__wt">80 г</div>
+                        </li>                  
+                      </ul>
+
+                      <img class="composition__img" src="../icons/burger.svg" alt="icon-burger">
+                      <p class="composition_text">состав</p>
+                    </div>
+                    <div class="kkal">
+                      <!--<img class="kkal__img" src="../icons/kkal.svg" alt="icon-kkal">-->
+                      <svg class="kkal__img">
+                          <use xlink:href="../icons/sprite/sprite.svg#kkal" style="fill: #f9d19d"></use>
+                      </svg>
+                      <p class="kkal_in">1200</p>
+                      <p class="composition_text">kkal</p>
+                    </div>
+
+                    <div class="main-burgers__picture">
+                      <img src="../img/__burgers/Spicy_Shrimp_Burger.png" alt="Spicy Shrimp Burger" class="main-burgers__img"> 
+                    </div>     
+                    <div class="description-burgers">
+                       <div class=" section__title burgers-title">Spicy Shrimp Burger</div>
+                       <div class="description-burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эммпеталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</div>
+                       <div class="wrap-section__button">
+                          <div class="section__title price-sum">500</div>
+                          <div class="section__title price-val">рублей</div>
+                          <a class="toorder-about__button" href="#form">заказать</a>
+                       </div>
+                    </div> 
+                  </div>                   
+              </div>                   
+             
+
+           </div>              
           </section>
+
+
+          
 
 
 
@@ -622,15 +750,12 @@
           </li>
         </ul> 
 
-        <script src="../js/jquery-3.2.1.js"></script>        
+        <!--<script src="../js/jquery-3.2.1.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>       
         <script src="../js/jquery.fancybox.min.js"></script>
-        <script src="../js/scrypt.js"></script>
-        <!--<script src="../js/scrypt_test.js"></script>--> 
-
-        <!--<div class="fansybox" id="hidden-content">
-          <h3>Константин Спилберг</h2>
-          <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозмо забыть... Никогда не думал, что булочки могут быть такими мягкими, котлета такой сочной, а сыр расплавленным.</p>
-        </div>-->
+        <script src="../js/jquery.bxslider.min.js"></script>  
+        <script src="../js/script.js"></script>
+        
 
         <div class="fancybox-reviews" id="fancybox-reviews">
           <ul class="fancybox-reviews__block">

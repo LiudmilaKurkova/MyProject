@@ -154,7 +154,7 @@ $(function() {
     transitionEffect : "slide",
     transitionDuration : 2000,
     afterClose: () => {
-      console.log('РјРѕРґР°Р»РєР° Р·Р°РєСЂС‹С‚Р°');
+      //console.log('РјРѕРґР°Р»РєР° Р·Р°РєСЂС‹С‚Р°');
     }
   });
   
@@ -166,10 +166,87 @@ $(function() {
 })
 
 
+// burger - slider ------------------------------------
 
+  $(document).ready(function(){
+   let slider = $('.slider').bxSlider();
+     speed: 1000
+  });
+
+  $('.bx-next').on('click' ,function(e) {
+        e.preventDefault();
+
+        slider.goToNextSlide();
+    });
+
+
+  $('.bx-prev').on('click' ,function(e) {
+        e.preventDefault();
+
+        slider.goToPrevSlide();
+    });
+
+
+
+
+/*
+$(function() {
+
+  let moveSlide = function (conteiner, slideNum) {
+
+      let          
+          items = conteiner.find('.slider_item'),
+          activeSlide = item.filter('.active'),
+          reqItem = item.eq(slideNum),
+          reqIndex = reqItem.index(),
+          list = conteiner.find('.slider_list'),
+          duration = 500;
+
+    if (reqItem.length) {
+       list.animate({
+        'left': -reqIndex * 100 + '%'
+      }, duration, function(){
+          activeSlide.removeClass('active');
+          reqItem.addClass('active');
+        });
+     }
+   }
 
   
 
+   $('.burgers-arrow-scroll').on('click', function(e){
+
+      let $this = $(this),
+          conteiner = $this.closest('.burger-slider'),
+          item = $('.slider_item, conteiner'),
+          activeItem = item.folter('.active'),
+          nextItem = activeItem.next(),
+          prevItem = activItim.prev();
+
+        if ($this.hasClass('.burgers-arrow-scroll--forward')) {
+
+               if (nextItem.length) {
+                moveSlide(conteiner, nextItem.index());
+              
+              } else {
+                moveSlide(conteiner, items.first());
+                          
+        } else {
+
+                if (prevItem.length) {
+                moveSlide(conteiner, prevItem.index());
+              
+              } else {
+                moveSlide(conteiner, items.last()};
+         }
+          
+        }
+    });
+
+
+
+  
+*/
 
 
 
