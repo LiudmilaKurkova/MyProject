@@ -7,13 +7,13 @@
   transition: opacity .5s;
 }
 
-.main-about {
+.main-about {	
 	width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-grow: 1;
   align-items: center;
-  margin-bottom: rem(100px);
+  //margin-bottom: rem(100px);
 
   	 @include tablets {
   	 	flex-direction: column;
@@ -75,8 +75,8 @@
 }
 
 .arrow-scroll__icon {
-	width: rem(40px);
-  height: rem(40px);
+	width: rem(30px);
+  height: rem(30px);
   transition: .3s;
   fill: #fff; 
 }

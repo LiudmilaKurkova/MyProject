@@ -147,7 +147,8 @@ $(document).ready ( () => {
 */
 
 
-//reviews-fancybox
+//reviews-fancybox -----------------------------------------------------
+
 $(function() {
 
    $("[data-fancybox]").fancybox({
@@ -166,12 +167,12 @@ $(function() {
 })
 
 
-// burger - slider ------------------------------------
+// burger - slider --------------------------------------------------
 
   $(document).ready(function(){
    let slider = $('.slider').bxSlider();
      speed: 1000
-  });
+
 
   $('.bx-next').on('click' ,function(e) {
         e.preventDefault();
@@ -186,9 +187,31 @@ $(function() {
         slider.goToPrevSlide();
     });
 
+    });
+
+
+// FullPage Skroll --------------------------------------------------------------
+
+$(document).ready(function() {
+  $('#fullpage').fullpage({
+    menu: '#menu',
+    anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
+    navigation: true,    
+  });
+
+  $(document).on('click', '#moveDown', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+  
+});
 
 
 
+
+
+
+
+// slider
 /*
 $(function() {
 
@@ -242,11 +265,5 @@ $(function() {
           
         }
     });
-
-
-
   
 */
-
-
-

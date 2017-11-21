@@ -256,7 +256,7 @@
 				}
 
 				@include tablets {
-					right: 0;
+					right: none;
 				}
 }
 
@@ -269,10 +269,10 @@
 	left: 0;
 }
 
-//.bx-wrapper .bx-pager {
-//	display: none;
-//}
-//
+.bx-wrapper .bx-pager {
+	display: none;
+}
+
 .bx-wrapper {
     margin-bottom: -30px;
   }
