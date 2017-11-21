@@ -35,7 +35,7 @@ $('.main-team__trigger').on('click', e => {
     const items = $('.main-team__item', container);
     const content = $('.main-team__drop', item);
     const otherContent = $('.main-team__drop', container);
-    const textBlock = $('.main-team__text', item);
+    const textBlock = $('.main-team__wrap', item);
     const reqHeight = textBlock.outerHeight();
 
      //console.log(textBlock);
