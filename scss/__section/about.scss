@@ -25,7 +25,7 @@
 
 .main-about__picture {
 	flex-basis: 50%;	
-	padding-bottom: 80px;
+	padding-bottom: rem(40px);
 
 		@include tablets {
       margin-bottom: 0;

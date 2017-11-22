@@ -190,14 +190,15 @@ $(function() {
     });
 
 
-// FullPage Skroll --------------------------------------------------------------
+// FullPage  --------------------------------------------------------------
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
     menu: '#menu',
     //anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
-    navigation: true,    
-  });
+    navigation: true, 
+    
+ });
 
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();

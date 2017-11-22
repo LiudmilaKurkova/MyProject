@@ -548,8 +548,7 @@ th {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  margin-bottom: 4rem; }
+  padding-top: 1.25rem; }
   @media screen and (max-width: 768px) {
     .header-about {
       margin-bottom: 4rem; } }
@@ -616,7 +615,7 @@ th {
 
 .main-about__picture {
   flex-basis: 50%;
-  padding-bottom: 80px; }
+  padding-bottom: 2.5rem; }
   @media screen and (max-width: 768px) {
     .main-about__picture {
       margin-bottom: 0; } }
