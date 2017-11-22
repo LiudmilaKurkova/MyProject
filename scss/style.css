@@ -577,6 +577,9 @@ th {
   .nav-about__item:last-child:after {
     display: none; }
 
+.none {
+  display: none; }
+
 .nav-about__link {
   text-transform: uppercase;
   font-family: "Ubuntu";
@@ -1037,7 +1040,8 @@ th {
   background-position: center center;
   background-repeat: no-repeat;
   text-decoration: none;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .acco-menu__trigger-text {
   font-size: 2.5rem;
@@ -1525,7 +1529,7 @@ th {
   width: 5.3125rem;
   height: 5.625rem;
   position: absolute;
-  top: 83%; }
+  top: 80%; }
   .kkal .composition_text {
     color: #f9d19d; }
   .kkal .composition_text {

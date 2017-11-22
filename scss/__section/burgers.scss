@@ -20,15 +20,13 @@
 }
 
 .slider {
-	//white-space: nowrap;
-  //position: relative;
 	width: 100%;
   display: flex;
   flex-wrap: nowrap;
   flex-grow: 1;
   align-items: center;
   border: none;  
-  }
+}
 
  
  .bx-wrapper {
@@ -53,8 +51,6 @@
 	display: inline-flex;
 	font-size: 0px;
 	
-	//padding-top: 5%;
-
 		@include tablets {
   		flex-direction: column;
   		justify-content: center;
@@ -66,8 +62,6 @@
 .main-burgers__picture {
 	position: relative;
 	flex-basis: 50%;
-	//margin-right: rem(20px);
-	//float: left;
 	width: 50%;
 	
 			@include tablets {
@@ -83,7 +77,6 @@
 
 .description-burgers {
 		flex-basis: 45%;
-		//float: left;
 		width: 50%;
 		white-space: normal;
 		
@@ -116,7 +109,6 @@
 	font-weight: 300; 
 	margin-bottom: rem(40px);
 	
-
 		@include tablets {
 			padding: 0 5rem;
 		}
@@ -130,8 +122,6 @@
 
 .composition {
 	position: absolute;
-	//top: 5%;
-	//left: 10%;
 	width: rem(90px);
 	height: rem(90px);
 	background: #f08c33;
@@ -144,7 +134,7 @@
 		}
 					@include tablets {
 						top: 5%;
-			    left: 10%;
+			    	left: 10%;
 			  	}
 
 			  	@include phones {
@@ -183,7 +173,7 @@
 	width: rem(85px);
     height: rem(90px);
     position: absolute;
-    top: 83%;
+    top: 80%;
 			
 			.composition_text {
 				color: #f9d19d;
@@ -211,18 +201,11 @@
   left: 35%;
 }
 
-
-
-
 .kkal__img {
 	width: 80%;
 	height: rem(90px);
 	margin-left: rem(13px);
 }
-
-
-
-
 
 .price-sum {
 	display: inline-block;
@@ -240,11 +223,9 @@
 	display: inline-block;
 }
 
-
 .burgers-arrow-scroll {
 
 	position: absolute;
-	//right: rem(-15px);
 	top: 50%;
 	width: rem(30px);
   height: rem(15px);

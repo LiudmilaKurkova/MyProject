@@ -24,36 +24,38 @@
     <div class="wrapper">
       <div class="maincontent" id="fullpage">             
 
-          <section class="section section-about" id="aboutUs" data-anchor="slide1" >  
+          <section class="section section-about active" data-anchor="FerstSection">  
             <div class="container container-about">
     			  	<header class="header-about">
     			  		<div class="header-about__logo">
     			  			<img class="header-about__img" src="../icons/logo.svg" alt="Логотип компании">
     			  		</div>
+
                 <nav class="nav-about">
-                  <ul class="nav-about__list" id="myMenu">
-    			  				<li class="nav-about__item" data-menuanchor="best">
-    			  					<a class="nav-about__link" href="#best">О нас</a>
+                  <ul class="nav-about__list">
+                    <li class="nav-about__item">
+    			  					<a class="nav-about__link" href="#sectionBest">О нас</a>
     			  				</li>
-    			  				<li class="nav-about__item" data-menuanchor="burgers">
-    			  					<a class="nav-about__link" href="#burgers">бургеры</a>
+    			  				<li class="nav-about__item">
+    			  					<a class="nav-about__link" href="#sectionBurgers">бургеры</a>
     			  				</li>
-                    <li class="nav-about__item" data-menuanchor="team">
-                      <a class="nav-about__link" href="#team">команда</a>
+                    <li class="nav-about__item">
+                      <a class="nav-about__link" Href="#sectionTeam">команда</a>
                     </li>
-    			  				<li class="nav-about__item" data-menuanchor="menu">
-    			  					<a class="nav-about__link" href="#menu">меню</a>
+    			  				<li class="nav-about__item">
+    			  					<a class="nav-about__link" href="#sectionMenu">меню</a>
     			  				</li>
-    			  				<li class="nav-about__item" data-menuanchor="reviews">
-    			  					<a class="nav-about__link" href="#reviews">отзывы</a>
+    			  				<li class="nav-about__item">
+    			  					<a class="nav-about__link" href="#sectionReviews">отзывы</a>
     			  				</li>
-    			  				<li class="nav-about__item" data-menuanchor="contacts">
-    			  					<a class="nav-about__link" href="#contacts">контакты</a>
+    			  				<li class="nav-about__item">
+    			  					<a class="nav-about__link" href="#sectionContacts">контакты</a>
     			  				</li>	  				
     			  			</ul>
+
       			  	</nav>
                 <div class="toorder-about">
-                  <a class="toorder-about__button" data-menuanchor="Page7" href="#form">заказать</a>
+                  <a class="toorder-about__button" href="#form">заказать</a>
                   <div class="hamburger-menu-link" id="hamburger-menu-link">
                     <!--<img  class="link__bars" src="../icons/menu-alt-256.png" alt="меню">-->
                     <div class="hamburger-menu-link__bars">
@@ -84,7 +86,7 @@
             </div>
   	  		</section>
 
-    	    <section class="section section-we" id="best" data-anchor="slide2">
+    	    <section class="section section-we" data-anchor="sectionBest">
             <div class="container container-we">
         		  <div class="wrap-we">
       				  <header class="header-we">
@@ -134,7 +136,7 @@
   			    </div>  	
   		    </section>
           
-          <section class="section section-burgers" id="burgers" data-anchor="slide3">
+          <section class="section section-burgers" data-anchor="sectionBurgers">
 
             <div class="slider-controls">
               <a href="#" class="bx-prev">
@@ -396,7 +398,7 @@
            </div>              
           </section>
 
-          <section class="section section-team" id="team" data-anchor="slide4">
+          <section class="section section-team" data-anchor="sectionTeam">
             <div class="container container-team">
               <main class="main-team">              
                   <div class="section__title team__title">команда</div> 
@@ -465,7 +467,7 @@
             </div>
           </section>
 
-          <section class="section section-menu" id="menu" data-anchor="slide5">
+          <section class="section section-menu" data-anchor="sectionMenu">
             <div class="section__title section__title--white section__title--left">меню</div>
               <ul class="acco-menu">
                 <li class="acco-menu__item">
@@ -495,7 +497,7 @@
             </ul>                    
           </section>
 
-          <section class="section section-reviews" id="reviews" data-anchor="slide6">
+          <section class="section section-reviews" data-anchor="sectionReviews">
               <main class="main-reviews">
                 <ul class="main-reviews__block">
                   <li class="main-reviews__item main-reviews__item--photo_1" style="background-image: url('../img/__reviews/photo_1.png')">
@@ -558,7 +560,7 @@
               </main>         
           </section>
 
-          <section class="section section-form" id="form" data-anchor="slide7">
+          <section class="section section-form" data-anchor="sectionForm">
             <div class="container container-form">
               <main class="main-form">              
                 <div class="section__title section__title--center form__title">закажите доставку</div>  
@@ -648,7 +650,7 @@
             </div>
           </section>
 
-          <section class="section section-contacts" id="contacts" data-anchor="slide8">
+          <section class="section section-contacts" data-anchor="sectionContacts">
             <div class="contacts__map"></div>                             
               <footer class="footer-contacts">
                 <div class="container container-contacts"> 
@@ -730,38 +732,26 @@
               </div>          
         </div>
 
-        <!--<ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade1"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade2"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade3"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade4"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade5"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade6"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade7"></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#slade8"></a>
-          </li>
-        </ul> -->
+        <div class="nav"></div>
+        <div class="nav__dots">
+          <ul id="menu" class="nav__list">
+            <li data-menuanchor="FerstSection" class="nav_item"></li>
+            <li data-menuanchor="sectionBest" class="nav_item"></li>
+            <li data-menuanchor="sectionBurgers" class="nav_item"></li>
+            <li data-menuanchor="sectionTeam" class="nav_item"></li>
+            <li data-menuanchor="sectionMenu" class="nav_item"></li>
+            <li data-menuanchor="sectionReviews" class="nav_item"></li>
+            <li data-menuanchor="sectionForm" class="nav_item"></li>
+            <li data-menuanchor="sectionContacts" class="nav_item"></li>           
+          </ul>
+        </div>
 
+        
         <!--<script src="../js/jquery-3.2.1.js"></script>-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>       
         <script src="../js/jquery.fancybox.min.js"></script>
         <script src="../js/jquery.bxslider.min.js"></script>  
-        <script src="../js/jquery.fullpage.min.js"></script>          
+        <script src="../js/jquery.fullpage.js"></script>          
         <script src="../js/script.js"></script>
         
 

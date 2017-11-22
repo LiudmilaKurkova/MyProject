@@ -194,15 +194,16 @@ $(function() {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    menu: '#myMenu',
-    anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
+    menu: '#menu',
+    //anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
     navigation: true,    
   });
 
   $(document).on('click', '#moveDown', function(){
-  $.fn.fullpage.moveSectionDown();
+    $.fn.fullpage.moveSectionDown();
 });
-  
+
+       
 });
 
 
