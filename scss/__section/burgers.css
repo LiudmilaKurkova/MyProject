@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 15 of E:\WEB\public_html\scss\__section\burgers.scss, in `phones'
-        from line 15 of E:\WEB\public_html\scss\__section\burgers.scss
+        on line 17 of E:\WEB\public_html\scss\__section\burgers.scss, in `phones'
+        from line 17 of E:\WEB\public_html\scss\__section\burgers.scss
 
-10: 
-11: .container-burgers {
-12: 	width: 100%;
-13: 	height: 80%;
-14: 
-15: 	@include phones{
-16: 		height: 100%;
-17: 	}
-18: }
-19: 
-20: .burgers-scroll {
+12: 	//max-width: rem(940px); 
+13: 	height: 90%;
+14: 	//overflow: hidden;
+15: 	padding-top: rem(30px);
+16: 	
+17: 			@include phones {
+18: 				height: 100%;
+19: 	}
+20: }
+21: 
+22: .slider {
 
 Backtrace:
-E:\WEB\public_html\scss\__section\burgers.scss:15:in `phones'
-E:\WEB\public_html\scss\__section\burgers.scss:15
+E:\WEB\public_html\scss\__section\burgers.scss:17:in `phones'
+E:\WEB\public_html\scss\__section\burgers.scss:17
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 15 of E:\WEB\public_html\scss\__section\burgers.scss, in `phones'\A         from line 15 of E:\WEB\public_html\scss\__section\burgers.scss\A \A 10: \A 11: .container-burgers {\A 12: 	width: 100%;\A 13: 	height: 80%;\A 14: \A 15: 	@include phones{\A 16: 		height: 100%;\A 17: 	}\A 18: }\A 19: \A 20: .burgers-scroll {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 17 of E:\WEB\public_html\scss\__section\burgers.scss, in `phones'\A         from line 17 of E:\WEB\public_html\scss\__section\burgers.scss\A \A 12: 	//max-width: rem(940px); \A 13: 	height: 90%;\A 14: 	//overflow: hidden;\A 15: 	padding-top: rem(30px);\A 16: 	\A 17: 			@include phones {\A 18: 				height: 100%;\A 19: 	}\A 20: }\A 21: \A 22: .slider {"; }

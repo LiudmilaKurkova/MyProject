@@ -21,24 +21,26 @@
 	transform: rotate(180deg);
 }
 
-.line{
+.line-top,
+.line-center,
+.line-bottom	{
 	width: rem(25px);
 	height: rem(3px);
 	background-color: #fff;
 	border-radius: rem(1px);
+	margin-bottom: 5px;
 	transition: all 600ms ease-in-out;
 }
 
-.line.center{
+.line-center {
 	margin: rem(5px) 0;
-}
+	}
 
-.active .line.top{
-	width: rem(25px);
-	transform: translateX(8px) translateY(1px) rotate(45deg);
-}
-
-.active .line.bottom{
-	width: rem(25px);
-	transform: translateX(8px) translateY(-1px) rotate(-45deg);
-}
+//.line-top{
+	//width: rem(25px);
+	//transform: translateX(8px) translateY(1px) rotate(45deg);
+//
+//.line-bottom{
+	//width: rem(25px);
+	//transform: translateX(8px) translateY(-1px) rotate(-45deg);
+//}

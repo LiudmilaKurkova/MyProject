@@ -1,13 +1,16 @@
 .wrapper {
   width: 100%; 
-  min-height: 100%; 
+  height: 100%; 
   position: relative;
   overflow: hidden; 
   }
 
 .maincontent {
   height: 100%;
-  min-height: 650px;
+  //min-height: 650px;
+  //overflow: hidden; 
+  will-change: transform;
+  transition: 1s;
 }
 
 .container {
@@ -22,7 +25,7 @@
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0,0,0,0.31);
   //min-width: 940px;
   //min-height: 650px;
@@ -30,6 +33,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center; 
+  overflow: hidden;
 }
 
 .section__title {
@@ -63,3 +67,4 @@
 .section__title--center {
   text-align: center;
 }
+

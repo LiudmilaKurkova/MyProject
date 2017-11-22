@@ -39,20 +39,6 @@
 }
 }
 
-/*.main-team__title {
-	font-family: "Gagalin";
-	font-weight: 500;
-	font-size: rem(72px);
-	color: #f6ac3a;
-	text-align: left;
-	//line-height: rem(190px);
-	margin-bottom: 0;
-
-		@include phones {
-			font-size: rem(50px);
-		};
-}*/
-
 .main-team__item {
 	margin-bottom: rem(35px);
 	align-items: center;
@@ -61,8 +47,6 @@
 		margin-bottom: 0;
 	} 
 }
-
-
 
 .main-team__trigger {
 	text-decoration: none;
@@ -73,6 +57,7 @@
   display: flex;
    align-items: center;
   margin-bottom: rem(15px);
+  cursor: pointer;
 
 		  &:before {
 		    content: "";
@@ -83,24 +68,23 @@
 		    border-bottom-width: 0px;
 		    margin-right: rem(10px);
   }
-  	@include tablets {
-  		font-size: rem(25px);
-			text-align: center;
-			justify-content: center;
+		  	@include tablets {
+		  		font-size: rem(25px);
+					text-align: center;
+					justify-content: center;
 		}
 } 
 
 .main-team__drop {
-	display: none;
-		//align-items: center;
-	//height: 0;
-	//overflow: hidden;
+	height: 0;
+  overflow: hidden;
+  transition: .3s;
 }
 
 .main-team__avatar {
-	display: inline-block;
-          
+	display: inline-block;          
 }
+
 .main-team__img {
 	width: rem(100px);
 	height: rem(100px);
@@ -138,13 +122,14 @@
 
 		.main-team__trigger:before {
      			transform: rotate(-180deg);
-    }
+     			transition: transform .3s linear;
+    }  
   
-			.main-team__drop {
-   			display: block;
-  }
+		}
+
+ 		 
 				
-	}
+	
 
 
 

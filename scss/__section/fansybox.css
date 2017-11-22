@@ -1,0 +1,20 @@
+.fansybox {
+  display: none;
+  width: rem(470px);
+  border-radius: rem(5px);
+  margin: 40px 20px; }
+  .fansybox h3 {
+    padding-top: rem(50px);
+    font-family: "Gagalin";
+    font-weight: 500;
+    font-size: rem(14px);
+    color: #2f3234;
+    margin-bottom: 30px; }
+  .fansybox p {
+    font-family: "Ubuntu";
+    font-weight: 300;
+    font-size: rem(14px);
+    color: #2f3234;
+    margin-bottom: rem(20px); }
+
+/*# sourceMappingURL=fansybox.css.map */

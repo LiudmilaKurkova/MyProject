@@ -11,8 +11,8 @@ Error: Undefined variable: "$dark".
 16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*\/
 17:   -moz-osx-font-smoothing: grayscale;
 18: }
-19:   
-20: 
+19: 
+20: .locked {
 
 Backtrace:
 E:\WEB\public_html\scss\__layout\base.scss:15
@@ -62,4 +62,4 @@ C:/Program Files/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$dark\".\A         on line 15 of E:\WEB\public_html\scss\__layout\base.scss\A \A 10:   margin: 0;\A 11:   padding: 0;\A 12:   font-size: rem(16px);\A 13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;\A 14:   line-height: 1.42;\A 15:   color: $dark;\A 16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/\A 17:   -moz-osx-font-smoothing: grayscale;\A 18: }\A 19:   \A 20: "; }
+  content: "Error: Undefined variable: \"$dark\".\A         on line 15 of E:\WEB\public_html\scss\__layout\base.scss\A \A 10:   margin: 0;\A 11:   padding: 0;\A 12:   font-size: rem(16px);\A 13:   font-family: 'Ubuntu', Arial, Helvetica, sans-serif;\A 14:   line-height: 1.42;\A 15:   color: $dark;\A 16:   -webkit-font-smoothing: antialiased;/*сглаживание шрифтов*/\A 17:   -moz-osx-font-smoothing: grayscale;\A 18: }\A 19: \A 20: .locked {"; }

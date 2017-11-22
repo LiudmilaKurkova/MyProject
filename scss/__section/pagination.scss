@@ -1,22 +1,23 @@
-.pagination {
-	position: fixed;
-	top: 4.8rem;;
-	left: 94%;
-  z-index: 2;
 
-    @include tablets {
-      display: none;
-    }
+#fp-nav {
+  @include tablets{
+        display: none;
+      }
 }
 
-.pagination__link {
+#fp-nav.right {
+    top: 25%;
+  }
+
+#fp-nav ul li a span {
     position: relative;
 		width: rem(20px);
 		height: rem(20px);
 		display: block;
     text-align: center;
     margin-bottom: rem(5px);
-     	 &:after {
+     	 
+       &:after {
     content: "";
     display: block;
     position: absolute;
@@ -38,7 +39,7 @@
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     border-radius: 50%;
-   width: 0;
+    width: 0;
     height: 0;
     border-radius: 50%;
     border: rem(1px) solid #fff;
@@ -48,8 +49,9 @@
      }
    }
 
-
-.pagination__link:hover:before {
+#fp-nav ul li a.active span:before,
+#fp-nav ul li:hover a.active span:before,
+#fp-nav ul li:hover a span:before {
     width: rem(15px);
     height: rem(15px);
     opacity: 1;
