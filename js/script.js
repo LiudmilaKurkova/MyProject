@@ -194,7 +194,7 @@ $(function() {
 
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    menu: '#menu',
+    menu: '#myMenu',
     anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
     navigation: true,    
   });

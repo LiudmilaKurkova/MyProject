@@ -276,3 +276,38 @@
 .bx-wrapper {
     margin-bottom: -30px;
   }
+
+.bx-prev {
+  display: inline-block;
+  width: rem(30px);
+  height: rem(15px);
+  position: absolute;
+  z-index: 3;
+  bottom: rem(320px);
+  left: rem(20px);
+  background: url('../icons/arrow-scroll.svg') center center no-repeat;
+  transform: rotate(90deg) translateY(-50%);
+ 
+			@include tablets {
+				 bottom: rem(500px);
+			}
+}
+
+
+.bx-next {
+  display: inline-block;
+  width: rem(30px);
+  height: rem(15px);
+  position: absolute;
+  z-index: 3;
+  bottom: rem(320px);
+  right: rem(20px);
+  background: url('../icons/arrow-scroll.svg') center center no-repeat;
+  transform: rotate(-90deg) translateY(-50%);
+ 
+  	@include tablets {
+				 bottom: rem(500px);
+			}
+}
+	
+
