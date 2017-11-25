@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 34 of J:\WEB\public_html\scss\__section\contacts.scss, in `phones'
-        from line 34 of J:\WEB\public_html\scss\__section\contacts.scss
+        on line 34 of C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss, in `phones'
+        from line 34 of C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss
 
 29: .container-contacts {
 30: 	display: flex;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'phones'.
 39:   	}
 
 Backtrace:
-J:\WEB\public_html\scss\__section\contacts.scss:34:in `phones'
-J:\WEB\public_html\scss\__section\contacts.scss:34
+C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss:34:in `phones'
+C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss:34
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 34 of J:\WEB\public_html\scss\__section\contacts.scss, in `phones'\A         from line 34 of J:\WEB\public_html\scss\__section\contacts.scss\A \A 29: .container-contacts {\A 30: 	display: flex;\A 31:   flex-flow: row nowrap;\A 32:   align-items: baseline; \A 33: \A 34:   	@include phones {\A 35:   		flex-direction: column;\A 36:   		justify-content: center;\A 37:   		align-items: center;\A 38:   		//padding: rem(20px);\A 39:   	}"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 34 of C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss, in `phones'\A         from line 34 of C:\OSPanel\domains\Site1\public_html\scss\__section\contacts.scss\A \A 29: .container-contacts {\A 30: 	display: flex;\A 31:   flex-flow: row nowrap;\A 32:   align-items: baseline; \A 33: \A 34:   	@include phones {\A 35:   		flex-direction: column;\A 36:   		justify-content: center;\A 37:   		align-items: center;\A 38:   		//padding: rem(20px);\A 39:   	}"; }

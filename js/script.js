@@ -8,7 +8,6 @@ let blockBody = document.getElementById('MyBody');
 //let menuLink = document.getElementsByClassName('drop-link');
 //console.log(menuLink);
 
-
       hamburgerMenu.addEventListener('click', function() {
       //block.style.opacity = '0';
       hiddenMenu.style.display = 'block';
@@ -26,7 +25,6 @@ let blockBody = document.getElementById('MyBody');
       //hiddenMenu.style.zIndex--;
       //hiddenMenu.style.position = 'absolute';
      });
-
 
       $('.drop-link').on('click', (e) => {
      //e.preventDefault();
@@ -81,10 +79,8 @@ $('.main-team__trigger').on('click', e => {
 
   })
 
-
-
-
 //menu-acco ----------------------------------------------
+
 $(document).ready ( () => {
 
   const calculateWidth = () => {
@@ -137,7 +133,6 @@ $(document).ready ( () => {
       ? closeItem(item)
       : openItem(item)
 
-
   });
 
   // клик вне аккордеона
@@ -151,7 +146,7 @@ $(document).ready ( () => {
 })
 
 
-//Это тоже работает
+//Это тоже работает (но как-то плохо)))
 /*
 $(document).ready ( () => {
 
@@ -221,7 +216,6 @@ $(document).ready(function() {
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();
 });
-
        
 });
 
@@ -261,6 +255,75 @@ $(document).ready(function() {
           icon: "../img/__contacts/marker.png"
         });
       }
+
+// form ---------------------------------------------------
+
+// console.log('I am in common.js');
+// console.log($);
+
+var submitForm = function (ev) {
+    ev.preventDefault();
+    // console.log(ev);
+
+    //var content = $('.container-form');
+    var form = $(ev.target);
+        
+    var request = ajaxForm(form);
+
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+
+          var $div = $('<div class="success"/>', {
+                }).appendTo('.container-form');
+
+            $('<a href="#close" title="Закрыть" class="close">X</a>'
+, {   
+                    }).appendTo($div);
+
+            $('<p>' + mes + '</p>', {   
+                   }).appendTo($div);
+
+
+            //form.append('<p class="success">' + mes + '</p>');
+
+
+        } else{
+
+        form.append('<p class="error">' + mes + '</p>');
+        
+        }
+    });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);
+  
+
+    
+
+
+
+
+
 
 
 

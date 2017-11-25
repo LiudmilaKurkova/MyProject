@@ -17,11 +17,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.locked {
-  overflow: hidden;
-}
-  
-
 /*убираем стили*/
 ul {      
   margin: 0; 
@@ -38,6 +33,11 @@ img {
   width: 100%;
   height: auto;
 }
+
+
+.locked {
+  overflow: hidden;
+} 
 
 /*спрятать элемент*/
 .visuallyhidden:not(:focus):not(:active) {
@@ -58,6 +58,46 @@ img {
   display: block;
   clear: both;
 }
+
+.success {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  background: rgba(69, 69, 69, 0.9);
+  width: 30%;
+  height: 20%;
+  border-radius: rem(5px);
+  margin: 0;
+  z-index: 999;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  color: #f9b43b;
+  text-align: center;
+  font-size: rem(24px);
+}
+
+.close {
+  z-index: 1001;
+  background: #606061;
+  color: #f9b43b;
+  line-height: rem(25px);
+  position: absolute;
+  right: rem(-12px);
+  text-align: center;
+  top: rem(-10px);
+  width: rem(25px);
+  height: rem(25px);
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: rem(12px);
+  -moz-border-radius: rem(12px);
+  border-radius: rem(12px);
+  -moz-box-shadow: rem(1px) rem(1px) rem(3px) #000;
+  -webkit-box-shadow: rem(1px) rem(1px) rem(3px) #000;
+  box-shadow: rem(1px) rem(1px) rem(3px) #000;
+}
+  
 
 
 

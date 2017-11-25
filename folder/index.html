@@ -565,7 +565,7 @@
               <main class="main-form">              
                 <div class="section__title section__title--center form__title">закажите доставку</div>  
                 <div class="form">
-                  <form action="server.php" id="order-form" method="post" class="form__elem">
+                  <form action="../server.php" id="order-form" method="post" class="form__elem">
                     <div class="form__content">                   
                       <div class="form__row">
                         <label class="form__block">
@@ -608,17 +608,17 @@
                       <div class="form__row form__row--margin">
                         <label class="form__block">
                           <div class="form__block-title">Комментарий</div>
-                            <textarea type="text" maxlength="250" id="comment" name="comment" class="form__textarea form__input"></textarea>
+                            <textarea type="text" maxlength="250" id="message" name="message" class="form__textarea form__input"></textarea>
                         </label>
                       </div>
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="radio" id="cash" name="cash" class="comments-form__controls-radio" name="radioJob">
+                            <input type="radio" id="cash" name="pay-option" class="comments-form__controls-radio" value="Наличными">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Потребуется сдача</div>
                         </label>
                         <label class="comments-form__controls-input">
-                          <input type="radio" id="noncash" name="noncash"class="comments-form__controls-radio" name="radioJob">
+                          <input type="radio" id="card" name="pay-option" class="comments-form__controls-radio" value="Картой">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Оплата по карте</div>
                         </label>                      
@@ -626,7 +626,7 @@
 
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="checkbox" id="notcallback" name="notcallback"class="comments-form__controls-radio" name="checkbox" value="1">
+                            <input type="checkbox" id="dont-disturb" name="dont-disturb"class="comments-form__controls-radio" name="checkbox" value="1">
                           <div class="comments-form__controls-fake comments-form__controls-checkbox"></div>
                           <div class="form__block-title">Не перезванивать</div>
                         </label>
@@ -634,7 +634,7 @@
 
                       <div class="form__row form__row--margin">
                         <label class="toorder-about">                          
-                            <input type="button" class="toorder-about__button toorder-about__button--border" value="Заказать">
+                            <input type="submit" class="toorder-about__button toorder-about__button--border" value="Заказать">
                         </label>
                         <label class="toorder-about">                          
                             <input type="reset" class="toorder-about__button form__input-reset" value="Очистить">
@@ -694,7 +694,6 @@
 	              <!--</div> -->
 	            </div>                
 	          </footer>
-            </div>
           </section>
 
      </div>
@@ -752,8 +751,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>       
         <script src="../js/jquery.fancybox.min.js"></script>
         <script src="../js/jquery.bxslider.min.js"></script>  
-        <script src="../js/jquery.fullpage.js"></script>    
-
+        <script src="../js/jquery.fullpage.js"></script>  
         <script src="../js/script.js"></script>
         
 

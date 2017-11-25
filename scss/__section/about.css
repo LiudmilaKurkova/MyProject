@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 26 of J:\WEB\public_html\scss\__section\about.scss, in `tablets'
-        from line 26 of J:\WEB\public_html\scss\__section\about.scss
+        on line 26 of C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss, in `tablets'
+        from line 26 of C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss
 
 21:   flex-wrap: nowrap;
 22:   flex-grow: 1;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 31:   	 }
 
 Backtrace:
-J:\WEB\public_html\scss\__section\about.scss:26:in `tablets'
-J:\WEB\public_html\scss\__section\about.scss:26
+C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss:26:in `tablets'
+C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss:26
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 26 of J:\WEB\public_html\scss\__section\about.scss, in `tablets'\A         from line 26 of J:\WEB\public_html\scss\__section\about.scss\A \A 21:   flex-wrap: nowrap;\A 22:   flex-grow: 1;\A 23:   align-items: center;\A 24:   //margin-bottom: rem(100px);\A 25: \A 26:   	 @include tablets {\A 27:   	 	flex-direction: column;\A 28: 	    align-items: center;\A 29: 	    text-align: center;\A 30: 	    padding: 0 20%; \A 31:   	 }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 26 of C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss, in `tablets'\A         from line 26 of C:\OSPanel\domains\Site1\public_html\scss\__section\about.scss\A \A 21:   flex-wrap: nowrap;\A 22:   flex-grow: 1;\A 23:   align-items: center;\A 24:   //margin-bottom: rem(100px);\A 25: \A 26:   	 @include tablets {\A 27:   	 	flex-direction: column;\A 28: 	    align-items: center;\A 29: 	    text-align: center;\A 30: 	    padding: 0 20%; \A 31:   	 }"; }
