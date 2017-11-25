@@ -19,12 +19,12 @@
     <link rel="stylesheet" type="text/css" href="../scss/style.css">
     <title>Бургерная</title>
   </head>
-  <body>  	
+  <body id="MyBody">  	
 
     <div class="wrapper">
       <div class="maincontent" id="fullpage">             
 
-          <section class="section section-about active" data-anchor="FerstSection">  
+          <section class="section section-about" data-anchor="FerstSection">  
             <div class="container container-about">
     			  	<header class="header-about">
     			  		<div class="header-about__logo">
@@ -565,42 +565,42 @@
               <main class="main-form">              
                 <div class="section__title section__title--center form__title">закажите доставку</div>  
                 <div class="form">
-                  <form action="" class="form__elem">
+                  <form action="server.php" id="order-form" method="post" class="form__elem">
                     <div class="form__content">                   
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Имя</div>
-                            <input type="text" class="form__input">
+                            <input type="text" id="user-name" name="user-name" class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Телефон</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user-phone" name="user-phone" class="form__input">
                         </label>
                       </div>
 
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Улица</div>
-                            <input type="text" class="form__input">
+                            <input type="text" id="user-street" name="user-street" class="form__input">
                         </label>
                       </div>
 
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Дом</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user-house" name="user-house" class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Корпус</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user-housing" name="user-housing" class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Квартира</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user-apartment" name="user-apartment" class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Этаж</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user-floor" name="user-floor" class="form__input">
                         </label>
                       </div>
                     </div>
@@ -608,17 +608,17 @@
                       <div class="form__row form__row--margin">
                         <label class="form__block">
                           <div class="form__block-title">Комментарий</div>
-                            <textarea type="text" maxlength="250" class="form__textarea form__input"></textarea>
+                            <textarea type="text" maxlength="250" id="comment" name="comment" class="form__textarea form__input"></textarea>
                         </label>
                       </div>
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="radio" class="comments-form__controls-radio" name="radioJob">
+                            <input type="radio" id="cash" name="cash" class="comments-form__controls-radio" name="radioJob">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Потребуется сдача</div>
                         </label>
                         <label class="comments-form__controls-input">
-                          <input type="radio" class="comments-form__controls-radio" name="radioJob">
+                          <input type="radio" id="noncash" name="noncash"class="comments-form__controls-radio" name="radioJob">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Оплата по карте</div>
                         </label>                      
@@ -626,7 +626,7 @@
 
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="checkbox" class="comments-form__controls-radio" name="checkbox">
+                            <input type="checkbox" id="notcallback" name="notcallback"class="comments-form__controls-radio" name="checkbox" value="1">
                           <div class="comments-form__controls-fake comments-form__controls-checkbox"></div>
                           <div class="form__block-title">Не перезванивать</div>
                         </label>
@@ -651,48 +651,49 @@
           </section>
 
           <section class="section section-contacts" data-anchor="sectionContacts">
-            <div class="contacts__map"></div>                             
-              <footer class="footer-contacts">
-                <div class="container container-contacts"> 
-                <div class="footer__row footer__row--left">
-                  <div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                  <a href="#" class="footer__link"> +7 (812) 377-13</a>
-                </div>              
-                <div class="footer__row footer__row--right">
-                  <!--<div class="footer__socials">-->
-                    <ul class="socials__list"
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                         <svg class="socials__link-icon" style="fill: #fff">
-                           <use xlink:href="../icons/sprite/sprite.svg#fb"></use>
-                        </svg>
-                         </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul> 
-                  <!--</div> -->
-                </div>                
-              </footer>
+            <div class="map" id ="map"></div>  
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Tzp--H12ZCIlNnuqRg-tuUr117Q1XqU&callback=initMap"></script>                              
+	          <footer class="footer-contacts">
+	            <div class="container container-contacts"> 
+	            <div class="footer__row footer__row--left">
+	              <div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+	              <a href="#" class="footer__link"> +7 (812) 377-13</a>
+	            </div>              
+	            <div class="footer__row footer__row--right">
+	              <!--<div class="footer__socials">-->
+	                <ul class="socials__list"
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#vk"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                     <svg class="socials__link-icon" style="fill: #fff">
+	                       <use xlink:href="../icons/sprite/sprite.svg#fb"></use>
+	                    </svg>
+	                     </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#inst"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#twitter"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                </ul> 
+	              <!--</div> -->
+	            </div>                
+	          </footer>
             </div>
           </section>
 
@@ -710,22 +711,22 @@
                 <nav class="nav-about nav-about__drop">
                   <ul class="nav-about__list">
                     <li class="nav-about__item" data-menuanchor="best">
-                      <a class="nav-about__link" href="#best">О нас</a>
+                      <a class="nav-about__link drop-link" href="#best">О нас</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="burgers">
-                      <a class="nav-about__link" href="#burgers">бургеры</a>
+                      <a class="nav-about__link drop-link" href="#burgers">бургеры</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="team">
-                      <a class="nav-about__link" href="#team">команда</a>
+                      <a class="nav-about__link drop-link" href="#team">команда</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="menu">
-                      <a class="nav-about__link" href="#menu">меню</a>
+                      <a class="nav-about__link drop-link" href="#menu">меню</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="reviews">
-                      <a class="nav-about__link" href="#reviews">отзывы</a>
+                      <a class="nav-about__link drop-link" href="#reviews">отзывы</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="contacts">
-                      <a class="nav-about__link" href="#contacts">контакты</a>
+                      <a class="nav-about__link drop-link" href="#contacts">контакты</a>
                     </li>                          
                   </ul>
                 </nav>
@@ -751,7 +752,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>       
         <script src="../js/jquery.fancybox.min.js"></script>
         <script src="../js/jquery.bxslider.min.js"></script>  
-        <script src="../js/jquery.fullpage.js"></script>          
+        <script src="../js/jquery.fullpage.js"></script>    
+
         <script src="../js/script.js"></script>
         
 

@@ -5,6 +5,8 @@ let block = document.getElementById('about');
 let buttonClose = document.getElementById('img-close');
 let hiddenMenu = document.getElementById('drop-about');
 let blockBody = document.getElementById('MyBody');
+//let menuLink = document.getElementsByClassName('drop-link');
+//console.log(menuLink);
 
 
       hamburgerMenu.addEventListener('click', function() {
@@ -14,7 +16,7 @@ let blockBody = document.getElementById('MyBody');
       blockBody.className = 'locked';
       // hiddenMenu.style.zIndex++;
       //hiddenMenu.style.position = 'fixed';
-     })
+     });
 
 			buttonClose.addEventListener('click', function() {
       //block.style.opacity = '1';
@@ -23,7 +25,23 @@ let blockBody = document.getElementById('MyBody');
       blockBody.className = '';
       //hiddenMenu.style.zIndex--;
       //hiddenMenu.style.position = 'absolute';
-     })
+     });
+
+
+      $('.drop-link').on('click', (e) => {
+     //e.preventDefault();
+
+      const $this = $(e.target);
+
+      $(location).attr('href'); 
+      hiddenMenu.style.display = 'none';
+      hiddenMenu.style.opacity = '0';
+      blockBody.className = '';
+
+
+      //hiddenMenu.style.zIndex--;
+      //hiddenMenu.style.position = 'absolute';
+     });
 
 //team-acco---------------------------------------------
 
@@ -208,7 +226,41 @@ $(document).ready(function() {
 });
 
 
+// google-map -------------------------------------------------
 
+  function initMap() {
+        var uluru = {lat: 59.934406, lng: 30.289048}; 
+        var firstMapMarker = {lat: 59.955511, lng: 30.389528};
+        var secondMapMarker = {lat: 59.979567, lng: 30.281725};
+        var thirdMapMarker = {lat: 59.827719, lng: 30.289048};
+        var fourthMapMarker = {lat: 59.893340, lng: 30.515501};        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru
+        });
+
+        var marker = new google.maps.Marker({
+          position: firstMapMarker,
+          map: map,
+          icon: "../img/__contacts/marker.png"
+
+        });
+        var marker = new google.maps.Marker({
+          position: secondMapMarker,
+          map: map,
+          icon: "../img/__contacts/marker.png"
+        });
+        var marker = new google.maps.Marker({
+          position: thirdMapMarker,
+          map: map,
+          icon: "../img/__contacts/marker.png"
+        });
+        var marker = new google.maps.Marker({
+          position: fourthMapMarker,
+          map: map,
+          icon: "../img/__contacts/marker.png"
+        });
+      }
 
 
 
