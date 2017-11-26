@@ -1143,20 +1143,6 @@ th {
     .form__title {
       margin-top: 1.25rem; } }
 
-/*.main-form__title {
-	//height: rem(190px);
-	font-family: "Gagalin";
-	font-weight: 500;
-	font-size: rem(72px);
-	color: #f9b43c;
-	text-align: center;
-	//line-height: rem(190px);
-	margin-bottom: rem(30px);
-
-    @include phones {
-      font-size: rem(50px);
-       }
-}*/
 .form__elem {
   display: flex;
   flex-direction: row;
@@ -1186,6 +1172,13 @@ th {
   .form__input:focus {
     outline: none;
     border: 1px solid #3c21b1; }
+  .form__input.error {
+    border-color: #e85666;
+    box-shadow: 0 0 3px #e85666; }
+
+label.error {
+  font-size: 0.625rem;
+  color: #e85666; }
 
 .form__row {
   display: flex;

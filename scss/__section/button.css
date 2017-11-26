@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$orange".
-        on line 17 of C:\MyProject\src\scss\__section\button.scss
+        on line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\button.scss
 
 12: 	line-height: rem(35px);
 13: 	border-radius: rem(5px);
@@ -12,7 +12,7 @@ Error: Undefined variable: "$orange".
 19: }
 
 Backtrace:
-C:\MyProject\src\scss\__section\button.scss:17
+C:\OSPanel\domains\Site1\public_html\scss\__section\button.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
@@ -78,4 +78,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$orange\".\A         on line 17 of C:\MyProject\src\scss\__section\button.scss\A \A 12: 	line-height: rem(35px);\A 13: 	border-radius: rem(5px);\A 14: 	text-decoration: none;\A 15: 	transition: .5s;\A 16:   &:hover {\A 17:     background-color: darken($orange, 7%);\A 18:   }\A 19: }"; }
+  content: "Error: Undefined variable: \"$orange\".\A         on line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\button.scss\A \A 12: 	line-height: rem(35px);\A 13: 	border-radius: rem(5px);\A 14: 	text-decoration: none;\A 15: 	transition: .5s;\A 16:   &:hover {\A 17:     background-color: darken($orange, 7%);\A 18:   }\A 19: }"; }

@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'phones'.
-        on line 17 of C:\MyProject\src\scss\__section\burgers.scss, in `phones'
-        from line 17 of C:\MyProject\src\scss\__section\burgers.scss
+        on line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss, in `phones'
+        from line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss
 
 12: 	//max-width: rem(940px); 
 13: 	height: 90%;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'phones'.
 22: .slider {
 
 Backtrace:
-C:\MyProject\src\scss\__section\burgers.scss:17:in `phones'
-C:\MyProject\src\scss\__section\burgers.scss:17
+C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss:17:in `phones'
+C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss:17
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'phones'.\A         on line 17 of C:\MyProject\src\scss\__section\burgers.scss, in `phones'\A         from line 17 of C:\MyProject\src\scss\__section\burgers.scss\A \A 12: 	//max-width: rem(940px); \A 13: 	height: 90%;\A 14: 	//overflow: hidden;\A 15: 	padding-top: rem(30px);\A 16: 	\A 17: 			@include phones {\A 18: 				height: 100%;\A 19: 	}\A 20: }\A 21: \A 22: .slider {"; }
+  content: "Error: Undefined mixin 'phones'.\A         on line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss, in `phones'\A         from line 17 of C:\OSPanel\domains\Site1\public_html\scss\__section\burgers.scss\A \A 12: 	//max-width: rem(940px); \A 13: 	height: 90%;\A 14: 	//overflow: hidden;\A 15: 	padding-top: rem(30px);\A 16: 	\A 17: 			@include phones {\A 18: 				height: 100%;\A 19: 	}\A 20: }\A 21: \A 22: .slider {"; }

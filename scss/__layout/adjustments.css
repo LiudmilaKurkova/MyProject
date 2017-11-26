@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$yellow".
-        on line 45 of C:\MyProject\src\scss\__layout\adjustments.scss
+        on line 45 of C:\OSPanel\domains\Site1\public_html\scss\__layout\adjustments.scss
 
 40: .section__title {
 41:   font-family: "Gagalin";
@@ -15,7 +15,7 @@ Error: Undefined variable: "$yellow".
 50:         font-size: rem(63px);
 
 Backtrace:
-C:\MyProject\src\scss\__layout\adjustments.scss:45
+C:\OSPanel\domains\Site1\public_html\scss\__layout\adjustments.scss:45
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -62,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$yellow\".\A         on line 45 of C:\MyProject\src\scss\__layout\adjustments.scss\A \A 40: .section__title {\A 41:   font-family: \"Gagalin\";\A 42:   font-weight: normal;\A 43:   font-style: normal;\A 44:   font-size: rem(72px);\A 45:   color: $yellow;\A 46:   text-transform: uppercase;\A 47:   margin-bottom: rem(35px);  \A 48: \A 49:       @include phones {\A 50:         font-size: rem(63px);"; }
+  content: "Error: Undefined variable: \"$yellow\".\A         on line 45 of C:\OSPanel\domains\Site1\public_html\scss\__layout\adjustments.scss\A \A 40: .section__title {\A 41:   font-family: \"Gagalin\";\A 42:   font-weight: normal;\A 43:   font-style: normal;\A 44:   font-size: rem(72px);\A 45:   color: $yellow;\A 46:   text-transform: uppercase;\A 47:   margin-bottom: rem(35px);  \A 48: \A 49:       @include phones {\A 50:         font-size: rem(63px);"; }

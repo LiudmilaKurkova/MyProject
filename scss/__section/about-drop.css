@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 23 of C:\MyProject\src\scss\__section\about-drop.scss, in `tablets'
-        from line 23 of C:\MyProject\src\scss\__section\about-drop.scss
+        on line 23 of C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss, in `tablets'
+        from line 23 of C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss
 
 18: 
 19: .container-drop-about {
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 28: .img-close {
 
 Backtrace:
-C:\MyProject\src\scss\__section\about-drop.scss:23:in `tablets'
-C:\MyProject\src\scss\__section\about-drop.scss:23
+C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss:23:in `tablets'
+C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss:23
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 23 of C:\MyProject\src\scss\__section\about-drop.scss, in `tablets'\A         from line 23 of C:\MyProject\src\scss\__section\about-drop.scss\A \A 18: \A 19: .container-drop-about {\A 20: 		display: flex;\A 21:     flex-direction: column;\A 22: \A 23:     	@include tablets {\A 24: 	justify-content: space-around;\A 25: 	}\A 26: }\A 27: \A 28: .img-close {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 23 of C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss, in `tablets'\A         from line 23 of C:\OSPanel\domains\Site1\public_html\scss\__section\about-drop.scss\A \A 18: \A 19: .container-drop-about {\A 20: 		display: flex;\A 21:     flex-direction: column;\A 22: \A 23:     	@include tablets {\A 24: 	justify-content: space-around;\A 25: 	}\A 26: }\A 27: \A 28: .img-close {"; }

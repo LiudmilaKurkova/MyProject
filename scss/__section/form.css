@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 9 of C:\MyProject\src\scss\__section\form.scss, in `tablets'
-        from line 9 of C:\MyProject\src\scss\__section\form.scss
+        on line 9 of C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss, in `tablets'
+        from line 9 of C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss
 
 4:   background-size: cover;
 5:   position: relative;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 14: .form__title {
 
 Backtrace:
-C:\MyProject\src\scss\__section\form.scss:9:in `tablets'
-C:\MyProject\src\scss\__section\form.scss:9
+C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss:9:in `tablets'
+C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss:9
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 9 of C:\MyProject\src\scss\__section\form.scss, in `tablets'\A         from line 9 of C:\MyProject\src\scss\__section\form.scss\A \A 4:   background-size: cover;\A 5:   position: relative;\A 6:   justify-content: space-between;\A 7:   padding-top: 4rem;\A 8: \A 9:     @include tablets {\A 10:       padding-top: 0;\A 11:     }\A 12: }\A 13: \A 14: .form__title {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 9 of C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss, in `tablets'\A         from line 9 of C:\OSPanel\domains\Site1\public_html\scss\__section\form.scss\A \A 4:   background-size: cover;\A 5:   position: relative;\A 6:   justify-content: space-between;\A 7:   padding-top: 4rem;\A 8: \A 9:     @include tablets {\A 10:       padding-top: 0;\A 11:     }\A 12: }\A 13: \A 14: .form__title {"; }

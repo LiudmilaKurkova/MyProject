@@ -293,4 +293,82 @@ var ajaxForm = function (form) {
 
 $('#order-form').on('submit', submitForm);
   
+// Валидация формы -------------------------------------------------
+
+
+ /* $('#order-form').validate({  
+    rules: {
+      user_name: {
+        required: true
+      },
+      user_phone: {
+        required: true,
+        digits: true
+      },
+      user_street: {
+        required: true
+      },
+      user_house: {
+        required: true,
+        digits: true
+      },
+      user_housing: {
+        required: true,
+        digits: true
+      },
+      user_apartment: {
+        required: true
+      },
+      user_floor: {
+        required: true,
+        digits: true
+      },
+      message: {
+        required: true,
+        maxlength: 100
+      },
+      pay_option: {
+        required: true
+      },
+      dont_disturb: {
+        required: true
+      }
+    },
+    messages: {
+      user_name: {
+        required: "Поле обязательное для заполнения"
+     },
+      user_phone: {
+        required: "Поле обязательное для заполнения",
+        digits: "Введите правильно номер"
+    },
+      user_street: {
+        required: "Поле обязательное для заполнения"
+    },
+      user_house: {
+        required: "Поле обязательное для заполнения"
+     },
+      user_housing: {
+        required: "Поле обязательное для заполнения"
+    },
+      user_apartment: {
+        required: "Поле обязательное для заполнения"
+      },
+      user_floor: {
+        required: "Поле обязательное для заполнения"
+      },
+      message: {
+        required: "Поле обязательное для заполнения"
+      },
+      pay_option: {
+        required: "Поле обязательное для заполнения"
+      },
+      dont_disturb: {
+        required: "Поле обязательное для заполнения"
+      }
+    },
+    focusCleanup: true    
+   
+   })   
+   */
 
