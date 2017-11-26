@@ -587,9 +587,6 @@ th {
   justify-content: space-between;
   align-items: center;
   padding-top: 1.25rem; }
-  @media screen and (max-width: 768px) {
-    .header-about {
-      margin-bottom: 4rem; } }
 
 .nav-about {
   margin-right: 0.9375rem;

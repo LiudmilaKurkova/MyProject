@@ -1,45 +1,63 @@
-//about-hamburger--------------------------------------------
+// OnePageScroll. Плагин fullpage.js
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+    menu: '#menu',
+    navigation: true, 
+    
+ });
 
-let hamburgerMenu = document.getElementById('hamburger-menu-link');
-let block = document.getElementById('about');
-let buttonClose = document.getElementById('img-close');
-let hiddenMenu = document.getElementById('drop-about');
-let blockBody = document.getElementById('MyBody');
-//let menuLink = document.getElementsByClassName('drop-link');
-//console.log(menuLink);
+  $(document).on('click', '#moveDown', function(){
+    $.fn.fullpage.moveSectionDown();
+});
 
-      hamburgerMenu.addEventListener('click', function() {
-      //block.style.opacity = '0';
-      hiddenMenu.style.display = 'block';
-      hiddenMenu.style.opacity = '1';
-      blockBody.className = 'locked';
-      // hiddenMenu.style.zIndex++;
-      //hiddenMenu.style.position = 'fixed';
-     });
+       
+}); 
 
-			buttonClose.addEventListener('click', function() {
-      //block.style.opacity = '1';
-      hiddenMenu.style.display = 'none';
-      hiddenMenu.style.opacity = '0';
-      blockBody.className = '';
-      //hiddenMenu.style.zIndex--;
-      //hiddenMenu.style.position = 'absolute';
-     });
+  
+//запрет или разрешение скороллинга
+    var scrollControl = function(param) {
+    $.fn.fullpage.setAllowScrolling(param);
+    $.fn.fullpage.setKeyboardScrolling(param, 'down');
+  }
 
-      $('.drop-link').on('click', (e) => {
-     //e.preventDefault();
-
-      const $this = $(e.target);
-
-      $(location).attr('href'); 
-      hiddenMenu.style.display = 'none';
-      hiddenMenu.style.opacity = '0';
-      blockBody.className = '';
+    var hamburgerMenu = document.getElementById('hamburger-menu-link');
+    var block = document.getElementById('about');
+    var buttonClose = document.getElementById('img-close');
+    var hiddenMenu = document.getElementById('drop-about');
+    var blockBody = document.getElementById('MyBody');
+    var menuLink = document.getElementsByClassName('drop-link');
+    var $menuLink = document.getElementsByClassName('drop-link');
 
 
-      //hiddenMenu.style.zIndex--;
-      //hiddenMenu.style.position = 'absolute';
-     });
+  
+  // Меню для мобильной версии 
+    var mobileMenu = function() {
+    var menuControl = function(param, value) {
+      $(hiddenMenu).css(param, value);
+    }
+
+    $(hamburgerMenu).click(
+      function() {
+        menuControl('display', 'block');
+        scrollControl(false);
+      });
+
+    $(buttonClose).click(
+      function() {
+        menuControl('display', 'none');
+        scrollControl(true);
+      });
+
+   $('[data-scroll-to]').on('click', (e) => {
+      e.preventDefault()
+      performTransition(parseInt($(e.target).attr('data-scroll-to'))) 
+       menuControl('display', 'none');
+      scrollControl(true);
+      });
+  }
+      mobileMenu();
+
+
 
 //team-acco---------------------------------------------
 
@@ -203,31 +221,13 @@ $(function() {
     });
 
 
-// FullPage  --------------------------------------------------------------
-
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-    menu: '#menu',
-    //anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
-    navigation: true, 
-    
- });
-
-  $(document).on('click', '#moveDown', function(){
-    $.fn.fullpage.moveSectionDown();
-});
-       
-});
 
 
 // google-map -------------------------------------------------
 
   function initMap() {
-        var uluru = {lat: 59.934406, lng: 30.289048}; 
-        var firstMapMarker = {lat: 59.955511, lng: 30.389528};
-        var secondMapMarker = {lat: 59.979567, lng: 30.281725};
-        var thirdMapMarker = {lat: 59.827719, lng: 30.289048};
-        var fourthMapMarker = {lat: 59.893340, lng: 30.515501};        
+        var uluru = {lat: 59.929414, lng:  30.361815}; 
+        var $icon = "../img/__contacts/marker.png";
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
           center: uluru,
@@ -235,25 +235,29 @@ $(document).ready(function() {
         });
 
         var marker = new google.maps.Marker({
-          position: firstMapMarker,
+          position: {lat: 59.930874, lng: 30.364257},
           map: map,
-          icon: "../img/__contacts/marker.png"
+          title: 'Невский пр., 126, Санкт-Петербург',
+          icon: $icon
 
         });
         var marker = new google.maps.Marker({
-          position: secondMapMarker,
+          position: {lat: 59.902666, lng: 30.274486},
+          title: 'Нарвский пр., 27, Санкт-Петербург',
           map: map,
-          icon: "../img/__contacts/marker.png"
+          icon: $icon
         });
         var marker = new google.maps.Marker({
-          position: thirdMapMarker,
+          position: {lat: 59.958178, lng: 30.345933},
+          title: 'ул. Пестеля, 27, Санкт-Петербург',
           map: map,
-          icon: "../img/__contacts/marker.png"
+          icon: $icon
         });
         var marker = new google.maps.Marker({
-          position: fourthMapMarker,
+          position: {lat: 59.944844,  lng: 30.346591},
+          title: 'Литейный пр., 59, Санкт-Петербург',
           map: map,
-          icon: "../img/__contacts/marker.png"
+          icon: $icon
         });
       }
 
