@@ -230,7 +230,8 @@ $(document).ready(function() {
         var fourthMapMarker = {lat: 59.893340, lng: 30.515501};        
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 11,
-          center: uluru
+          center: uluru,
+          scrollwheel: false
         });
 
         var marker = new google.maps.Marker({
@@ -285,6 +286,10 @@ var submitForm = function (ev) {
             $('<p>' + mes + '</p>', {   
                    }).appendTo($div);
 
+            $(document).on('click', '.success', function(e){
+            $(e.currentTarget).css({'display' : 'none', 'cursor' : 'pointer'});
+
+      });            
 
             //form.append('<p class="success">' + mes + '</p>');
 
