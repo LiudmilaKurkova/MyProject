@@ -2,18 +2,14 @@
     $(document).ready(function() {
     $('#fullpage').fullpage({
     menu: '#menu',
-    navigation: true, 
-    
+    navigation: true,    
  });
 
   $(document).on('click', '#moveDown', function(){
     $.fn.fullpage.moveSectionDown();
-});
-
-       
+});       
 }); 
 
-  
 //запрет или разрешение скороллинга
     var scrollControl = function(param) {
     $.fn.fullpage.setAllowScrolling(param);
@@ -29,7 +25,6 @@
     var $menuLink = document.getElementsByClassName('drop-link');
 
 
-  
   // Меню для мобильной версии 
     var mobileMenu = function() {
     var menuControl = function(param, value) {
@@ -46,11 +41,7 @@
       function() {
         menuControl('display', 'none');
         scrollControl(true);
-      });
-
-      //$('[data-scroll-to]').on('click', (e) => {
-      //e.preventDefault()
-      // performTransition(parseInt($(e.target).attr('data-scroll-to'))) 
+      });      
 
       $('.drop-link').click(
       function() {
@@ -58,11 +49,9 @@
       menuControl('display', 'none');
       scrollControl(true);
       });
-  }
+     }
   
       mobileMenu();
-
-
 
 //team-acco---------------------------------------------
 
@@ -77,10 +66,7 @@ $('.main-team__trigger').on('click', e => {
     const textBlock = $('.main-team__wrap', item);
     const reqHeight = textBlock.outerHeight();
 
-     //console.log(textBlock);
-        //console.log(reqHeight);
-
-    if (!item.hasClass('main-team__item--activ')) {
+     if (!item.hasClass('main-team__item--activ')) {
       items.removeClass('main-team__item--activ')
       item.addClass('main-team__item--activ')
 
@@ -99,7 +85,6 @@ $('.main-team__trigger').on('click', e => {
         'height' : 0
       })
     }
-
   })
 
 //menu-acco ----------------------------------------------
@@ -111,8 +96,7 @@ $(document).ready ( () => {
     const titles = $('.acco-menu__trigger');
     const titleWidth = titles.width();
     const reqWidth = wWidth - (titleWidth * titles.length);
-    //console.log(titles.length);
-
+   
     return (reqWidth > 540) ? 540 : reqWidth
   }
 
@@ -168,21 +152,6 @@ $(document).ready ( () => {
   });
 })
 
-
-//Это тоже работает (но как-то плохо)))
-/*
-$(document).ready ( () => {
-
-      $('.acco-menu__trigger').on('click', (e) => {
-
-  $(e.currentTarget).parent('.acco-menu__item').toggleClass('acco-menu__item--activ');
-  $(e.currentTarget).parent('.acco-menu__item').siblings().removeClass('acco-menu__item--activ');
-  
-})
-})
-*/
-
-
 //reviews-fancybox -----------------------------------------------------
 
 $(function() {
@@ -191,8 +160,7 @@ $(function() {
     transitionEffect : "slide",
     transitionDuration : 2000,
     afterClose: () => {
-      //console.log('РјРѕРґР°Р»РєР° Р·Р°РєСЂС‹С‚Р°');
-    }
+       }
   });
   
   $('.close-fancy').on('click', e => {
@@ -224,8 +192,6 @@ $(function() {
     });
 
     });
-
-
 
 
 // google-map -------------------------------------------------
@@ -268,9 +234,6 @@ $(function() {
 
 // form ---------------------------------------------------
 
-// console.log('I am in common.js');
-// console.log($);
-
 var submitForm = function (ev) {
     ev.preventDefault();
     // console.log(ev);
@@ -297,12 +260,11 @@ var submitForm = function (ev) {
 
             $(document).on('click', '.success', function(e){
             $(e.currentTarget).css({'display' : 'none', 'cursor' : 'pointer'});
+            document.getElementById("order-form").reset();
 
       });            
 
-            //form.append('<p class="success">' + mes + '</p>');
-
-
+            
         } else{
 
         form.append('<p class="error">' + mes + '</p>');
@@ -312,7 +274,7 @@ var submitForm = function (ev) {
 
     request.fail(function(jqXHR, textStatus) {
         alert("Request failed: " + textStatus);
-    });
+      });
 }
 
 var ajaxForm = function (form) {
@@ -332,69 +294,3 @@ var ajaxForm = function (form) {
 $('#order-form').on('submit', submitForm);
   
 
-    
-
-
-
-
-
-
-
-
-
-// slider
-/*
-$(function() {
-
-  let moveSlide = function (conteiner, slideNum) {
-
-      let          
-          items = conteiner.find('.slider_item'),
-          activeSlide = item.filter('.active'),
-          reqItem = item.eq(slideNum),
-          reqIndex = reqItem.index(),
-          list = conteiner.find('.slider_list'),
-          duration = 500;
-
-    if (reqItem.length) {
-       list.animate({
-        'left': -reqIndex * 100 + '%'
-      }, duration, function(){
-          activeSlide.removeClass('active');
-          reqItem.addClass('active');
-        });
-     }
-   }
-
-  
-
-   $('.burgers-arrow-scroll').on('click', function(e){
-
-      let $this = $(this),
-          conteiner = $this.closest('.burger-slider'),
-          item = $('.slider_item, conteiner'),
-          activeItem = item.folter('.active'),
-          nextItem = activeItem.next(),
-          prevItem = activItim.prev();
-
-        if ($this.hasClass('.burgers-arrow-scroll--forward')) {
-
-               if (nextItem.length) {
-                moveSlide(conteiner, nextItem.index());
-              
-              } else {
-                moveSlide(conteiner, items.first());
-                          
-        } else {
-
-                if (prevItem.length) {
-                moveSlide(conteiner, prevItem.index());
-              
-              } else {
-                moveSlide(conteiner, items.last()};
-         }
-          
-        }
-    });
-  
-*/
