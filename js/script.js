@@ -48,13 +48,18 @@
         scrollControl(true);
       });
 
-   $('[data-scroll-to]').on('click', (e) => {
-      e.preventDefault()
-      performTransition(parseInt($(e.target).attr('data-scroll-to'))) 
-       menuControl('display', 'none');
+      //$('[data-scroll-to]').on('click', (e) => {
+      //e.preventDefault()
+      // performTransition(parseInt($(e.target).attr('data-scroll-to'))) 
+
+      $('.drop-link').click(
+      function() {
+      $(location).attr('href');  
+      menuControl('display', 'none');
       scrollControl(true);
       });
   }
+  
       mobileMenu();
 
 
