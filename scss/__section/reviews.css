@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 21 of C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss, in `tablets'
-        from line 21 of C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss
+        on line 21 of C:\MyProject\src\scss\__section\reviews.scss, in `tablets'
+        from line 21 of C:\MyProject\src\scss\__section\reviews.scss
 
 16:   background-position: center center;
 17:   background-repeat: no-repeat;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 26: 		  &:hover {
 
 Backtrace:
-C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss:21:in `tablets'
-C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss:21
+C:\MyProject\src\scss\__section\reviews.scss:21:in `tablets'
+C:\MyProject\src\scss\__section\reviews.scss:21
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 21 of C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss, in `tablets'\A         from line 21 of C:\OSPanel\domains\Site1\public_html\scss\__section\reviews.scss\A \A 16:   background-position: center center;\A 17:   background-repeat: no-repeat;\A 18:   filter: grayscale(100%);  \A 19:   position: relative;\A 20: \A 21:   	 @include tablets {\A 22: 	    width: 50%;\A 23: 	    height: 25%;\A 24:   } \A 25: \A 26: 		  &:hover {"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 21 of C:\MyProject\src\scss\__section\reviews.scss, in `tablets'\A         from line 21 of C:\MyProject\src\scss\__section\reviews.scss\A \A 16:   background-position: center center;\A 17:   background-repeat: no-repeat;\A 18:   filter: grayscale(100%);  \A 19:   position: relative;\A 20: \A 21:   	 @include tablets {\A 22: 	    width: 50%;\A 23: 	    height: 25%;\A 24:   } \A 25: \A 26: 		  &:hover {"; }

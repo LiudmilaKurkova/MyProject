@@ -133,12 +133,12 @@
 			background: #e35028;
 		}
 					@include tablets {
-						top: 5%;
+						top: 0;
 			    	left: 10%;
 			  	}
 
 			  	@include phones {
-			  		top: 6%;
+			  		top: 0;
 			  		left: 3%;
 			  	}
 }
@@ -183,12 +183,12 @@
 			}
 
 				@include tablets {
-				top: 5%;
+				top: 0;
     		left: 80%;
     	}
 
     	@include phones {
-    				top: 6%;
+    				top: 0;
 			  		left: 78%;
 			  	}
 }
@@ -267,11 +267,7 @@
   bottom: 50%;
   left: rem(20px);
   background: url('../icons/arrow-scroll.svg') center center no-repeat;
-  transform: rotate(90deg) translateY(-50%);
- 
-			@include tablets {
-				 bottom: rem(500px);
-			}
+  transform: rotate(90deg) translateY(-50%); 		
 }
 
 
@@ -285,10 +281,6 @@
   right: rem(20px);
   background: url('../icons/arrow-scroll.svg') center center no-repeat;
   transform: rotate(-90deg) translateY(-50%);
- 
-  	@include tablets {
-				 bottom: rem(500px);
-			}
-}
+ }
 	
 

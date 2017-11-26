@@ -16,7 +16,14 @@
   	display: none;  
 }
 
+.container-drop-about {
+		display: flex;
+    flex-direction: column;
 
+    	@include tablets {
+	justify-content: space-around;
+	}
+}
 
 .img-close {
 width: rem(20px);

@@ -5,6 +5,10 @@
   position: relative;
   justify-content: space-between;
   padding-top: 4rem;
+
+    @include tablets {
+      padding-top: 0;
+    }
 }
 
 .form__title {

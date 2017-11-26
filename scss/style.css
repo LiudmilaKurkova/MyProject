@@ -834,7 +834,7 @@ th {
 
 .main-reviews__drop {
   position: absolute;
-  padding: 20% 10%;
+  padding: 0 10%;
   top: 0;
   left: 0;
   right: 0;
@@ -848,27 +848,33 @@ th {
       text-align: center; } }
   @media screen and (max-width: 480px) {
     .main-reviews__drop {
-      padding: 0 5%; } }
+      padding: 0 5%; }
+      .main-reviews__drop p {
+        display: none; } }
   .main-reviews__drop:hover .main-reviews__drop {
     left: 0; }
 
 .main-reviews__item h3 {
-  padding-top: 3.125rem;
+  padding-top: 20%;
   font-family: "Gagalin";
   font-weight: 500;
   font-size: 0.875rem;
   color: #fff;
-  margin-bottom: 30px; }
+  margin-bottom: 20%; }
+  @media screen and (max-width: 768px) {
+    .main-reviews__item h3 {
+      padding-top: 10%;
+      margin-bottom: 10%; } }
   @media screen and (max-width: 480px) {
     .main-reviews__item h3 {
-      padding-top: 1.5625rem; } }
+      font-size: 1.5rem; } }
 
 .main-reviews__item p {
   font-family: "Ubuntu";
   font-weight: 300;
   font-size: 0.875rem;
   color: #fff;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 5%; }
 
 .main-reviews__link {
   display: block;
@@ -890,7 +896,8 @@ th {
       margin-left: 30%; } }
   @media screen and (max-width: 480px) {
     .main-reviews__link {
-      display: none; } }
+      margin-top: 0;
+      margin-left: 25%; } }
 
 @media screen and (max-width: 768px) {
   #fp-nav {
@@ -1126,6 +1133,9 @@ th {
   position: relative;
   justify-content: space-between;
   padding-top: 4rem; }
+  @media screen and (max-width: 768px) {
+    .section-form {
+      padding-top: 0; } }
 
 .form__title {
   margin-bottom: 4.375rem; }
@@ -1393,6 +1403,13 @@ th {
   z-index: 2;
   display: none; }
 
+.container-drop-about {
+  display: flex;
+  flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .container-drop-about {
+      justify-content: space-around; } }
+
 .img-close {
   width: 1.25rem;
   height: 1.25rem;
@@ -1543,11 +1560,11 @@ th {
     background: #e35028; }
   @media screen and (max-width: 768px) {
     .composition {
-      top: 5%;
+      top: 0;
       left: 10%; } }
   @media screen and (max-width: 480px) {
     .composition {
-      top: 6%;
+      top: 0;
       left: 3%; } }
 
 .composition:hover .drop__list {
@@ -1581,11 +1598,11 @@ th {
     margin: 0; }
   @media screen and (max-width: 768px) {
     .kkal {
-      top: 5%;
+      top: 0;
       left: 80%; } }
   @media screen and (max-width: 480px) {
     .kkal {
-      top: 6%;
+      top: 0;
       left: 78%; } }
 
 .kkal_in {
@@ -1649,9 +1666,6 @@ th {
   left: 1.25rem;
   background: url("../icons/arrow-scroll.svg") center center no-repeat;
   transform: rotate(90deg) translateY(-50%); }
-  @media screen and (max-width: 768px) {
-    .bx-prev {
-      bottom: 31.25rem; } }
 
 .bx-next {
   display: inline-block;
@@ -1663,9 +1677,6 @@ th {
   right: 1.25rem;
   background: url("../icons/arrow-scroll.svg") center center no-repeat;
   transform: rotate(-90deg) translateY(-50%); }
-  @media screen and (max-width: 768px) {
-    .bx-next {
-      bottom: 31.25rem; } }
 
 .drop__list {
   position: absolute;
@@ -1699,7 +1710,7 @@ th {
 
 .fansybox {
   display: none;
-  width: 29.375rem;
+  width: 25.375rem;
   border-radius: 0.3125rem;
   margin: 40px 20px; }
   .fansybox h3 {

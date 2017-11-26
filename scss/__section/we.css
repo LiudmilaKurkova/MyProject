@@ -1,7 +1,7 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 10 of C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss, in `tablets'
-        from line 10 of C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss
+        on line 10 of C:\MyProject\src\scss\__section\we.scss, in `tablets'
+        from line 10 of C:\MyProject\src\scss\__section\we.scss
 
 5:   position: relative;
 6: 	display: flex;
@@ -16,8 +16,8 @@ Error: Undefined mixin 'tablets'.
 15: }
 
 Backtrace:
-C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss:10:in `tablets'
-C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss:10
+C:\MyProject\src\scss\__section\we.scss:10:in `tablets'
+C:\MyProject\src\scss\__section\we.scss:10
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files (x86)/Koala/bin/sass:18:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss, in `tablets'\A         from line 10 of C:\OSPanel\domains\Site1\public_html\scss\__section\we.scss\A \A 5:   position: relative;\A 6: 	display: flex;\A 7: 	justify-content: space-between;\A 8: 	align-items: center;\A 9: 		\A 10: 		@include tablets {\A 11: 		background: url(\"../img/__we/bg_we_768.png\") no-repeat; \A 12: 		background-position: center center;\A 13:   	background-size: cover;\A 14: 		}\A 15: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 10 of C:\MyProject\src\scss\__section\we.scss, in `tablets'\A         from line 10 of C:\MyProject\src\scss\__section\we.scss\A \A 5:   position: relative;\A 6: 	display: flex;\A 7: 	justify-content: space-between;\A 8: 	align-items: center;\A 9: 		\A 10: 		@include tablets {\A 11: 		background: url(\"../img/__we/bg_we_768.png\") no-repeat; \A 12: 		background-position: center center;\A 13:   	background-size: cover;\A 14: 		}\A 15: }"; }
