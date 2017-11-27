@@ -32,7 +32,7 @@
 
 .main-reviews__drop {
   position: absolute;
-  padding: 20% 10%;
+  padding: 0 10%;
   top: 0;
   left: 0;
   right: 0;
@@ -46,8 +46,13 @@
 		 			text-align: center; 
 		}
 
+
 			@include phones {
 				padding: 0 5%;
+					p {
+						display: none;
+						//opacity: 0;
+					}
 			};
 		
 		 		&:hover .main-reviews__drop {
@@ -57,24 +62,27 @@
 
 
 
- //.main-reviews__img {
- 	//position: relative;
- 	//width: 100%;
- 	//height: 100%;
-  //}
+ 
 
  
 
 .main-reviews__item h3 {
-		padding-top: rem(50px);
+		padding-top: 20%;
 		font-family: "Gagalin";
 		font-weight: 500;
 		font-size: rem(14px);
 		color: #fff;
-		margin-bottom: 30px;
+		margin-bottom: 20%;
+
+			@include tablets {
+				padding-top: 10%;
+				margin-bottom: 10%;
+			};
 
 			@include phones {
-				padding-top: rem(25px);
+				font-size: rem(24px);
+				//margin-bottom: 0;
+				//padding-top: 0;
 			}
 }
 
@@ -83,7 +91,7 @@
 		font-weight: 300;
 		font-size: rem(14px);
 		color: #fff;
-		margin-bottom: rem(20px);
+		margin-bottom: 5%;
 }
 
 .main-reviews__link {
@@ -107,9 +115,11 @@
 		}
 
 			@include phones {
-				display: none;
+				margin-top: 0;
+   	 		margin-left: 25%;				
 			}
 }
+
 
 
 

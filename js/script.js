@@ -1,29 +1,57 @@
-//about-hamburger--------------------------------------------
+// OnePageScroll. Плагин fullpage.js
+    $(document).ready(function() {
+    $('#fullpage').fullpage({
+    menu: '#menu',
+    navigation: true,    
+ });
 
-let hamburgerMenu = document.getElementById('hamburger-menu-link');
-let block = document.getElementById('about');
-let buttonClose = document.getElementById('img-close');
-let hiddenMenu = document.getElementById('drop-about');
-let blockBody = document.getElementById('MyBody');
+  $(document).on('click', '#moveDown', function(){
+    $.fn.fullpage.moveSectionDown();
+});       
+}); 
+
+//запрет или разрешение скороллинга
+    var scrollControl = function(param) {
+    $.fn.fullpage.setAllowScrolling(param);
+    $.fn.fullpage.setKeyboardScrolling(param, 'down');
+  }
+
+    var hamburgerMenu = document.getElementById('hamburger-menu-link');
+    var block = document.getElementById('about');
+    var buttonClose = document.getElementById('img-close');
+    var hiddenMenu = document.getElementById('drop-about');
+    var blockBody = document.getElementById('MyBody');
+    var menuLink = document.getElementsByClassName('drop-link');
+    var $menuLink = document.getElementsByClassName('drop-link');
 
 
-      hamburgerMenu.addEventListener('click', function() {
-      //block.style.opacity = '0';
-      hiddenMenu.style.display = 'block';
-      hiddenMenu.style.opacity = '1';
-      blockBody.className = 'locked';
-      // hiddenMenu.style.zIndex++;
-      //hiddenMenu.style.position = 'fixed';
-     })
+  // Меню для мобильной версии 
+    var mobileMenu = function() {
+    var menuControl = function(param, value) {
+      $(hiddenMenu).css(param, value);
+    }
 
-			buttonClose.addEventListener('click', function() {
-      //block.style.opacity = '1';
-      hiddenMenu.style.display = 'none';
-      hiddenMenu.style.opacity = '0';
-      blockBody.className = '';
-      //hiddenMenu.style.zIndex--;
-      //hiddenMenu.style.position = 'absolute';
-     })
+    $(hamburgerMenu).click(
+      function() {
+        menuControl('display', 'block');
+        scrollControl(false);
+      });
+
+    $(buttonClose).click(
+      function() {
+        menuControl('display', 'none');
+        scrollControl(true);
+      });      
+
+      $('.drop-link').click(
+      function() {
+      $(location).attr('href');  
+      menuControl('display', 'none');
+      scrollControl(true);
+      });
+     }
+  
+      mobileMenu();
 
 //team-acco---------------------------------------------
 
@@ -38,10 +66,7 @@ $('.main-team__trigger').on('click', e => {
     const textBlock = $('.main-team__wrap', item);
     const reqHeight = textBlock.outerHeight();
 
-     //console.log(textBlock);
-        //console.log(reqHeight);
-
-    if (!item.hasClass('main-team__item--activ')) {
+     if (!item.hasClass('main-team__item--activ')) {
       items.removeClass('main-team__item--activ')
       item.addClass('main-team__item--activ')
 
@@ -60,13 +85,10 @@ $('.main-team__trigger').on('click', e => {
         'height' : 0
       })
     }
-
   })
 
-
-
-
 //menu-acco ----------------------------------------------
+
 $(document).ready ( () => {
 
   const calculateWidth = () => {
@@ -74,8 +96,7 @@ $(document).ready ( () => {
     const titles = $('.acco-menu__trigger');
     const titleWidth = titles.width();
     const reqWidth = wWidth - (titleWidth * titles.length);
-    //console.log(titles.length);
-
+   
     return (reqWidth > 540) ? 540 : reqWidth
   }
 
@@ -119,7 +140,6 @@ $(document).ready ( () => {
       ? closeItem(item)
       : openItem(item)
 
-
   });
 
   // клик вне аккордеона
@@ -132,21 +152,6 @@ $(document).ready ( () => {
   });
 })
 
-
-//Это тоже работает
-/*
-$(document).ready ( () => {
-
-      $('.acco-menu__trigger').on('click', (e) => {
-
-  $(e.currentTarget).parent('.acco-menu__item').toggleClass('acco-menu__item--activ');
-  $(e.currentTarget).parent('.acco-menu__item').siblings().removeClass('acco-menu__item--activ');
-  
-})
-})
-*/
-
-
 //reviews-fancybox -----------------------------------------------------
 
 $(function() {
@@ -155,8 +160,7 @@ $(function() {
     transitionEffect : "slide",
     transitionDuration : 2000,
     afterClose: () => {
-      //console.log('РјРѕРґР°Р»РєР° Р·Р°РєСЂС‹С‚Р°');
-    }
+       }
   });
   
   $('.close-fancy').on('click', e => {
@@ -190,82 +194,181 @@ $(function() {
     });
 
 
-// FullPage  --------------------------------------------------------------
+// google-map -------------------------------------------------
 
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-    menu: '#menu',
-    //anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6', 'slide7', 'slide8'],
-    navigation: true, 
-    
- });
-
-  $(document).on('click', '#moveDown', function(){
-    $.fn.fullpage.moveSectionDown();
-});
-
-       
-});
-
-
-
-
-
-
-
-// slider
-/*
-$(function() {
-
-  let moveSlide = function (conteiner, slideNum) {
-
-      let          
-          items = conteiner.find('.slider_item'),
-          activeSlide = item.filter('.active'),
-          reqItem = item.eq(slideNum),
-          reqIndex = reqItem.index(),
-          list = conteiner.find('.slider_list'),
-          duration = 500;
-
-    if (reqItem.length) {
-       list.animate({
-        'left': -reqIndex * 100 + '%'
-      }, duration, function(){
-          activeSlide.removeClass('active');
-          reqItem.addClass('active');
+  function initMap() {
+        var uluru = {lat: 59.929414, lng:  30.361815}; 
+        var $icon = "../img/__contacts/marker.png";
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: uluru,
+          scrollwheel: false
         });
-     }
-   }
 
-  
+        var marker = new google.maps.Marker({
+          position: {lat: 59.930874, lng: 30.364257},
+          map: map,
+          title: 'Невский пр., 126, Санкт-Петербург',
+          icon: $icon
 
-   $('.burgers-arrow-scroll').on('click', function(e){
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 59.902666, lng: 30.274486},
+          title: 'Нарвский пр., 27, Санкт-Петербург',
+          map: map,
+          icon: $icon
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 59.958178, lng: 30.345933},
+          title: 'ул. Пестеля, 27, Санкт-Петербург',
+          map: map,
+          icon: $icon
+        });
+        var marker = new google.maps.Marker({
+          position: {lat: 59.944844,  lng: 30.346591},
+          title: 'Литейный пр., 59, Санкт-Петербург',
+          map: map,
+          icon: $icon
+        });
+      }
 
-      let $this = $(this),
-          conteiner = $this.closest('.burger-slider'),
-          item = $('.slider_item, conteiner'),
-          activeItem = item.folter('.active'),
-          nextItem = activeItem.next(),
-          prevItem = activItim.prev();
+// form ---------------------------------------------------
 
-        if ($this.hasClass('.burgers-arrow-scroll--forward')) {
+var submitForm = function (ev) {
+    ev.preventDefault();
+    // console.log(ev);
 
-               if (nextItem.length) {
-                moveSlide(conteiner, nextItem.index());
-              
-              } else {
-                moveSlide(conteiner, items.first());
-                          
-        } else {
+    //var content = $('.container-form');
+    var form = $(ev.target);
+        
+    var request = ajaxForm(form);
 
-                if (prevItem.length) {
-                moveSlide(conteiner, prevItem.index());
-              
-              } else {
-                moveSlide(conteiner, items.last()};
-         }
-          
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        if (status === 'OK') {
+
+          var $div = $('<div class="success"/>', {
+                }).appendTo('.container-form');
+
+            $('<a href="#close" title="Закрыть" class="close">X</a>'
+, {   
+                    }).appendTo($div);
+
+            $('<p>' + mes + '</p>', {   
+                   }).appendTo($div);
+
+            $(document).on('click', '.success', function(e){
+            $(e.currentTarget).css({'display' : 'none', 'cursor' : 'pointer'});
+            document.getElementById("order-form").reset();
+
+      });            
+
+            
+        } else{
+
+        form.append('<p class="error">' + mes + '</p>');
+        
         }
     });
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+      });
+}
+
+var ajaxForm = function (form) {
+
+    var url = form.attr('action'),
+        data = form.serialize();
+
+    return $.ajax({
+        type: 'POST',
+        url: url,
+        data: data,
+        dataType: 'JSON'
+    });
+
+}
+
+$('#order-form').on('submit', submitForm);
   
-*/
+// Валидация формы -------------------------------------------------
+
+
+ /* $('#order-form').validate({  
+    rules: {
+      user_name: {
+        required: true
+      },
+      user_phone: {
+        required: true,
+        digits: true
+      },
+      user_street: {
+        required: true
+      },
+      user_house: {
+        required: true,
+        digits: true
+      },
+      user_housing: {
+        required: true,
+        digits: true
+      },
+      user_apartment: {
+        required: true
+      },
+      user_floor: {
+        required: true,
+        digits: true
+      },
+      message: {
+        required: true,
+        maxlength: 100
+      },
+      pay_option: {
+        required: true
+      },
+      dont_disturb: {
+        required: true
+      }
+    },
+    messages: {
+      user_name: {
+        required: "Поле обязательное для заполнения"
+     },
+      user_phone: {
+        required: "Поле обязательное для заполнения",
+        digits: "Введите правильно номер"
+    },
+      user_street: {
+        required: "Поле обязательное для заполнения"
+    },
+      user_house: {
+        required: "Поле обязательное для заполнения"
+     },
+      user_housing: {
+        required: "Поле обязательное для заполнения"
+    },
+      user_apartment: {
+        required: "Поле обязательное для заполнения"
+      },
+      user_floor: {
+        required: "Поле обязательное для заполнения"
+      },
+      message: {
+        required: "Поле обязательное для заполнения"
+      },
+      pay_option: {
+        required: "Поле обязательное для заполнения"
+      },
+      dont_disturb: {
+        required: "Поле обязательное для заполнения"
+      }
+    },
+    focusCleanup: true    
+   
+   })   
+   */
+

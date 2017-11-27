@@ -7,6 +7,14 @@
   transition: opacity .5s;
 }
 
+
+.container-about {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
 .main-about {	
 	width: 100%;
   display: flex;

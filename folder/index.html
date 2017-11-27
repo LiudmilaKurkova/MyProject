@@ -19,12 +19,12 @@
     <link rel="stylesheet" type="text/css" href="../scss/style.css">
     <title>Бургерная</title>
   </head>
-  <body>  	
+  <body id="MyBody">  	
 
     <div class="wrapper">
       <div class="maincontent" id="fullpage">             
 
-          <section class="section section-about active" data-anchor="FerstSection">  
+          <section class="section section-about" data-anchor="FerstSection">  
             <div class="container container-about">
     			  	<header class="header-about">
     			  		<div class="header-about__logo">
@@ -55,7 +55,7 @@
 
       			  	</nav>
                 <div class="toorder-about">
-                  <a class="toorder-about__button" href="#form">заказать</a>
+                  <a class="toorder-about__button" href="#sectionForm">заказать</a>
                   <div class="hamburger-menu-link" id="hamburger-menu-link">
                     <!--<img  class="link__bars" src="../icons/menu-alt-256.png" alt="меню">-->
                     <div class="hamburger-menu-link__bars">
@@ -206,7 +206,7 @@
                        <div class="wrap-section__button">
                           <div class="section__title price-sum">500</div>
                           <div class="section__title price-val">рублей</div>
-                          <a class="toorder-about__button" href="#form">заказать</a>
+                          <a class="toorder-about__button" href="#sectionForm">заказать</a>
                        </div>
                     </div> 
                   </div> 
@@ -266,7 +266,7 @@
                        <div class="wrap-section__button">
                           <div class="section__title price-sum">500</div>
                           <div class="section__title price-val">рублей</div>
-                          <a class="toorder-about__button" href="#form">заказать</a>
+                          <a class="toorder-about__button" href="#sectionForm">заказать</a>
                        </div>
                     </div> 
                   </div> 
@@ -327,7 +327,7 @@
                        <div class="wrap-section__button">
                           <div class="section__title price-sum">500</div>
                           <div class="section__title price-val">рублей</div>
-                          <a class="toorder-about__button" href="#form">заказать</a>
+                          <a class="toorder-about__button" href="#sectionForm">заказать</a>
                        </div>
                     </div> 
                   </div>   
@@ -388,7 +388,7 @@
                        <div class="wrap-section__button">
                           <div class="section__title price-sum">500</div>
                           <div class="section__title price-val">рублей</div>
-                          <a class="toorder-about__button" href="#form">заказать</a>
+                          <a class="toorder-about__button" href="#sectionForm">заказать</a>
                        </div>
                     </div> 
                   </div>                   
@@ -565,42 +565,43 @@
               <main class="main-form">              
                 <div class="section__title section__title--center form__title">закажите доставку</div>  
                 <div class="form">
-                  <form action="" class="form__elem">
+
+                  <form action="../server.php" id="order-form" method="post" class="form__elem">
                     <div class="form__content">                   
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Имя</div>
-                            <input type="text" class="form__input">
+                            <input type="text" id="user_name" name="user_name" required class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Телефон</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user_phone" name="user_phone" required class="form__input">
                         </label>
                       </div>
 
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Улица</div>
-                            <input type="text" class="form__input">
+                            <input type="text" id="user_street" name="user_street" required class="form__input">
                         </label>
                       </div>
 
                       <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Дом</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user_house" name="user_house" required class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Корпус</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user_housing" name="user_housing" required class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Квартира</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user_apartment" name="user_apartment" required class="form__input">
                         </label>
                         <label class="form__block">
                           <div class="form__block-title">Этаж</div>
-                          <input type="text" class="form__input">
+                          <input type="text" id="user_floor" name="user_floor" required class="form__input">
                         </label>
                       </div>
                     </div>
@@ -608,17 +609,17 @@
                       <div class="form__row form__row--margin">
                         <label class="form__block">
                           <div class="form__block-title">Комментарий</div>
-                            <textarea type="text" maxlength="250" class="form__textarea form__input"></textarea>
+                            <textarea type="text" maxlength="250" id="message" name="message" required class="form__textarea form__input"></textarea>
                         </label>
                       </div>
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="radio" class="comments-form__controls-radio" name="radioJob">
+                            <input type="radio" id="cash" name="pay_option" required class="comments-form__controls-radio" value="Наличными">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Потребуется сдача</div>
                         </label>
                         <label class="comments-form__controls-input">
-                          <input type="radio" class="comments-form__controls-radio" name="radioJob">
+                          <input type="radio" id="card" name="pay_option" required class="comments-form__controls-radio" value="Картой">
                           <div class="comments-form__controls-fake"></div>
                           <div class="form__block-title">Оплата по карте</div>
                         </label>                      
@@ -626,7 +627,7 @@
 
                       <div class="form__row form__row--margin">
                         <label class="comments-form__controls-input">
-                            <input type="checkbox" class="comments-form__controls-radio" name="checkbox">
+                            <input type="checkbox" id="dont_disturb" name="dont_disturb" required class="comments-form__controls-radio" name="checkbox" value="1">
                           <div class="comments-form__controls-fake comments-form__controls-checkbox"></div>
                           <div class="form__block-title">Не перезванивать</div>
                         </label>
@@ -634,7 +635,7 @@
 
                       <div class="form__row form__row--margin">
                         <label class="toorder-about">                          
-                            <input type="button" class="toorder-about__button toorder-about__button--border" value="Заказать">
+                            <input type="submit" class="toorder-about__button toorder-about__button--border" value="Заказать">
                         </label>
                         <label class="toorder-about">                          
                             <input type="reset" class="toorder-about__button form__input-reset" value="Очистить">
@@ -651,56 +652,56 @@
           </section>
 
           <section class="section section-contacts" data-anchor="sectionContacts">
-            <div class="contacts__map"></div>                             
-              <footer class="footer-contacts">
-                <div class="container container-contacts"> 
-                <div class="footer__row footer__row--left">
-                  <div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                  <a href="#" class="footer__link"> +7 (812) 377-13</a>
-                </div>              
-                <div class="footer__row footer__row--right">
-                  <!--<div class="footer__socials">-->
-                    <ul class="socials__list"
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#vk"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                         <svg class="socials__link-icon" style="fill: #fff">
-                           <use xlink:href="../icons/sprite/sprite.svg#fb"></use>
-                        </svg>
-                         </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#inst"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="socials__item">
-                        <a class="socials__link" href="#">
-                          <svg class="socials__link-icon" style="fill: #fff">
-                            <use xlink:href="../icons/sprite/sprite.svg#twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul> 
-                  <!--</div> -->
-                </div>                
-              </footer>
-            </div>
+            <div class="map" id ="map"></div>  
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9Tzp--H12ZCIlNnuqRg-tuUr117Q1XqU&callback=initMap"></script>                              
+	          <footer class="footer-contacts">
+	            <div class="container container-contacts"> 
+	            <div class="footer__row footer__row--left">
+	              <div class="footer__adress">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+	              <a href="#" class="footer__link"> +7 (812) 377-13</a>
+	            </div>              
+	            <div class="footer__row footer__row--right">
+	              <!--<div class="footer__socials">-->
+	                <ul class="socials__list"
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#vk"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                     <svg class="socials__link-icon" style="fill: #fff">
+	                       <use xlink:href="../icons/sprite/sprite.svg#fb"></use>
+	                    </svg>
+	                     </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#inst"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                  <li class="socials__item">
+	                    <a class="socials__link" href="#">
+	                      <svg class="socials__link-icon" style="fill: #fff">
+	                        <use xlink:href="../icons/sprite/sprite.svg#twitter"></use>
+	                      </svg>
+	                    </a>
+	                  </li>
+	                </ul> 
+	              <!--</div> -->
+	            </div>                
+	          </footer>
           </section>
 
      </div>
     </div>
 
         <div class="dropsection-about" id="drop-about">
-              <div class="container">
+              <div class="container container-drop-about">
                 <header class="header-about">
                   <div class="header-about__logo">
                     <img class="header-about__img" src="../icons/logo.svg" alt="Логотип компании">
@@ -710,22 +711,22 @@
                 <nav class="nav-about nav-about__drop">
                   <ul class="nav-about__list">
                     <li class="nav-about__item" data-menuanchor="best">
-                      <a class="nav-about__link" href="#best">О нас</a>
+                      <a class="nav-about__link drop-link" href="#sectionBest" data-scroll-to="#sectionBest">О нас</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="burgers">
-                      <a class="nav-about__link" href="#burgers">бургеры</a>
+                      <a class="nav-about__link drop-link" href="#sectionBurgers" data-scroll-to="#sectionBurgers">бургеры</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="team">
-                      <a class="nav-about__link" href="#team">команда</a>
+                      <a class="nav-about__link drop-link" href="#sectionTeam" data-scroll-to="#sectionTeam">команда</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="menu">
-                      <a class="nav-about__link" href="#menu">меню</a>
+                      <a class="nav-about__link drop-link" href="#sectionMenu" data-scroll-to="#sectionMenu">меню</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="reviews">
-                      <a class="nav-about__link" href="#reviews">отзывы</a>
+                      <a class="nav-about__link drop-link" href="sectionReviews" data-scroll-to="#sectionReviews">отзывы</a>
                     </li>
                     <li class="nav-about__item" data-menuanchor="contacts">
-                      <a class="nav-about__link" href="#contacts">контакты</a>
+                      <a class="nav-about__link drop-link" href="#sectionContacts" data-scroll-to="#sectionContacts">контакты</a>
                     </li>                          
                   </ul>
                 </nav>
@@ -751,7 +752,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>       
         <script src="../js/jquery.fancybox.min.js"></script>
         <script src="../js/jquery.bxslider.min.js"></script>  
-        <script src="../js/jquery.fullpage.js"></script>          
+        <script src="../js/jquery.fullpage.min.js"></script>  
+        <script src="../js/jquery.validate.min.js"></script>  
         <script src="../js/script.js"></script>
         
 
